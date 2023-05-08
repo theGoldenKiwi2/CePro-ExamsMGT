@@ -1,0 +1,17 @@
+<!doctype html>
+<title>{% block title %}{% endblock %} - Flaskr</title>
+<nav>
+  <h1>Flaskr</h1>
+  <ul>
+    <li><a href="{{ url_for('data_import.csv_import') }}">Import CSV file</a>
+  </ul>
+</nav>
+<section class="content">
+  <header>
+    {% block header %}{% endblock %}
+  </header>
+  {% for message in get_flashed_messages() %}
+    <div class="flash">{{ message }}</div>
+  {% endfor %}
+  {% block content %}{% endblock %}
+</section>
