@@ -8,6 +8,7 @@ DROP TABLE IF EXISTS ceproexams.employee_type;
 DROP TABLE IF EXISTS ceproexams.exam;
 DROP TABLE IF EXISTS ceproexams.section;
 DROP TABLE IF EXISTS ceproexams.service;
+DROP TABLE IF EXISTS ceproexams.service_level;
 DROP TABLE IF EXISTS ceproexams.exam_status;
 DROP TABLE IF EXISTS ceproexams.exam_type;
 
@@ -67,21 +68,21 @@ CREATE TABLE ceproexams.employee
 
 CREATE TABLE ceproexams.exam
 (
-  id INT PRIMARY KEY NOT NULL AUTO_INCREMENT,*
-  code VARCHAR(20),*
-  name VARCHAR(50),*
-  service_level_id INT,*
+  id INT PRIMARY KEY NOT NULL AUTO_INCREMENT,
+  code VARCHAR(20),
+  name VARCHAR(50),
+  service_level_id INT,
   service_id INT,
   exam_type_id INT,
-  exam_status_id INT,*
-  exam_date DATETIME,*
-  exam_years VARCHAR (10),*
-  exam_semester VARCHAR (10),*
-  nb_students INT,*
-  nb_pages INT,*
-  deadline_prep DATETIME,*
-  deadline_repro DATETIME,*
-  remark VARCHAR (250),*
+  exam_status_id INT,
+  exam_date DATETIME,
+  exam_years VARCHAR (10),
+  exam_semester VARCHAR (10),
+  nb_students INT,
+  nb_pages INT,
+  deadline_prep DATETIME,
+  deadline_repro DATETIME,
+  remark VARCHAR (250),
   INDEX fk_service_level_idx (service_level_id ASC),
   INDEX fk_services_idx (service_id ASC),
   INDEX fk_exam_type_idx (exam_type_id ASC),
