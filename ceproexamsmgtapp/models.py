@@ -51,7 +51,7 @@ class EmployeeType(db.Model):
     name = db.Column(db.String(20))
 
 class Employee(db.Model):
-    id =db.Column(db.Integer, primary_key=True)
+    id = db.Column(db.Integer, primary_key=True)
     lastname = db.Column(db.String(50))
     firstname = db.Column(db.String(50))
     email = db.Column(db.String(50))
@@ -59,12 +59,13 @@ class Employee(db.Model):
     emplyee_type = db.relationship('EmployeeType', backref='employee', lazy='dynamic')
 
 class EmployeeHasExam(db.Model):
-    id=db.column(db.Integer, primary_key=True)
+    id = db.Column(db.Integer, primary_key=True)
     exam = db.relationship('Exams', backref='EmployeeHasExam', lazy='dynamic', nullable=False)
     employee = db.relatonship('Employee', backref='EmployeeHasExam', lazy='dynamic', nullable=False)
+    contact_person = db.Column(db.Boolean(), default=False)
 
 class ExamHasSection(db.Model):
-    id=db.column(db.Integer, primary_key=True)
+    id = db.Column(db.Integer, primary_key=True)
     section = db.relationship('Section', backref='ExamHasSection', lazy='dynamic', nullable=False)
     exam = db.relationship('Exam', backref='ExamHasSection', lazy='dynamic', nullable=False)
 
