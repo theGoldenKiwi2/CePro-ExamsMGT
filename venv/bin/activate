@@ -38,7 +38,7 @@ deactivate () {
 # unset irrelevant variables
 deactivate nondestructive
 
-VIRTUAL_ENV="/media/michael/8ECE116DCE114F39/Users/eskander.INTRANET/DATA/EPFL/Projets/CePro-ExamsMGT/venv"
+VIRTUAL_ENV="/home/lucile/CePro-ExamsMGT/venv"
 export VIRTUAL_ENV
 
 _OLD_VIRTUAL_PATH="$PATH"

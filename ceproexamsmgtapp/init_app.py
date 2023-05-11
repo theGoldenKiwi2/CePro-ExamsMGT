@@ -12,7 +12,7 @@ basedir = os.path.abspath(os.path.dirname(__file__))
 def create_app(test_config=None):
     # create and configure the app
     app = Flask(__name__, instance_relative_config=True)
-    app.config['SQLALCHEMY_DATABASE_URI'] = "mysql://root:Mic99099.-.@localhost:3306/ceproexamsmgt"
+    app.config['SQLALCHEMY_DATABASE_URI'] = "mysql://root:MOTdepasse2023!@localhost:3306/ceproexamsmgt"
     app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
     
     #remplacer la configuration
@@ -25,6 +25,8 @@ def create_app(test_config=None):
 
 
     db.init_app(app)
+    with app.app_context():
+        db.create_all()
 
     #s’assure que l’instance existe
     try:
@@ -36,9 +38,9 @@ def create_app(test_config=None):
     @app.route('/hello')
     def hello():
 
-        exams = Exam.query.all()
-        for exam in exams:
-            print("Examen :"+ str(exam.id)+" / "+exam.code+" / "+exam.name)
+        # exams = Exam.query.all()
+        # for exam in exams:
+        #     print("Examen :"+ str(exam.id)+" / "+exam.code+" / "+exam.name)
         
         return 'Hello, World!'
 

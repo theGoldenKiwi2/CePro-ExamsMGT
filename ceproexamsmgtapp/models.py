@@ -32,14 +32,14 @@ class Exam(db.Model):
     id = db.Column(db.Integer, primary_key=True)
     code = db.Column(db.String(20))
     name = db.Column(db.String(50))
-    exam_date = db.column(db.DateTime)
-    exam_years = db.column(db.string(10))
-    exam_semester = db.column(db.string(10))
-    nb_students = db.column(db.Integer)
-    nb_pages = db.column(db.Integer)
-    deadline_prep = db.column(db.DateTime)
-    deadline_repro = db.column(db.DateTime)
-    remark = db.column(db.string(250))
+    exam_date = db.Column(db.DateTime())
+    exam_years = db.Column(db.String(10))
+    exam_semester = db.Column(db.String(10))
+    nb_students = db.Column(db.Integer)
+    nb_pages = db.Column(db.Integer)
+    deadline_prep = db.Column(db.DateTime())
+    deadline_repro = db.Column(db.DateTime())
+    remark = db.Column(db.String(250))
     exam_type = db.relationship('ExamType', backref='exams', lazy='dynamic')
     exam_status = db.relationship('ExamStatus', backref='exams', lazy='dynamic')
     service_level = db.relationship('ServiceLevel', backref='exams', lazy='dynamic')
@@ -60,14 +60,14 @@ class Employee(db.Model):
 
 class EmployeeHasExam(db.Model):
     id = db.Column(db.Integer, primary_key=True)
-    exam = db.relationship('Exams', backref='EmployeeHasExam', lazy='dynamic', nullable=False)
-    employee = db.relatonship('Employee', backref='EmployeeHasExam', lazy='dynamic', nullable=False)
+    exam = db.relationship('Exams', backref='EmployeeHasExam', lazy='dynamic')
+    employee = db.relationship('Employee', backref='EmployeeHasExam', lazy='dynamic')
     contact_person = db.Column(db.Boolean(), default=False)
 
 class ExamHasSection(db.Model):
     id = db.Column(db.Integer, primary_key=True)
-    section = db.relationship('Section', backref='ExamHasSection', lazy='dynamic', nullable=False)
-    exam = db.relationship('Exam', backref='ExamHasSection', lazy='dynamic', nullable=False)
+    section = db.relationship('Section', backref='ExamHasSection', lazy='dynamic')
+    exam = db.relationship('Exam', backref='ExamHasSection', lazy='dynamic')
 
 
 
