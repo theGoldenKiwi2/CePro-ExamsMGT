@@ -248,4 +248,7 @@ dmypy.json
 
 # Cython debug symbols
 cython_debug/
+<<<<<<< HEAD
 
+=======
+>>>>>>> 2af8bc3 (Employee changed as user)
