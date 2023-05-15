@@ -58,7 +58,7 @@ class User(db.Model):
     password = db.Column(db.String(100))
     authenticated = db.Column(db.Boolean, default=False)
     sciper = db.Column(db.String(6))
-    employee_type = db.relationship('UserType', backref='user', lazy='dynamic')
+    user_type = db.relationship('UserType', backref='users', lazy='dynamic')
 
     def is_active(self):
         return True

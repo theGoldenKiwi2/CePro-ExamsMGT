@@ -1,10 +1,12 @@
 import os
 
 #ici on importe flask
-from flask import Flask
+from flask import Flask, render_template
+from flask_login import LoginManager
+from flask_login import login_required
 
 from flask_sqlalchemy import SQLAlchemy
-from ceproexamsmgtapp.models import db, Exam
+from ceproexamsmgtapp.models import db, Exam, User
 
 basedir = os.path.abspath(os.path.dirname(__file__))
 
@@ -23,6 +25,17 @@ def create_app(test_config=None):
         # load the test config if passed in
         app.config.from_mapping(test_config)
 
+    login_manager = LoginManager()
+    login_manager.init_app(app)
+
+    @login_manager.user_loader
+    def user_loader(user_id):
+        """Given *user_id*, return the associated User object.
+
+        :param unicode user_id: user_id (email) user to retrieve
+
+        """
+        return User.query.get(user_id)
 
     db.init_app(app)
     with app.app_context():
@@ -36,6 +49,7 @@ def create_app(test_config=None):
 
     #petit test pour voir si la page s’affiche bien 
     @app.route('/hello')
+    @login_required
     def hello():
 
         # exams = Exam.query.all()
@@ -43,5 +57,9 @@ def create_app(test_config=None):
         #     print("Examen :"+ str(exam.id)+" / "+exam.code+" / "+exam.name)
         
         return 'Hello, World!'
+
+    @app.route('/')
+    def login():
+        return render_template('login.html')
 
     return app
