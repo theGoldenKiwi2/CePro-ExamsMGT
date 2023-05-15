@@ -36,11 +36,14 @@ def parse_employee_csv(file_path):
         employee.firstname = row[3]
         employee.lastname = row[2]
 
+        #on filtre le employee type pour que le modèle du type (code) soit égal à la row 4 du fichier csv
         employee_type = EmployeeType.query.filter_by(code=row[4])
 
+        #si il récupère quelque chose il prend donc le première objet (donc dans se cas le seul)
         if employee_type:
             employee_type = employee_type.first() 
 
+        #on récupère l'objet et on le met dans l'objet de l'employee correspondant
         employee.employee_type = employee_type
 
         db.session.add(employee)
