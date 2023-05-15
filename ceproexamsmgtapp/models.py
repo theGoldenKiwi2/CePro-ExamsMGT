@@ -44,25 +44,38 @@ class Exam(db.Model):
     exam_status = db.relationship('ExamStatus', backref='exams', lazy='dynamic')
     service_level = db.relationship('ServiceLevel', backref='exams', lazy='dynamic')
     service = db.relationship('Service', backref='exams', lazy='dynamic')
-    responsable = db.relationship('Employee', backref='exams', lazy='dynamic')
 
-class EmployeeType(db.Model):
+class UserType(db.Model):
     id = db.Column(db.Integer, primary_key=True)
     code = db.Column(db.String(20))
     name = db.Column(db.String(20))
 
-class Employee(db.Model):
+class User(db.Model):
     id = db.Column(db.Integer, primary_key=True)
     lastname = db.Column(db.String(50))
     firstname = db.Column(db.String(50))
     email = db.Column(db.String(50))
+    password = db.Column(db.String(100))
+    authenticated = db.Column(db.Boolean, default=False)
     sciper = db.Column(db.String(6))
-    employee_type = db.relationship('EmployeeType', backref='employees', lazy='dynamic')
+    emplyee_type = db.relationship('UserType', backref='user', lazy='dynamic')
 
-class EmployeeHasExam(db.Model):
+    def is_active(self):
+        return True
+
+    def get_id(self):
+        return self.email
+
+    def is_authenticated(self):
+        return self.authenticated
+
+    def is_anonymous(self):
+        return False
+
+class UserHasExam(db.Model):
     id = db.Column(db.Integer, primary_key=True)
-    exam = db.relationship('Exams', backref='EmployeeHasExam', lazy='dynamic')
-    employee = db.relationship('Employee', backref='EmployeeHasExam', lazy='dynamic')
+    exam = db.relationship('Exams', backref='UserHasExam', lazy='dynamic')
+    employee = db.relationship('User', backref='UserHasExam', lazy='dynamic')
     contact_person = db.Column(db.Boolean(), default=False)
 
 class ExamHasSection(db.Model):
