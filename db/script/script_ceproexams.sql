@@ -75,6 +75,7 @@ CREATE TABLE ceproexams.exam
   service_id INT,
   exam_type_id INT,
   exam_status_id INT,
+  responsable_id INT,
   exam_date DATETIME,
   exam_years VARCHAR (10),
   exam_semester VARCHAR (10),
@@ -87,11 +88,13 @@ CREATE TABLE ceproexams.exam
   INDEX fk_services_idx (service_id ASC),
   INDEX fk_exam_type_idx (exam_type_id ASC),
   INDEX fk_exam_status_idx (exam_status_id ASC),
+  INDEX fk_responsable_idx (responsable_id ASC),
   CONSTRAINT fk_exam_service_level FOREIGN KEY (service_level_id) REFERENCES service_level (id),
   CONSTRAINT fk_exam_service FOREIGN KEY (service_id) REFERENCES service (id),
   CONSTRAINT fk_exam_exam_type FOREIGN KEY (exam_type_id) REFERENCES exam_type (id),
-  CONSTRAINT fk_exam_exam_status FOREIGN KEY (exam_status_id) REFERENCES exam_status (id)
-    );
+  CONSTRAINT fk_exam_exam_status FOREIGN KEY (exam_status_id) REFERENCES exam_status (id),
+  CONSTRAINT fk_exam_responsable FOREIGN KEY (responsable_id) REFERENCES employee (id)
+  );
     
 CREATE TABLE ceproexams.exam_has_section
 (

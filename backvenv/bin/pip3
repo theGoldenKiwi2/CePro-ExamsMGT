@@ -1,4 +1,4 @@
-#!/media/michael/8ECE116DCE114F39/Users/eskander.INTRANET/DATA/EPFL/Projets/CePro-ExamsMGT/venv/bin/python
+#!/home/lucile/CePro-ExamsMGT/venv/bin/python3
 # -*- coding: utf-8 -*-
 import re
 import sys

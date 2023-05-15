@@ -44,6 +44,7 @@ class Exam(db.Model):
     exam_status = db.relationship('ExamStatus', backref='exams', lazy='dynamic')
     service_level = db.relationship('ServiceLevel', backref='exams', lazy='dynamic')
     service = db.relationship('Service', backref='exams', lazy='dynamic')
+    responsable = db.relationship('Employee', backref='exams', lazy='dynamic')
 
 class EmployeeType(db.Model):
     id = db.Column(db.Integer, primary_key=True)
@@ -56,7 +57,7 @@ class Employee(db.Model):
     firstname = db.Column(db.String(50))
     email = db.Column(db.String(50))
     sciper = db.Column(db.String(6))
-    emplyee_type = db.relationship('EmployeeType', backref='employee', lazy='dynamic')
+    employee_type = db.relationship('EmployeeType', backref='employees', lazy='dynamic')
 
 class EmployeeHasExam(db.Model):
     id = db.Column(db.Integer, primary_key=True)
