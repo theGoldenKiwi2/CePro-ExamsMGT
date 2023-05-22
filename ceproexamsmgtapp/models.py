@@ -49,8 +49,8 @@ class Exam(db.Model):
     exam_status_id = db.Column(db.Integer, db.ForeignKey('exam_status.id'))
     service_level_id = db.Column(db.Integer, db.ForeignKey('service_level.id'))
     service_id = db.Column(db.Integer, db.ForeignKey('service.id'))
-    user_has_exams = db.relationship('UserHasExam', backref='user_has_exams', lazy='dynamic')
-    exam_has_sections = db.relationship('ExamHasSection', backref='exam_has_sections', lazy='dynamic')
+    user_has_exams = db.relationship('UserHasExam', backref='exams', lazy='dynamic')
+    exam_has_sections = db.relationship('ExamHasSection', backref='exams', lazy='dynamic')
 
 class UserType(db.Model):
     id = db.Column(db.Integer, primary_key=True)
