@@ -1,9 +1,8 @@
 <!doctype html>
 <title>{% block title %}{% endblock %} - Flaskr</title>
 <nav>
-  <h1>Flaskrrrrrr</h1>
-  <ul>
-  </ul>
+    <a href="{{ url_for('auth.login') }}">Login</a>
+    <a href="{{ url_for('auth.logout') }}">Logout</a>
 </nav>
 <section class="content">
   <header>

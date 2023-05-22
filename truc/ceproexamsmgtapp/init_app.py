@@ -1,14 +1,14 @@
 import os
 
-#ici on importe flask
-from flask import Flask, render_template
-from flask_login import LoginManager, current_user
-from flask_login import login_required
+# ici on importe flask
+from flask import Flask
+from flask_login import LoginManager
 
-from flask_sqlalchemy import SQLAlchemy
-from ceproexamsmgtapp.models import db, Exam, User
+from ceproexamsmgtapp.models import db
 
 basedir = os.path.abspath(os.path.dirname(__file__))
+login_manager = LoginManager
+login_manager.init_app(app)
 
 #on crée l’application
 def create_app(test_config=None):
@@ -25,24 +25,9 @@ def create_app(test_config=None):
         # load the test config if passed in
         app.config.from_mapping(test_config)
 
-    from .blueprints.auth import auth
-    app.register_blueprint(auth.bp)
-
-    login_manager = LoginManager()
-    login_manager.init_app(app)
-
-    @login_manager.user_loader
-    def user_loader(user_id):
-        """Given *user_id*, return the associated User object.
-
-        :param unicode user_id: user_id (email) user to retrieve
-
-        """
-        return User.query.get(user_id)
 
     db.init_app(app)
     with app.app_context():
-        print('test')
         db.create_all()
 
     #s’assure que l’instance existe
@@ -52,16 +37,15 @@ def create_app(test_config=None):
         pass
 
     #petit test pour voir si la page s’affiche bien 
-    @app.route('/')
-    def index():
+    @app.route('/hello')
+    @login_required
+    def hello():
 
         # exams = Exam.query.all()
         # for exam in exams:
         #     print("Examen :"+ str(exam.id)+" / "+exam.code+" / "+exam.name)
-
-        if current_user.is_authenticated:
-            return render_template('login.html')
-        else:
-            return render_template('index.html')
+        
+        return 'Hello, World!'
 
     return app
+

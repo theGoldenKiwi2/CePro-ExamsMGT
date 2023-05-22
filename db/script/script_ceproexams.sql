@@ -1,60 +1,60 @@
-DROP DATABASE IF EXISTS ceproexams;
-CREATE DATABASE ceproexams CHARACTER SET utf8mb4 collate utf8mb4_bin;
+DROP DATABASE IF EXISTS ceproexamsmgt;
+CREATE DATABASE ceproexamsmgt CHARACTER SET utf8mb4 collate utf8mb4_bin;
 
-DROP TABLE IF EXISTS ceproexams.exam_has_section;
-DROP TABLE IF EXISTS ceproexams.user_has_exam;
-DROP TABLE IF EXISTS ceproexams.user;
-DROP TABLE IF EXISTS ceproexams.user_type;
-DROP TABLE IF EXISTS ceproexams.exam;
-DROP TABLE IF EXISTS ceproexams.section;
-DROP TABLE IF EXISTS ceproexams.service;
-DROP TABLE IF EXISTS ceproexams.service_level;
-DROP TABLE IF EXISTS ceproexams.exam_status;
-DROP TABLE IF EXISTS ceproexams.exam_type;
+DROP TABLE IF EXISTS ceproexamsmgt.exam_has_section;
+DROP TABLE IF EXISTS ceproexamsmgt.user_has_exam;
+DROP TABLE IF EXISTS ceproexamsmgt.user;
+DROP TABLE IF EXISTS ceproexamsmgt.user_type;
+DROP TABLE IF EXISTS ceproexamsmgt.exam;
+DROP TABLE IF EXISTS ceproexamsmgt.section;
+DROP TABLE IF EXISTS ceproexamsmgt.service;
+DROP TABLE IF EXISTS ceproexamsmgt.service_level;
+DROP TABLE IF EXISTS ceproexamsmgt.exam_status;
+DROP TABLE IF EXISTS ceproexamsmgt.exam_type;
 
-CREATE TABLE ceproexams.user_type
+CREATE TABLE ceproexamsmgt.user_type
 (
   id INT PRIMARY KEY NOT NULL AUTO_INCREMENT,
   code VARCHAR (20),
   name VARCHAR (50)
 );
 
-CREATE TABLE ceproexams.exam_type
+CREATE TABLE ceproexamsmgt.exam_type
 (
   id INT PRIMARY KEY NOT NULL AUTO_INCREMENT,
   code VARCHAR(20),
   name VARCHAR(50)
 );
 
-CREATE TABLE ceproexams.section
+CREATE TABLE ceproexamsmgt.section
 (
   id INT PRIMARY KEY NOT NULL AUTO_INCREMENT,
   code VARCHAR(20),
   name VARCHAR(50)
 );
 
-CREATE TABLE ceproexams.exam_status
+CREATE TABLE ceproexamsmgt.exam_status
 (
   id INT PRIMARY KEY NOT NULL AUTO_INCREMENT,
   code VARCHAR(45) NULL,
   description VARCHAR(100) NULL
 );
 
-CREATE TABLE ceproexams.service_level 
+CREATE TABLE ceproexamsmgt.service_level 
 (
   id INT PRIMARY KEY NOT NULL AUTO_INCREMENT,
   code VARCHAR(20) NULL,
   name VARCHAR(50) NULL
 );
 
-CREATE TABLE ceproexams.service
+CREATE TABLE ceproexamsmgt.service
 (
   id INT PRIMARY KEY NOT NULL AUTO_INCREMENT,
   code VARCHAR(45) NULL,
   description VARCHAR(100) NULL
   );
 
-CREATE TABLE ceproexams.user
+CREATE TABLE ceproexamsmgt.user
 (
   id INT PRIMARY KEY NOT NULL AUTO_INCREMENT,
   lastname VARCHAR(50),
@@ -62,11 +62,11 @@ CREATE TABLE ceproexams.user
   email VARCHAR(50),
   sciper VARCHAR(6),
   user_type_id INT,
-  INDEX fk_employee_type_idx (employee_type_id ASC),
-  CONSTRAINT fk_user_user_type_id FOREIGN KEY (user) REFERENCES user_type (id)
+  INDEX fk_user_type_idx (user_type_id ASC),
+  CONSTRAINT fk_user_user_type_id FOREIGN KEY (user_type_id) REFERENCES user_type (id)
 );
 
-CREATE TABLE ceproexams.exam
+CREATE TABLE ceproexamsmgt.exam
 (
   id INT PRIMARY KEY NOT NULL AUTO_INCREMENT,
   code VARCHAR(20),
@@ -93,7 +93,7 @@ CREATE TABLE ceproexams.exam
   CONSTRAINT fk_exam_exam_status FOREIGN KEY (exam_status_id) REFERENCES exam_status (id)
     );
     
-CREATE TABLE ceproexams.exam_has_section
+CREATE TABLE ceproexamsmgt.exam_has_section
 (
   exam_id INT NOT NULL,
   section_id INT NOT NULL,
@@ -104,9 +104,9 @@ CREATE TABLE ceproexams.exam_has_section
   CONSTRAINT fk_exam_has_section_section_id FOREIGN KEY (section_id) REFERENCES section (id)
 );
 
-CREATE TABLE ceproexams.user_has_exam
+CREATE TABLE ceproexamsmgt.user_has_exam
 (
-  employee_id INT NOT NULL,
+  user_id INT NOT NULL,
   exam_id INT NOT NULL,
   PRIMARY KEY (user_id, exam_id),
   INDEX fk_exam_idx (exam_id ASC),

@@ -1,6 +1,6 @@
 import math
 from ceproexamsmgtapp import models
-from ceproexamsmgtapp.models import db, EmployeeType,Employee
+from ceproexamsmgtapp.models import db, UserType, User
 import pandas as pd
 
 #fonctions pour lire le fichier csv pour ensuite pouvoir les inséré dans la bd 

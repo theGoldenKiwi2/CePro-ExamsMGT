@@ -6,26 +6,31 @@ class ExamType(db.Model):
     id = db.Column(db.Integer, primary_key=True)
     code = db.Column(db.String(20))
     name = db.Column(db.String(50))
+    exams = db.relationship('Exam', backref='exam_type', lazy='dynamic')
 
 class Section(db.Model):
     id = db.Column(db.Integer, primary_key=True)
     code = db.Column(db.String(20))
     name = db.Column(db.String(50))
+    exam_has_sections = db.relationship('ExamHasSection', backref='section', lazy='dynamic')
 
 class ExamStatus(db.Model):
     id = db.Column(db.Integer, primary_key=True)
     code = db.Column(db.String(20))
     name = db.Column(db.String(50))
+    exams = db.relationship('Exam', backref='exam_status', lazy='dynamic')
 
 class ServiceLevel(db.Model):
     id = db.Column(db.Integer, primary_key=True)
     code = db.Column(db.String(20))
     name = db.Column(db.String(50))
+    exams = db.relationship('Exam', backref='service_level', lazy='dynamic')
 
 class Service(db.Model):
     id = db.Column(db.Integer, primary_key=True)
     code = db.Column(db.String(20))
     description = db.Column(db.String(100))
+    exams = db.relationship('Exam', backref='service', lazy='dynamic')
 
 
 class Exam(db.Model):
@@ -40,25 +45,29 @@ class Exam(db.Model):
     deadline_prep = db.Column(db.DateTime())
     deadline_repro = db.Column(db.DateTime())
     remark = db.Column(db.String(250))
-    exam_type = db.relationship('ExamType', backref='exams', lazy='dynamic')
-    exam_status = db.relationship('ExamStatus', backref='exams', lazy='dynamic')
-    service_level = db.relationship('ServiceLevel', backref='exams', lazy='dynamic')
-    service = db.relationship('Service', backref='exams', lazy='dynamic')
+    exam_type_id = db.Column(db.Integer, db.ForeignKey('exam_type.id'))
+    exam_status_id = db.Column(db.Integer, db.ForeignKey('exam_status.id'))
+    service_level_id = db.Column(db.Integer, db.ForeignKey('service_level.id'))
+    service_id = db.Column(db.Integer, db.ForeignKey('service.id'))
+    user_has_exams = db.relationship('UserHasExam', backref='user_has_exams', lazy='dynamic')
+    exam_has_sections = db.relationship('ExamHasSection', backref='exam_has_sections', lazy='dynamic')
 
 class UserType(db.Model):
     id = db.Column(db.Integer, primary_key=True)
     code = db.Column(db.String(20))
     name = db.Column(db.String(20))
+    users = db.relationship('User', backref='user_type', lazy='dynamic')
 
 class User(db.Model):
     id = db.Column(db.Integer, primary_key=True)
     lastname = db.Column(db.String(50))
     firstname = db.Column(db.String(50))
-    email = db.Column(db.String(50))
+    email = db.Column(db.String(100))
     password = db.Column(db.String(100))
     authenticated = db.Column(db.Boolean, default=False)
     sciper = db.Column(db.String(6))
-    user_type = db.relationship('UserType', backref='users', lazy='dynamic')
+    user_type_id = db.Column(db.Integer, db.ForeignKey('user_type.id'))
+    exams = db.relationship('UserHasExam', backref='user', lazy='dynamic')
 
     def is_active(self):
         return True
@@ -74,14 +83,14 @@ class User(db.Model):
 
 class UserHasExam(db.Model):
     id = db.Column(db.Integer, primary_key=True)
-    exam = db.relationship('Exams', backref='UserHasExam', lazy='dynamic')
-    employee = db.relationship('User', backref='UserHasExam', lazy='dynamic')
+    exam_id = db.Column(db.Integer, db.ForeignKey('exam.id'))
+    user_id = db.Column(db.Integer, db.ForeignKey('user.id'))
     contact_person = db.Column(db.Boolean(), default=False)
 
 class ExamHasSection(db.Model):
     id = db.Column(db.Integer, primary_key=True)
-    section = db.relationship('Section', backref='ExamHasSection', lazy='dynamic')
-    exam = db.relationship('Exam', backref='ExamHasSection', lazy='dynamic')
+    section_id = db.Column(db.Integer, db.ForeignKey('section.id'))
+    exam_id = db.Column(db.Integer, db.ForeignKey('exam.id'))
 
 
 
