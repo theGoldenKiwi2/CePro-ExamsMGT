@@ -4,11 +4,13 @@ import os
 from flask import Flask, render_template
 from flask_login import LoginManager, current_user
 from flask_login import login_required
-
-from flask_sqlalchemy import SQLAlchemy
-from ceproexamsmgtapp.models import db, Exam, User
+from flask_admin import Admin
+from flask_admin.contrib.sqla import ModelView
+from flask_sqlalchemy import SQLAlchemy, model
+from ceproexamsmgtapp.models import db, Exam, User, UserType
 
 basedir = os.path.abspath(os.path.dirname(__file__))
+
 
 #on crée l’application
 def create_app(test_config=None):
@@ -16,7 +18,10 @@ def create_app(test_config=None):
     app = Flask(__name__, instance_relative_config=True)
     app.config['SQLALCHEMY_DATABASE_URI'] = "mysql://root:MOTdepasse2023!@localhost:3306/ceproexamsmgt"
     app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
-    
+    db = SQLAlchemy(app)
+
+
+
     #remplacer la configuration
     if test_config is None:
         # load the instance config, if it exists, when not testing
@@ -28,21 +33,22 @@ def create_app(test_config=None):
     from .blueprints.auth import auth
     app.register_blueprint(auth.bp)
 
+
     login_manager = LoginManager()
     login_manager.init_app(app)
 
     @login_manager.user_loader
     def user_loader(user_id):
-        """Given *user_id*, return the associated User object.
 
-        :param unicode user_id: user_id (email) user to retrieve
-
-        """
         return User.query.get(user_id)
 
-    db.init_app(app)
+        # Import admin model views
+    if __name__ == '__main__':
+        admin = Admin(app)
+        admin.add_view(ModelView(User, db.session))
+        # admin.add_view(ModelView(UserType, db.session))
+
     with app.app_context():
-        print('test')
         db.create_all()
 
     #s’assure que l’instance existe
@@ -51,7 +57,8 @@ def create_app(test_config=None):
     except OSError:
         pass
 
-    #petit test pour voir si la page s’affiche bien 
+
+    #petit test pour voir si la page s’affiche bien
     @app.route('/')
     def index():
 

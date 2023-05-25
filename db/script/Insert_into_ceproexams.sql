@@ -1,4 +1,4 @@
-USE ceproexams;
+USE ceproexamsmgt;
 
 
 INSERT INTO exam_type (id, code, name) VALUES
@@ -29,7 +29,7 @@ INSERT INTO exam_status (id, code, description) VALUES
 (14, 'WAIT-TEACH', 'Waiting for teacher'),
 (15, 'FINISHED', 'Finished');
 
-INSERT INTO employee_type (id, code, name) VALUES
+INSERT INTO user_type (id, code, name) VALUES
 (1, 'TEACH', 'teacher'),
 (2, 'ASSIST', 'assistant'),
 (3, 'CPRO', 'CePro');
