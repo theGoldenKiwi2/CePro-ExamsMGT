@@ -1,39 +1,33 @@
-import bcrypt as bcrypt
-from flask import render_template, Blueprint, redirect, url_for
-from flask_login import login_required, login_user, logout_user, current_user
-from ceproexamsmgtapp.blueprints.auth.Froms_auth import LoginForm
-from ceproexamsmgtapp.models import db, User
+from urllib import request
+from flask_login import login_user
+from flask import Blueprint, render_template, flash, redirect, url_for
+from login import check_password_hash
 
-bp = Blueprint('auth', __name__, url_prefix='/auth')
+#from . import db
+from ...models import User
 
+auth = Blueprint('auth', __name__)
 
-
-@bp.route('/login', methods=['GET', 'POST'])
-@login_required
+@auth.route('/login')
 def login():
-    print(db)
-    form = LoginForm()
-    if form.validate_on_submit():
-        user = User.query.get(form.email.data)
-        if user:
-           if bcrypt.check_password_hash(user.password, form.password.data):
-                user.authenticated = True
-                db.session.add(user)
-                db.session.commit()
-                login_user(user, remember=True)
-                return redirect(url_for("bp.reports"))
-    return render_template("login.html", form=form)
-
     return render_template('login.html')
+@auth.route('/login', methods=['POST'])
+def login_post():
+    email = request.form.get('email')
+    password = request.form.get('password')
+    remember = True if request.form.get('remember') else False
 
-@bp.route("/logout", methods=["GET"])
+    user = User.query.filter_by(email=email).first()
 
-@login_required
+    # check if the user actually exists
+    # take the user-supplied password, hash it, and compare it to the hashed password in the database
+    if not user or not check_password_hash(user.password, password):
+        flash('Please check your login details and try again.')
+        return redirect(url_for('auth.login'))
+    login_user(user, remember=remember)
+    return redirect(url_for('main.profile'))
+
+
+@auth.route('/logout')
 def logout():
-    """Logout the current user."""
-    user = current_user
-    user.authenticated = False
-    db.session.add(user)
-    db.session.commit()
-    logout_user()
-    return render_template("logout.html")
+    return 'Logout'
