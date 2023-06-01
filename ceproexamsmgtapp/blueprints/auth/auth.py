@@ -6,12 +6,12 @@ from login import check_password_hash
 #from . import db
 from ...models import User
 
-auth = Blueprint('auth', __name__)
+bp = Blueprint('auth', __name__)
 
-@auth.route('/login')
+@bp.route('/login')
 def login():
     return render_template('login.html')
-@auth.route('/login', methods=['POST'])
+@bp.route('/login', methods=['POST'])
 def login_post():
     email = request.form.get('email')
     password = request.form.get('password')
@@ -28,6 +28,6 @@ def login_post():
     return redirect(url_for('main.profile'))
 
 
-@auth.route('/logout')
+@bp.route('/logout')
 def logout():
     return 'Logout'

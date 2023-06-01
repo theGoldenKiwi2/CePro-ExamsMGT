@@ -1,5 +1,4 @@
-from flask_admin.contrib.appengine import ModelView
-
+from flask_admin.contrib.sqla import ModelView
 
 class UserView(ModelView):
     column_filters = ['email']

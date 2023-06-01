@@ -2,7 +2,7 @@ import os
 
 # ici on importe flask
 from flask import Flask, render_template
-from flask_login import current_user
+from flask_login import current_user, LoginManager
 from flask_admin import Admin
 from flask_admin.contrib.sqla import ModelView
 from flask_sqlalchemy import SQLAlchemy
@@ -41,6 +41,14 @@ def create_app(test_config=None):
     admin.add_view(ModelView(UserType, db.session))
     admin.add_view(ModelView(ServiceLevel, db.session))
 
+    login_manager = LoginManager()
+    login_manager.init_app(app)
+    login_manager.login_view = 'login'
+
+    @login_manager.user_loader
+    def load_user(user_id):
+        return User.get(user_id)
+
 
     # s’assure que l’instance existe
     try:
@@ -61,9 +69,9 @@ def create_app(test_config=None):
         else:
             return render_template('index.html')
 
-    #@app.route('/login/', methods=('GET', 'POST'))
-    #def login():
-     #   return render_template('login.html')
+    @app.route('/login', methods=('GET', 'POST'))
+    def login():
+        return render_template('login.html')
 
     #@app.route('/logout/', methods=('GET', 'POST'))
     #def logout():
