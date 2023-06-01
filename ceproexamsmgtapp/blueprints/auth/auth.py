@@ -1,5 +1,5 @@
 from urllib import request
-from flask_login import login_user
+from flask_login import login_user, login_required, logout_user
 from flask import Blueprint, render_template, flash, redirect, url_for
 from login import check_password_hash
 
@@ -29,5 +29,7 @@ def login_post():
 
 
 @bp.route('/logout')
+@login_required
 def logout():
-    return 'Logout'
+    logout_user()
+    return redirect(url_for('index'))
