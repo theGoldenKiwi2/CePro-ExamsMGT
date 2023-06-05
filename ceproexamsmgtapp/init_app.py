@@ -7,7 +7,7 @@ from flask_admin import Admin
 from flask_admin.contrib.sqla import ModelView
 from flask_sqlalchemy import SQLAlchemy
 from ceproexamsmgtapp.models import db, Exam, User, UserType, ServiceLevel
-from ceproexamsmgtapp.views import UserView
+
 
 basedir = os.path.abspath(os.path.dirname(__file__))
 
@@ -33,22 +33,26 @@ def create_app(test_config=None):
     from .blueprints.auth import auth
     app.register_blueprint(auth.bp)
 
+    from .blueprints.auth import main
+    app.register_blueprint(main.bp)
 
         # Import admin model views
 
     #if __name__ == '__main__':
     admin = Admin(app)
-    admin.add_view(UserView(User, db.session))
+    admin.add_view(ModelView(User, db.session))
     admin.add_view(ModelView(UserType, db.session))
     admin.add_view(ModelView(ServiceLevel, db.session))
 
     login_manager = LoginManager()
     login_manager.init_app(app)
-    login_manager.login_view = 'login'
+    login_manager.login_view = 'auth.login'
 
     @login_manager.user_loader
     def load_user(user_id):
-        return User.get(user_id)
+        print(User.query.filter_by(email=user_id).first())
+
+        return User.query.filter_by(email=user_id).first()
 
 
     # s’assure que l’instance existe
@@ -70,17 +74,6 @@ def create_app(test_config=None):
         else:
             return render_template('index.html')
 
-    # @app.route('/login', methods=('GET', 'POST'))
-    # def login():
-    #
-    #     if request.method == 'POST':
-    #         print(request.form)
-    #
-    #     return render_template('login.html')
 
-    #@app.route('/logout/', methods=('GET', 'POST'))
-    #def logout():
-     #   return render_template('logout.html')
 
     return app
-

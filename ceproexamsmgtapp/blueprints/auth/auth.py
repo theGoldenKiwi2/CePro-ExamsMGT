@@ -23,8 +23,6 @@ def login():
         if not user or user.password != password:
             flash('Please check your login details and try again.')
             return redirect(url_for('auth.login'))
-
-        flash('Login successful !')
         login_user(user, remember=remember)
         return redirect(url_for('main.profile'))
 
@@ -33,4 +31,5 @@ def login():
 @bp.route('/logout')
 @login_required
 def logout():
-    return redirect(url_for('index.html'))
+    logout_user()
+    return redirect(url_for('index'))
