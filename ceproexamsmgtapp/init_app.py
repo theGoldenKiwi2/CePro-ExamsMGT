@@ -1,7 +1,7 @@
 import os
 
 # ici on importe flask
-from flask import Flask, render_template
+from flask import Flask, render_template, request
 from flask_login import current_user, LoginManager
 from flask_admin import Admin
 from flask_admin.contrib.sqla import ModelView
@@ -16,6 +16,7 @@ basedir = os.path.abspath(os.path.dirname(__file__))
 def create_app(test_config=None):
     # create and configure the app
     app = Flask(__name__, instance_relative_config=True)
+    app.config['SECRET_KEY'] = "secret-key"
     app.config['SQLALCHEMY_DATABASE_URI'] = "mysql://root:MOTdepasse2023!@localhost:3306/ceproexamsmgt"
     app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
     app.config['BASIC_AUTH_FORCE'] = True
@@ -69,9 +70,13 @@ def create_app(test_config=None):
         else:
             return render_template('index.html')
 
-    @app.route('/login', methods=('GET', 'POST'))
-    def login():
-        return render_template('login.html')
+    # @app.route('/login', methods=('GET', 'POST'))
+    # def login():
+    #
+    #     if request.method == 'POST':
+    #         print(request.form)
+    #
+    #     return render_template('login.html')
 
     #@app.route('/logout/', methods=('GET', 'POST'))
     #def logout():
