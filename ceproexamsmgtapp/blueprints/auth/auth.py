@@ -27,7 +27,6 @@ def login():
             flash('Please check your login details and try again.')
             return redirect(url_for('auth.login', error=error_msg))
         login_user(user, remember=remember)
-        print(user)
         return redirect(url_for('main.profile', error=None))
 
 
