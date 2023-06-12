@@ -1,39 +1,35 @@
-import bcrypt as bcrypt
-from flask import render_template, Blueprint, redirect, url_for
-from flask_login import login_required, login_user, logout_user, current_user
-from ceproexamsmgtapp.blueprints.auth.Froms_auth import LoginForm
-from ceproexamsmgtapp.models import db, User
+from flask_login import login_user, login_required, logout_user
+from flask import Blueprint, render_template, flash, redirect, url_for, request
+from login import check_password_hash
+from sqlalchemy.sql.functions import user
+from .Froms_auth import LoginForm
+#from . import db
+from ...models import User
 
-bp = Blueprint('auth', __name__, url_prefix='/auth')
-
-
+bp = Blueprint('auth', __name__)
 
 @bp.route('/login', methods=['GET', 'POST'])
-@login_required
 def login():
-    print(db)
-    form = LoginForm()
-    if form.validate_on_submit():
-        user = User.query.get(form.email.data)
-        if user:
-           if bcrypt.check_password_hash(user.password, form.password.data):
-                user.authenticated = True
-                db.session.add(user)
-                db.session.commit()
-                login_user(user, remember=True)
-                return redirect(url_for("bp.reports"))
-    return render_template("login.html", form=form)
+    if request.method == 'POST':
+        email = request.form.get('email')
+        password = request.form.get('password')
+        remember = True if request.form.get('remember') else False
+
+        user = User.query.filter_by(email=email).first()
+
+        # check if the user actually exists
+        # take the user-supplied password, hash it, and compare it to the hashed password in the database
+
+        if not user or user.password != password:
+            flash('Please check your login details and try again.')
+            return redirect(url_for('auth.login'))
+        login_user(user, remember=remember)
+        return redirect(url_for('main.profile'))
 
     return render_template('login.html')
 
-@bp.route("/logout", methods=["GET"])
-
+@bp.route('/logout')
 @login_required
 def logout():
-    """Logout the current user."""
-    user = current_user
-    user.authenticated = False
-    db.session.add(user)
-    db.session.commit()
     logout_user()
-    return render_template("logout.html")
+    return redirect(url_for('index'))

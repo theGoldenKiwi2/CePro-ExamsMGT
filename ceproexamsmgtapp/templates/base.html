@@ -1,22 +1,9 @@
 <!doctype html>
 <title>{% block title %}{% endblock %} - Flaskr</title>
-<head>
-    <link rel="stylesheet" href="../static/css/nav.css">
-</head>
-<body>
-  <nav>
-    <ul>
-      <li class="deroulant"><a href="#">import</a>
-        <ul class="sous">
-          <li><a href="{{ url_for('data_import.user_import') }}">User import</a></li>
-          <li><a href="{{ url_for('data_import.exam_import') }}">Exam import</a></li>
-        </ul>
-      </li>
-      <li><a href="{{ url_for('auth.login') }}">Login</a></li>
-      <li><a href="{{ url_for('auth.logout') }}">Logout</a></li>
-    </ul>
-  </nav>
-</body>
+<nav>
+    <a href="{{ url_for('auth.login') }}">Login</a>
+    <a href="{{ url_for('auth.logout') }}">Logout</a>
+</nav>
 <section class="content">
   <header>
     {% block header %}{% endblock %}

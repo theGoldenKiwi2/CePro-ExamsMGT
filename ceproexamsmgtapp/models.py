@@ -1,3 +1,4 @@
+from flask_login import UserMixin
 from flask_sqlalchemy import SQLAlchemy
 
 db = SQLAlchemy()
@@ -58,7 +59,7 @@ class UserType(db.Model):
     name = db.Column(db.String(20))
     users = db.relationship('User', backref='user_type', lazy='dynamic')
 
-class User(db.Model):
+class User(UserMixin, db.Model):
     id = db.Column(db.Integer, primary_key=True)
     lastname = db.Column(db.String(50))
     firstname = db.Column(db.String(50))
