@@ -83,15 +83,13 @@ class User(UserMixin, db.Model):
         return False
 
 class UserHasExam(db.Model):
-    id = db.Column(db.Integer, primary_key=True)
-    exam_id = db.Column(db.Integer, db.ForeignKey('exam.id'))
-    user_id = db.Column(db.Integer, db.ForeignKey('user.id'))
+    exam_id = db.Column(db.Integer, db.ForeignKey('exam.id'), primary_key=True)
+    user_id = db.Column(db.Integer, db.ForeignKey('user.id'), primary_key=True)
     contact_person = db.Column(db.Boolean(), default=False)
 
 class ExamHasSection(db.Model):
-    id = db.Column(db.Integer, primary_key=True)
-    section_id = db.Column(db.Integer, db.ForeignKey('section.id'))
-    exam_id = db.Column(db.Integer, db.ForeignKey('exam.id'))
+    section_id = db.Column(db.Integer, db.ForeignKey('section.id'), primary_key=True)
+    exam_id = db.Column(db.Integer, db.ForeignKey('exam.id'), primary_key=True)
 
 
 

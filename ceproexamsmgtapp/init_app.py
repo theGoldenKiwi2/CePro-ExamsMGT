@@ -70,9 +70,9 @@ def create_app(test_config=None):
     def index():
 
         if current_user.is_authenticated:
-            return render_template('login.html')
+            return render_template('profile.html')
         else:
-            return render_template('index.html')
+            return render_template('login.html')
 
 
 
