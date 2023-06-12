@@ -23,16 +23,20 @@ def create_app(test_config=None):
     else:
         # load the test config if passed in
         app.config.from_mapping(test_config)
+
     from .blueprints.auth import auth
     app.register_blueprint(auth.bp)
+
     from .blueprints.auth import main
     app.register_blueprint(main.bp)
+
         # Import admin model views
     #if __name__ == '__main__':
     admin = Admin(app)
     admin.add_view(ModelView(User, db.session))
     admin.add_view(ModelView(UserType, db.session))
     admin.add_view(ModelView(ServiceLevel, db.session))
+
     login_manager = LoginManager()
     login_manager.init_app(app)
     login_manager.login_view = 'auth.login'

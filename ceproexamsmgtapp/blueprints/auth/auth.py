@@ -29,9 +29,9 @@ def login():
         print(user)
         return redirect(url_for('main.profile', error=None))
 
-    return render_template('login.html')
 
-    return render_template('login.html', error=error_msg)
+
+     return render_template('login.html', error=error_msg)
 
 @bp.route('/logout')
 @login_required
