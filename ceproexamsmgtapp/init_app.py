@@ -16,9 +16,11 @@ basedir = os.path.abspath(os.path.dirname(__file__))
 def create_app(test_config=None):
     # create and configure the app
     app = Flask(__name__, instance_relative_config=True)
-    app.config['SQLALCHEMY_DATABASE_URI'] = "mysql://root:MOTdepasse2023!@localhost:3306/ceproexamsmgt"
+    app.config['SQLALCHEMY_DATABASE_URI'] = "mysql://root:Mic99099.-.@localhost:3306/ceproexamsmgt"
     app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
-    db = SQLAlchemy(app)
+    app.config['UPLOAD_FOLDER'] = basedir+'/blueprints/data_import/upload'
+    print(app.config['UPLOAD_FOLDER'])
+    db.init_app(app)
 
 
 
@@ -32,7 +34,8 @@ def create_app(test_config=None):
 
     from .blueprints.auth import auth
     app.register_blueprint(auth.bp)
-
+    from .blueprints.data_import import data_import
+    app.register_blueprint(data_import.bp)
 
     login_manager = LoginManager()
     login_manager.init_app(app)
@@ -42,16 +45,10 @@ def create_app(test_config=None):
 
         return User.query.get(user_id)
 
-        # Import admin model views
-    if __name__ == '__main__':
-        admin = Admin(app)
-        admin.add_view(ModelView(User, db.session))
-        # admin.add_view(ModelView(UserType, db.session))
+    admin = Admin(app)
+    admin.add_view(ModelView(User, db.session))
 
-    with app.app_context():
-        db.create_all()
-
-    #s’assure que l’instance existe
+     #s’assure que l’instance existe
     try:
         os.makedirs(app.instance_path)
     except OSError:

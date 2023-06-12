@@ -37,7 +37,7 @@ CREATE TABLE ceproexamsmgt.exam_status
 (
   id INT PRIMARY KEY NOT NULL AUTO_INCREMENT,
   code VARCHAR(45) NULL,
-  description VARCHAR(100) NULL
+  name VARCHAR(100) NULL
 );
 
 CREATE TABLE ceproexamsmgt.service_level 
@@ -61,6 +61,8 @@ CREATE TABLE ceproexamsmgt.user
   firstname VARCHAR(50) ,
   email VARCHAR(50),
   sciper VARCHAR(6),
+  password VARCHAR (100),
+  authenticated BOOLEAN,
   user_type_id INT,
   INDEX fk_user_type_idx (user_type_id ASC),
   CONSTRAINT fk_user_user_type_id FOREIGN KEY (user_type_id) REFERENCES user_type (id)
