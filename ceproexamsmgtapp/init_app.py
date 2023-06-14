@@ -30,6 +30,9 @@ def create_app(test_config=None):
     from .blueprints.auth import main
     app.register_blueprint(main.bp)
 
+    from .blueprints.data_import import data_import
+    app.register_blueprint(data_import.bp)
+
         # Import admin model views
     #if __name__ == '__main__':
     admin = Admin(app)
@@ -56,12 +59,7 @@ def create_app(test_config=None):
     @app.route('/')
     def index():
 
-        if current_user.is_authenticated:
-            return render_template('login.html')
-            return render_template('profile.html')
-        else:
             return render_template('index.html')
-            return render_template('login.html')
 
 
 

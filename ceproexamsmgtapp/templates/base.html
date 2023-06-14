@@ -1,5 +1,5 @@
-<title>{% block title %}{% endblock %} - Flaskr</title>
 
+<!doctype html>
 <html>
     <head>
      <meta charset="utf-8">
@@ -23,26 +23,113 @@
 
         <link rel="stylesheet" href="https://cdn.datatables.net/1.13.3/css/dataTables.bootstrap5.min.css">
         <link rel="stylesheet" href="https://cdn.datatables.net/fixedheader/3.3.1/css/fixedHeader.dataTables.min.css">
+        <link rel="stylesheet" href="../static/css/nav.css">
     {% block extra_head %}{% endblock %}
 </head>
-<nav>
-    <a href="{{ url_for('auth.login') }}">Login</a>
-    <a href="{{ url_for('auth.logout') }}">Logout</a>
-</nav>
-    <body>
-  <nav>
-    <ul>
-      <li class="deroulant"><a href="#">import</a>
-        <ul class="sous">
-          <li><a href="{{ url_for('data_import.user_import') }}">User import</a></li>
-          <li><a href="{{ url_for('data_import.exam_import') }}">Exam import</a></li>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+<a class="navbar-brand" href="/">
+    <img src="ceproexamsmgt/templates/images/home.svg" width="30" height="30" alt="">
+  </a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+
+    <div class="navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+                <a class="nav-link" href="#"> <span class="sr-only">(current)</span></a>
+
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarLog" role="button" data-toggle="dropdown"
+                   aria-haspopup="true" aria-expanded="false">
+                    Log
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="{{ url_for('auth.login') }}">Login</a>
+                    <a class="dropdown-item" href="{{ url_for('auth.logout') }}">Logout</a>
+
+                </div>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarImport" role="button" data-toggle="dropdown"
+                   aria-haspopup="true" aria-expanded="false">
+                    Import
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="{{ url_for('data_import.user_import') }}">Users</a>
+                    <a class="dropdown-item" href="{{ url_for('data_import.exam_import') }}">Exams</a>
+
+                </div>
+            </li>
+
+
         </ul>
-      </li>
-      <li><a href="{{ url_for('auth.login') }}">Login</a></li>
-      <li><a href="{{ url_for('auth.logout') }}">Logout</a></li>
-    </ul>
-  </nav>
-</body>
+    </div>
+</nav>
+
+    <!--<nav class="navbar navbar-dark bg-dark">
+        <a class="navbar-brand" href="/">Menu</a>
+        <a class="nav-link" href="{{ url_for('auth.login') }}">Login</a>
+        <a class="nav-link" href="{{ url_for('auth.logout') }}">Logout</a>
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span>IMPORT</span>
+        </button>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#toto"
+                aria-controls="toto" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon">sss</span>
+        </button>
+
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Dropdown
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="#">Action</a>
+          <a class="dropdown-item" href="#">Another action</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="#">Something else here</a>
+        </div>
+
+
+
+        <div class="collapse cepro-navbar" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Import <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item"><a href="{{ url_for('data_import.user_import') }}">User import</a></li>
+                <li class="nav-item"><a href="{{ url_for('data_import.exam_import') }}">Exam import</a></li>
+            </ul>
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Profile <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item"><a href="{{ url_for('data_import.user_import') }}">User import</a></li>
+                <li class="nav-item"><a href="{{ url_for('data_import.exam_import') }}">Exam import</a></li>
+            </ul>
+        </div>
+
+        <div class="collapse navbar-collapse" id="toto">
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Import <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item"><a href="{{ url_for('data_import.user_import') }}">asdfasdf import</a></li>
+                <li class="nav-item"><a href="{{ url_for('data_import.exam_import') }}">Examadsaasfasdf import</a></li>
+            </ul>
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Profile <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item"><a href="{{ url_for('data_import.user_import') }}">Useadsfasdfr import</a></li>
+                <li class="nav-item"><a href="{{ url_for('data_import.exam_import') }}">Exaadsfam import</a></li>
+            </ul>
+        </div>
+    </nav>-->
+
+
 <section class="content">
   <header>
     {% block header %}{% endblock %}
