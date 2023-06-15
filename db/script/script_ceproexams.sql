@@ -1,6 +1,5 @@
 DROP DATABASE IF EXISTS ceproexamsmgt;
 CREATE DATABASE ceproexamsmgt CHARACTER SET utf8mb4 collate utf8mb4_bin;
-
 DROP TABLE IF EXISTS ceproexamsmgt.exam_has_section;
 DROP TABLE IF EXISTS ceproexamsmgt.user_has_exam;
 DROP TABLE IF EXISTS ceproexamsmgt.user;
@@ -11,49 +10,42 @@ DROP TABLE IF EXISTS ceproexamsmgt.service;
 DROP TABLE IF EXISTS ceproexamsmgt.service_level;
 DROP TABLE IF EXISTS ceproexamsmgt.exam_status;
 DROP TABLE IF EXISTS ceproexamsmgt.exam_type;
-
 CREATE TABLE ceproexamsmgt.user_type
 (
   id INT PRIMARY KEY NOT NULL AUTO_INCREMENT,
   code VARCHAR (20),
   name VARCHAR (50)
 );
-
 CREATE TABLE ceproexamsmgt.exam_type
 (
   id INT PRIMARY KEY NOT NULL AUTO_INCREMENT,
   code VARCHAR(20),
   name VARCHAR(50)
 );
-
 CREATE TABLE ceproexamsmgt.section
 (
   id INT PRIMARY KEY NOT NULL AUTO_INCREMENT,
   code VARCHAR(20),
   name VARCHAR(50)
 );
-
 CREATE TABLE ceproexamsmgt.exam_status
 (
   id INT PRIMARY KEY NOT NULL AUTO_INCREMENT,
   code VARCHAR(45) NULL,
   name VARCHAR(100) NULL
 );
-
-CREATE TABLE ceproexamsmgt.service_level 
+CREATE TABLE ceproexamsmgt.service_level
 (
   id INT PRIMARY KEY NOT NULL AUTO_INCREMENT,
   code VARCHAR(20) NULL,
   name VARCHAR(50) NULL
 );
-
 CREATE TABLE ceproexamsmgt.service
 (
   id INT PRIMARY KEY NOT NULL AUTO_INCREMENT,
   code VARCHAR(45) NULL,
   description VARCHAR(100) NULL
   );
-
 CREATE TABLE ceproexamsmgt.user
 (
   id INT PRIMARY KEY NOT NULL AUTO_INCREMENT,
@@ -67,7 +59,6 @@ CREATE TABLE ceproexamsmgt.user
   INDEX fk_user_type_idx (user_type_id ASC),
   CONSTRAINT fk_user_user_type_id FOREIGN KEY (user_type_id) REFERENCES user_type (id)
 );
-
 CREATE TABLE ceproexamsmgt.exam
 (
   id INT PRIMARY KEY NOT NULL AUTO_INCREMENT,
@@ -94,7 +85,6 @@ CREATE TABLE ceproexamsmgt.exam
   CONSTRAINT fk_exam_exam_type FOREIGN KEY (exam_type_id) REFERENCES exam_type (id),
   CONSTRAINT fk_exam_exam_status FOREIGN KEY (exam_status_id) REFERENCES exam_status (id)
     );
-    
 CREATE TABLE ceproexamsmgt.exam_has_section
 (
   exam_id INT NOT NULL,
@@ -105,11 +95,11 @@ CREATE TABLE ceproexamsmgt.exam_has_section
   CONSTRAINT fk_exam_has_section_exam_id FOREIGN KEY (exam_id) REFERENCES exam (id),
   CONSTRAINT fk_exam_has_section_section_id FOREIGN KEY (section_id) REFERENCES section (id)
 );
-
 CREATE TABLE ceproexamsmgt.user_has_exam
 (
   user_id INT NOT NULL,
   exam_id INT NOT NULL,
+  contact_person TINYINT(1) NULL DEFAULT 0,
   PRIMARY KEY (user_id, exam_id),
   INDEX fk_exam_idx (exam_id ASC),
   INDEX fk_user (user_id ASC),
