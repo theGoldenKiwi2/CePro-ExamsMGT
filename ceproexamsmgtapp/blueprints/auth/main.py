@@ -7,6 +7,6 @@ bp = Blueprint('main', __name__)
 
 
 @bp.route('/profile')
-#@login_required
+@login_required
 def profile():
     return render_template('profile.html', name=current_user.firstname)

@@ -19,19 +19,15 @@ def login():
         # check if the user actually exists
         # take the user-supplied password, hash it, and compare it to the hashed password in the database
 
-
-
-        if user or user.password != password:
+        if not user or user.password != password:
             error_msg = 'Please check your login details and try again.'
-
-            return redirect(url_for('auth.login'))
+            print(error_msg)
             return redirect(url_for('auth.login', error=error_msg))
+
         login_user(user, remember=remember)
         return redirect(url_for('main.profile'))
-        print(user)
-    #return redirect(url_for('main.profile', error=None))
 
-    return render_template('login.html')
+    return render_template('login.html', error=None)
 
 @bp.route('/logout')
 @login_required

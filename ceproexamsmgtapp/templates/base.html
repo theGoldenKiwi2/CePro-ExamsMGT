@@ -30,11 +30,12 @@
     <link rel="stylesheet" href="https://cdn.datatables.net/1.13.3/css/dataTables.bootstrap5.min.css">
     <link rel="stylesheet" href="https://cdn.datatables.net/fixedheader/3.3.1/css/fixedHeader.dataTables.min.css">
     <link rel="stylesheet" href="../static/css/nav.css">
+    <link rel="stylesheet" href="../static/css/form.css">
     {% block extra_head %}{% endblock %}
 </head>
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <a class="navbar-brand" href="/">
-        <img src="ceproexamsmgt/templates/images/home.svg" width="30" height="30" alt="">
+        <img src="{{url_for('static', filename='images/home.svg')}}" width="30" height="30" alt="">
     </a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -47,17 +48,25 @@
             <li class="nav-item active">
                 <a class="nav-link" href="#"> <span class="sr-only">(current)</span></a>
 
-            <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarLog" role="button" data-toggle="dropdown"
-                   aria-haspopup="true" aria-expanded="false">
-                    Log
-                </a>
-                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <a class="dropdown-item" href="{{ url_for('auth.login') }}">Login</a>
-                    <a class="dropdown-item" href="{{ url_for('auth.logout') }}">Logout</a>
+                <ul class="cepro-navbar navbar-nav navbar-left">
+                    {% if user == True %}
+                    <li><a href="{{ url_for('auth.logout') }}">Logout <span class="sr-only">(current)</span></a></li>
+                    {% else %}
+                    <li><a href="{{ url_for('auth.login') }}">Login <span class="sr-only">(current)</span></a></li>
+                    {% endif %}
+                </ul>
 
-                </div>
-            </li>
+                <!-- <li class="nav-item dropdown">
+                     <a class="nav-link dropdown-toggle" href="#" id="navbarLog" role="button" data-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false">
+                         Log
+                     </a>
+                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                         <a class="dropdown-item" href="{{ url_for('auth.login') }}">Login</a>
+                         <a class="dropdown-item" href="{{ url_for('auth.logout') }}">Logout</a>
+
+                     </div>
+                 </li>-->
             <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#" id="navbarImport" role="button" data-toggle="dropdown"
                    aria-haspopup="true" aria-expanded="false">

@@ -1,6 +1,8 @@
 import os
+
+import flask_login
 # ici on importe flask
-from flask import Flask, render_template, request
+from flask import Flask, render_template, request, redirect, url_for
 from flask_login import current_user, LoginManager
 from flask_admin import Admin
 from flask_admin.contrib.sqla import ModelView
@@ -58,9 +60,12 @@ def create_app(test_config=None):
     #     print("Examen :"+ str(exam.id)+" / "+exam.code+" / "+exam.name)
     @app.route('/')
     def index():
+        print(current_user.is_authenticated)
 
+        if current_user.is_authenticated:
             return render_template('index.html')
-
+        else:
+            return redirect(url_for('auth.login', error=None))
 
 
     return app
