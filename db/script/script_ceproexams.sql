@@ -63,8 +63,6 @@ CREATE TABLE ceproexamsmgt.user
   password VARCHAR(100),
   authenticated TINYINT(1),
   sciper VARCHAR(6),
-  password VARCHAR (100),
-  authenticated BOOLEAN,
   user_type_id INT,
   INDEX fk_user_type_idx (user_type_id ASC),
   CONSTRAINT fk_user_user_type_id FOREIGN KEY (user_type_id) REFERENCES user_type (id)

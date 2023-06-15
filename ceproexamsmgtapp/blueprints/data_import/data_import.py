@@ -1,11 +1,12 @@
 import os
-
+from flask_login import login_required
 from flask import render_template, Blueprint, request, redirect, current_app
 from .import_functions import parse_user_csv, parse_exam_csv
 
 bp = Blueprint('data_import', __name__, url_prefix='/data_import ')
 
 @bp.route("/user_import", methods=['GET','POST'])
+@login_required
 def user_import():
 
     result = ' '
@@ -35,6 +36,7 @@ def user_import():
         return render_template(r'data_import/import_user.html')
 
 @bp.route("/exam_import", methods=['GET','POST'])
+@login_required
 def exam_import():
 
     result = ' '
