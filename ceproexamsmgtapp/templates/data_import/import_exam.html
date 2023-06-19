@@ -5,15 +5,24 @@
 {% endblock %}
 {% block content %}
   <form method=post enctype=multipart/form-data>
-        <div class="input-group mb-3">
-            <div class="input-group-prepend">
-                <input class="form-control" type="file" id="formFile" name="file" accept=".csv">
-            </div>
-            <div class="custom-file">
-            <input class="btn btn-success" type="submit" value="Upload">
-            </div>
-        </div>
+      <div class="input-group mb-3">
+          <div class="custom-file">
+              <input type="file" class="custom-file-input" id="inputGroupFile02" name="file" accept=".csv">
+              <label class="custom-file-label" for="inputGroupFile02">Choose file</label>
+          </div>
+          <div class="custom-file">
+              <input class="btn btn-success" type="submit" value="Upload">
+          </div>
+      </div>
   </form>
+  <script>
+        $('#inputGroupFile02').on('change',function(){
+            //get the file name
+            var fileName = $(this).val();
+            //replace the "Choose a file" label
+            $(this).next('.custom-file-label').html(fileName);
+        })
+  </script>
 <nav aria-label="Page navigation example">
   <ul class="pagination justify-content-end">
     <li class="page-item disabled">
