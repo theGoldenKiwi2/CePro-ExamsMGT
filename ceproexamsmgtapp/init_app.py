@@ -2,6 +2,7 @@ import os
 
 import flask_login
 # ici on importe flask
+from flask import Flask, render_template, request
 from flask import Flask, render_template, request, redirect, url_for
 from flask_login import current_user, LoginManager
 from flask_admin import Admin
@@ -14,7 +15,7 @@ def create_app(test_config=None):
     # create and configure the app
     app = Flask(__name__, instance_relative_config=True)
     app.config['SECRET_KEY'] = "secret-key"
-    app.config['SQLALCHEMY_DATABASE_URI'] = "mysql://root:Mic99099.-.@localhost:3306/ceproexamsmgt"
+    app.config['SQLALCHEMY_DATABASE_URI'] = "mysql://root:MOTdepasse2023!@localhost:3306/ceproexamsmgt"
     app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
     app.config['BASIC_AUTH_FORCE'] = True
     db.init_app(app)
@@ -25,23 +26,18 @@ def create_app(test_config=None):
     else:
         # load the test config if passed in
         app.config.from_mapping(test_config)
-
     from .blueprints.auth import auth
     app.register_blueprint(auth.bp)
-
     from .blueprints.auth import main
     app.register_blueprint(main.bp)
-
     from .blueprints.data_import import data_import
     app.register_blueprint(data_import.bp)
-
         # Import admin model views
     #if __name__ == '__main__':
     admin = Admin(app)
     admin.add_view(ModelView(User, db.session))
     admin.add_view(ModelView(UserType, db.session))
     admin.add_view(ModelView(ServiceLevel, db.session))
-
     login_manager = LoginManager()
     login_manager.init_app(app)
     login_manager.login_view = 'auth.login'
@@ -64,6 +60,7 @@ def create_app(test_config=None):
 
         if current_user.is_authenticated:
             return render_template('index.html')
+
         else:
             return redirect(url_for('auth.login', error=None))
 
