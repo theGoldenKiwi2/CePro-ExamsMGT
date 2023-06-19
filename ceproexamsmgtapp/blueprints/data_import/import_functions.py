@@ -1,6 +1,6 @@
 import math
 from ceproexamsmgtapp import models
-from ceproexamsmgtapp.models import db, UserType, User
+from ceproexamsmgtapp.models import db, UserType, User, ExamStatus, UserHasExam, Exam
 import pandas as pd
 from flask import Blueprint
 
@@ -72,8 +72,22 @@ def parse_exam_csv(file_path):
 
         ligne = "Lignes " + str(i) + " : "
 
-        user = None
-        
+        exam = None
+        exam = Exam()
+
+        exam.exam_years = row[0]
+        exam.exam_semester = row[1]
+        exam.exam_date = row[2]
+        exam_status = ExamStatus.query.filter_by(code=row[3])
+        if exam_status:
+            exam_status = exam_status.first()
+        exam.exam_status_id = exam_status
+        exam.code = [5]
+        exam.name = [6]
+
+        user_has_exam = None
+        user_has_exam = UserHasExam()
+
         #on regarde si il est float ou pas en utilisant la fonctions qui est plus basse
         if is_float(row[0]):
             if math.isnan(row[0]):
