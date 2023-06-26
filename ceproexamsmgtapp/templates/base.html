@@ -55,6 +55,7 @@
                 </ul>
 
 
+
             <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#" id="navbarImport" role="button" data-toggle="dropdown"
                    aria-haspopup="true" aria-expanded="false">
@@ -72,7 +73,7 @@
                     Stats
                 </a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <a class="dropdown-item" href="{{ url_for('auth.login') }}">1</a>
+                    <a class="dropdown-item" href="#">1</a>
                     <a class="dropdown-item" href="{{ url_for('auth.logout') }}">2</a>
 
                 </div>
@@ -80,8 +81,22 @@
 
         </ul>
     </div>
-</nav>
 
+</nav>
+<nav class="d-flex-column flex-shrink-0 p-3 text-white bg-dark" style="width: 250px;">
+
+     <div class="sidebar-sticky">
+
+        <ul class="nav flex-column" >
+            <li class="nav-item">
+                <a class="nav-link active" href="#">Test</a>
+            </li>
+
+
+        </ul>
+
+    </div>
+</nav>
 
 
 <section class="content">

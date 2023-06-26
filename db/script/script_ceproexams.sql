@@ -59,6 +59,12 @@ CREATE TABLE ceproexamsmgt.user
   INDEX fk_user_type_idx (user_type_id ASC),
   CONSTRAINT fk_user_user_type_id FOREIGN KEY (user_type_id) REFERENCES user_type (id)
 );
+CREATE TABLE ceproexamsmgt.exam_year
+(
+id INT PRIMARY KEY NOT NULL AUTO_INCREMENT,
+code VARCHAR(20),
+name VARCHAR(50)
+);
 CREATE TABLE ceproexamsmgt.exam
 (
   id INT PRIMARY KEY NOT NULL AUTO_INCREMENT,
