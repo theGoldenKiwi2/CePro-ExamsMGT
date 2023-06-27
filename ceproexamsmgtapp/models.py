@@ -6,11 +6,7 @@ class ExamType(db.Model):
     code = db.Column(db.String(20))
     name = db.Column(db.String(50))
     exams = db.relationship('Exam', backref='exam_type', lazy='dynamic')
-class Section(db.Model):
-    id = db.Column(db.Integer, primary_key=True)
-    code = db.Column(db.String(20))
-    name = db.Column(db.String(50))
-    exam_has_sections = db.relationship('ExamHasSection', backref='section', lazy='dynamic')
+
 class ExamStatus(db.Model):
     id = db.Column(db.Integer, primary_key=True)
     code = db.Column(db.String(20))
@@ -26,12 +22,24 @@ class Service(db.Model):
     code = db.Column(db.String(20))
     description = db.Column(db.String(100))
     exams = db.relationship('Exam', backref='service', lazy='dynamic')
-class Exam(db.Model):
+
+class AcademicYear(db.Model):
     id = db.Column(db.Integer, primary_key=True)
     code = db.Column(db.String(20))
-    name = db.Column(db.String(50))
+    name = db.Column(db.String(100))
+    exams = db.relationship('Exam', backref='academic_year', lazy='dynamic')
+
+class Section(db.Model):
+    id = db.Column(db.Integer, primary_key=True)
+    code = db.Column(db.String(20))
+    name = db.Column(db.String(100))
+    exams = db.relationship('Exam', backref='section', lazy='dynamic')
+
+class Exam(db.Model):
+    id = db.Column(db.Integer, primary_key=True)
+    code = db.Column(db.String(30))
+    name = db.Column(db.String(100))
     exam_date = db.Column(db.DateTime())
-    exam_years = db.Column(db.String(10))
     exam_semester = db.Column(db.String(10))
     nb_students = db.Column(db.Integer)
     nb_pages = db.Column(db.Integer)
@@ -42,15 +50,17 @@ class Exam(db.Model):
     exam_status_id = db.Column(db.Integer, db.ForeignKey('exam_status.id'), primary_key=True)
     service_level_id = db.Column(db.Integer, db.ForeignKey('service_level.id'), primary_key=True)
     service_id = db.Column(db.Integer, db.ForeignKey('service.id'), primary_key=True)
+    academic_year_id = db.Column(db.Integer, db.ForeignKey('academic_year.id'), primary_key=True)
     user_has_exams = db.relationship('UserHasExam', backref='exams', lazy='dynamic')
-    exam_has_sections = db.relationship('ExamHasSection', backref='exams', lazy='dynamic')
+    section_id = db.Column(db.Integer, db.ForeignKey('section.id'), primary_key=True)
 class UserType(db.Model):
     id = db.Column(db.Integer, primary_key=True)
     code = db.Column(db.String(20))
     name = db.Column(db.String(20))
     users = db.relationship('User', backref='user_type', lazy='dynamic')
+
 class User(UserMixin, db.Model):
-    id = db.Column(db.Integer, primary_key=True)
+    id = db.Column(db.Integer, primary_key=True, autoincrement=True)
     lastname = db.Column(db.String(50))
     firstname = db.Column(db.String(50))
     email = db.Column(db.String(100))

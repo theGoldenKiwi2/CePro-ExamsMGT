@@ -5,14 +5,6 @@
 {% endblock %}
 {% block content %}
   <form method=post enctype=multipart/form-data>
-        <div class="input-group mb-3">
-            <div class="input-group-prepend">
-                <input class="form-control-file" type="file" id="formFile" name="file" accept=".csv">
-            </div>
-            <div class="custom-file">
-            <input class="btn btn-success" type="submit" value="Upload">
-            </div>
-        </div>
       <div class="input-group mb-3">
           <div class="custom-file">
               <input type="file" class="custom-file-input" id="inputGroupFile02" name="file" accept=".csv">
@@ -31,7 +23,21 @@
             $(this).next('.custom-file-label').html(fileName);
         })
   </script>
+
 <p>Ceci est un test</p>
+<div align="center">
+    <table>
+        <h1>
+            <!--Displaying the converted table-->
+            {% for table in tables %}
+            <h2>{{titles[loop.index]}}</h2>
+            {{ table|safe }}
+            {% endfor %}
+        </h1>
+    </table>
+</div>
+
+
 <nav aria-label="Page navigation example">
   <ul class="pagination justify-content-end">
     <li class="page-item disabled">

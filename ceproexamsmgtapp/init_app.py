@@ -2,13 +2,12 @@ import os
 
 import flask_login
 # ici on importe flask
-from flask import Flask, render_template, request
 from flask import Flask, render_template, request, redirect, url_for
 from flask_login import current_user, LoginManager
 from flask_admin import Admin
 from flask_admin.contrib.sqla import ModelView
-from flask_sqlalchemy import SQLAlchemy
-from ceproexamsmgtapp.models import db, Exam, User, UserType, ServiceLevel
+from ceproexamsmgtapp.models import db, Exam, User, UserType, ServiceLevel, ExamType
+
 basedir = os.path.abspath(os.path.dirname(__file__))
 # on crée l’application
 def create_app(test_config=None):
@@ -39,6 +38,8 @@ def create_app(test_config=None):
     admin.add_view(ModelView(User, db.session))
     admin.add_view(ModelView(UserType, db.session))
     admin.add_view(ModelView(ServiceLevel, db.session))
+    admin.add_view(ModelView(ExamType, db.session))
+
     login_manager = LoginManager()
     login_manager.init_app(app)
     login_manager.login_view = 'auth.login'
@@ -64,6 +65,8 @@ def create_app(test_config=None):
 
         else:
             return redirect(url_for('auth.login', error=None))
+
+
 
 
     return app
