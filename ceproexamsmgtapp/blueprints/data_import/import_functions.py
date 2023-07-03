@@ -1,6 +1,6 @@
 import math
 from ceproexamsmgtapp import models
-from ceproexamsmgtapp.models import db, UserType, User, ExamStatus, UserHasExam, Exam
+from ceproexamsmgtapp.models import db, UserType, User, ExamStatus, UserHasExam, Exam, ServiceLevel
 import pandas as pd
 from flask import Blueprint
 
@@ -87,6 +87,23 @@ def parse_exam_csv(file_path):
 
         user_has_exam = None
         user_has_exam = UserHasExam()
+
+
+
+
+        #on regarde si il y a une virgule ou pas si il y en a une on enregistre 2 teacher pour le cou si il y en a 2 3 ect.....
+
+        # on filtre le user type pour que le modèle du type (code) soit égal à la row 4 du fichier csv
+        service_level = ServiceLevel.query.filter_by(code=row[13])
+
+        # si il récupère quelque chose il prend donc le première objet (donc dans se cas le seul)
+        if service_level:
+            service_level = service_level.first()
+
+        # on récupère l'objet et on le met dans l'objet de l'user correspondant
+        exam.service_level_id = service_level
+
+#-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
         #on regarde si il est float ou pas en utilisant la fonctions qui est plus basse
         if is_float(row[0]):
