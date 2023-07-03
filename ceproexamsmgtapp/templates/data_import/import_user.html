@@ -23,18 +23,19 @@
             $(this).next('.custom-file-label').html(fileName);
         })
 
-
-
 </script>
-<table class="table">
-<thead>
-    <tr>
-      <th scope="col">Lastname</th>
-      <th scope="col">Firstname</th>
-      <th scope="col">Email</th>
-      <th scope="col">Sciper</th>
-    </tr>
-  </thead>
+
+    <div align="center">
+    <table>
+        <h1>
+            <!--Displaying the converted table-->
+            {% for table in tables %}
+            <h2>{{titles[loop.index]}}</h2>
+            {{ table|safe }}
+            {% endfor %}
+        </h1>
+    </table>
+</div>
     <table id="EmptyTable"></table>
 
 <nav aria-label="Page navigation example">

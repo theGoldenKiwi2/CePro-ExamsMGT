@@ -61,6 +61,7 @@ class UserType(db.Model):
     users = db.relationship('User', backref='user_type', lazy='dynamic')
 
 class User(UserMixin, db.Model):
+    __searchable__ = ['firstname']
     id = db.Column(db.Integer, primary_key=True, autoincrement=True)
     lastname = db.Column(db.String(50))
     firstname = db.Column(db.String(50))
