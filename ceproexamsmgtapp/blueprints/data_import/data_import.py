@@ -66,7 +66,7 @@ def exam_import():
         if file.filename.rsplit('.', 1)[1].lower() == 'csv':
             file.save(os.path.join(current_app.config['UPLOAD_FOLDER'], file.filename))
             file_path = os.path.join(current_app.config['UPLOAD_FOLDER']) + "/" + file.filename
-            #result = parse_exam_csv(file_path)
+            result = parse_exam_csv(file_path)
 
             if result:
                 msg = 'super ça marche'
@@ -74,7 +74,7 @@ def exam_import():
                 msg = 'gros caca boudin'
 
             # reading the data in the csv file
-            data = pd.read_csv(os.path.join(current_app.config['UPLOAD_FOLDER'], file.filename), sep=',')
+            data = pd.read_csv(os.path.join(current_app.config['UPLOAD_FOLDER'], file.filename), sep=';')
 
 
             return render_template(r'data_import/import_exam.html', message=msg, tables=[data.to_html()], titles=[''])
