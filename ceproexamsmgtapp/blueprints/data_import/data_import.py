@@ -35,13 +35,13 @@ def user_import():
 
             data = pd.read_csv(os.path.join(current_app.config['UPLOAD_FOLDER'], file.filename), sep=',')
 
-            page = request.args.get('page', 1, type=int)
+            # page = request.args.get('page', 1, type=int)
+            #
+            # table = Table.query.paginate(page=page, per_page=ROWS_PER_PAGE)
 
-            table = Table.query.paginate(page=page, per_page=ROWS_PER_PAGE)
 
 
-
-            return render_template(r'data_import/import_user.html', message=msg, tables=[data.to_html()], titles=[''], table=table)
+            return render_template(r'data_import/import_user.html', message=msg, tables=[data.to_html()], titles=[''])
 
         return render_template(r'data_import/import_user.html', message="Veuillez choisir un fichier .csv")
     else:

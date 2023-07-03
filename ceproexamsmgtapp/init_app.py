@@ -3,6 +3,7 @@ import os
 import flask_login
 # ici on importe flask
 from flask import Flask, render_template, request, redirect, url_for
+from flask_admin.model import BaseModelView
 from flask_login import current_user, LoginManager
 from flask_admin import Admin
 from flask_admin.contrib.sqla import ModelView
@@ -32,15 +33,23 @@ def create_app(test_config=None):
     app.register_blueprint(main.bp)
     from .blueprints.data_import import data_import
     app.register_blueprint(data_import.bp)
-    from .blueprints.search import search
-    app.register_blueprint(search.bp)
+    # from .blueprints.search import search
+    # app.register_blueprint(search.bp)
         # Import admin model views
     #if __name__ == '__main__':
-    admin = Admin(app)
+
+
+    admin = Admin(app, template_mode='bootstrap3')
     admin.add_view(ModelView(User, db.session))
     admin.add_view(ModelView(UserType, db.session))
     admin.add_view(ModelView(ServiceLevel, db.session))
     admin.add_view(ModelView(ExamType, db.session))
+
+
+
+
+
+
 
     login_manager = LoginManager()
     login_manager.init_app(app)
