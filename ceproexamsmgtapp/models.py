@@ -43,6 +43,7 @@ class Exam(db.Model):
     exam_semester = db.Column(db.String(10))
     nb_students = db.Column(db.Integer)
     nb_pages = db.Column(db.Integer)
+    total_pages = db.Column(db.Integer)
     deadline_prep = db.Column(db.DateTime())
     deadline_repro = db.Column(db.DateTime())
     remark = db.Column(db.String(250))

@@ -58,14 +58,14 @@ CREATE TABLE ceproexamsmgt.user
   INDEX fk_user_type_idx (user_type_id ASC),
   CONSTRAINT fk_user_user_type_id FOREIGN KEY (user_type_id) REFERENCES user_type (id)
 );
-<<<<<<< HEAD
+
 CREATE TABLE ceproexamsmgt.exam_year
 (
 id INT PRIMARY KEY NOT NULL AUTO_INCREMENT,
 code VARCHAR(20),
 name VARCHAR(50)
 );
-=======
+
 
 CREATE TABLE ceproexamsmgt.academic_year
 (
@@ -74,7 +74,6 @@ CREATE TABLE ceproexamsmgt.academic_year
 	name VARCHAR(100) NULL 
 );
 
->>>>>>> 337ca360e540d87d17231b23346020e4c094751d
 CREATE TABLE ceproexamsmgt.exam
 (
   id INT PRIMARY KEY NOT NULL AUTO_INCREMENT,
@@ -89,6 +88,7 @@ CREATE TABLE ceproexamsmgt.exam
   exam_semester VARCHAR (10),
   nb_students INT,
   nb_pages INT,
+  total_pages INT,
   deadline_prep DATETIME,
   deadline_repro DATETIME,
   remark TEXT,
