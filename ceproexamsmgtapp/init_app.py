@@ -18,6 +18,7 @@ def create_app(test_config=None):
     app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
     app.config['BASIC_AUTH_FORCE'] = True
     app.config['UPLOAD_FOLDER'] = app.root_path+"/blueprints/data_import/upload"
+    app.config['WHOOSH_BASE'] = '/blueprints/search/whoosh.db'
     db.init_app(app)
     # remplacer la configuration
     if test_config is None:
@@ -32,20 +33,12 @@ def create_app(test_config=None):
     app.register_blueprint(main.bp)
     from .blueprints.data_import import data_import
     app.register_blueprint(data_import.bp)
-<<<<<<< HEAD
-    # from .blueprints.search import search
-    # app.register_blueprint(search.bp)
+    from .blueprints.search import search
+    app.register_blueprint(search.bp)
 
         # Import admin model views
     #if __name__ == '__main__':
     admin = Admin(app, template_mode='bootstrap3')
-=======
-    from .blueprints.search import search
-    app.register_blueprint(search.bp)
-        # Import admin model views
-    #if __name__ == '__main__':
-    admin = Admin(app)
->>>>>>> 2fc851176129d5df5e4a6468064f0927afd50b2c
     admin.add_view(ModelView(User, db.session))
     admin.add_view(ModelView(UserType, db.session))
     admin.add_view(ModelView(ServiceLevel, db.session))

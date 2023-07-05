@@ -1,9 +1,5 @@
 from flask_login import login_user, login_required, logout_user
 from flask import Blueprint, render_template, flash, redirect, url_for, request
-from login import check_password_hash
-from sqlalchemy.sql.functions import user
-from .Froms_auth import LoginForm
-#from . import db
 from ...models import User
 bp = Blueprint('auth', __name__)
 

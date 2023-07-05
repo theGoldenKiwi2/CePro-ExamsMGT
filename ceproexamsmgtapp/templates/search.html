@@ -1,7 +1,11 @@
-{% extends 'layouts/base.html' %}
+{% extends 'base.html' %}
 {% set page_title = 'Search' %}
-{% block body %}
+{% block content %}
     <div>
-        {{ render_form(url_for('search'), form) }} # note: render_form is some marco from another .html file
+          {% for user in users %}
+            {{ user.firstname }} {{ user.lastname }}
+            <br/>
+        {% endfor %}
+
     </div>
 {% endblock %}

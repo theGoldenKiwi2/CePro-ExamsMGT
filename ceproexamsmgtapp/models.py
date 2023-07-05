@@ -1,5 +1,7 @@
+from falcon.bench.nuts.config import app
 from flask_login import UserMixin
 from flask_sqlalchemy import SQLAlchemy
+
 db = SQLAlchemy()
 class ExamType(db.Model):
     id = db.Column(db.Integer, primary_key=True)
@@ -61,7 +63,6 @@ class UserType(db.Model):
     users = db.relationship('User', backref='user_type', lazy='dynamic')
 
 class User(UserMixin, db.Model):
-    __searchable__ = ['firstname']
     id = db.Column(db.Integer, primary_key=True, autoincrement=True)
     lastname = db.Column(db.String(50))
     firstname = db.Column(db.String(50))
@@ -71,6 +72,7 @@ class User(UserMixin, db.Model):
     sciper = db.Column(db.String(6))
     user_type_id = db.Column(db.Integer, db.ForeignKey('user_type.id'), primary_key=True)
     exams = db.relationship('UserHasExam', backref='user', lazy='dynamic')
+
     def is_active(self):
         return True
     def get_id(self):
@@ -88,3 +90,5 @@ class UserHasExam(db.Model):
 class ExamHasSection(db.Model):
     section_id = db.Column(db.Integer, db.ForeignKey('section.id'), primary_key=True)
     exam_id = db.Column(db.Integer, db.ForeignKey('exam.id'), primary_key=True)
+
+
