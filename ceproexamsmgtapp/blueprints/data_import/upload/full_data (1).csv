@@ -1,0 +1,907 @@
+EXAM_YEAR_ID;SEMESTER;EXAM DATE;EXAM_STATUS_ID;CODE;NAME;TEACHERS SCIPERS;CONTACTS SCIPER;SERVICE_LEVEL_ID;RESPONSABLE;NB STUDENTS;NB PAGES;TOTAL PAGES;SERVICE_TYPE_ID;EXAM_TYPE_ID;DEADLINE PREP;DEADLINE REPRO;REMARK;SECTION
+6;2;31.05.23;14;ME-201 Final;Continuum mechanics;278363;;2;283365;250;;0;4;1;;;;GM
+6;2;31.05.23;14;CS-210 Final;Parallelisme and concurrency Final;177241,331765;250109;2;283365;300;;0;4;1;;;;IC
+6;2;31.05.23;15;BIO-204;Integrated labo in Life sciences II;177072,181957;177072;3;275804;160;;0;4;1;;;;SV
+6;2;30.06.23;15;MATH-115(a);Algèbre linéaire avancée II;183121;270637;3;283365;120;24;2880;4;1;;;;MA
+6;2;30.06.23;14;CS-251;Theory of computation;318509;;2;275804;312;;0;1;1;;;;IC
+6;2;30.06.23;14;MATH-251(b);Analyse numérique;106096;258064;2;275804;300;;0;4;1;;;Moodle + compte serveur AMC ok. Elle me contacte si besoin;MA
+6;2;30.06.23;14;MATH-212;Analyse numérique et optimisation;106096;247278;3;275804;190;;0;4;1;;;déjà fait un exam en janvier. il me contacte si besoin;MA
+6;2;28.06.23;14;ME-311;Dynamique des systèmes mécaniques;103606;;3;275804;110;;0;4;1;;;;GM
+6;2;28.06.23;14;PHYS-105;Advanced physics II (thermodynamics);178548;;2;205845;120;;0;3;1;;;;PH
+6;2;28.06.23;14;Micro-502;Aerial robotics;111729;371568;3;275804;90;;0;4;1;;;;MT
+6;2;28.06.23;14;ME-104;Introduction to structural mechanics;283343;342378;2;275804;300;;0;4;1;;;;GM
+6;2;27.06.23;14;PHYS-209;;166196;;3;275804;160;;0;4;1;;;;PH
+6;2;27.06.23;14;PHYS-206;Physics IV;318383;;3;205845;124;;0;3;1;;;;PH
+6;2;27.04.23;15;CS-206 FINAL;Parallelism and Concurrency Midterm;126003,331765;250300;1;283365;264;16;4224;4;1;18.04.22;21.04.22;;IC
+6;2;26.06.23;15;UNIL-123;Physique expérimentale II (pour SFU);105173;;2;283365;214;12;2568;3;1;;;;UNIL
+6;2;26.06.23;14;PREPA-093;Chimie MAN;109839;;2;283365;388;;0;4;1;;;;MAN/CMS
+6;2;26.06.23;14;PREPA-091;Géométrie Descriptive MAN;157882;;2;283365;320;;0;4;1;;;;MAN/CMS
+6;2;26.06.23;14;PREPA-033;Physique MAN;104677,165328;;2;283365;720;;0;4;1;;;;MAN/CMS
+6;2;26.06.23;14;PREPA-031(a);Analyse A MAN;183833,101466,121777;;2;283365;718;;0;4;1;;;;MAN/CMS
+6;2;26.06.23;14;MATH-123(b);Géométrie;238427;;3;275804;71;;0;4;1;;;Scanner à prevoir;MA
+6;2;26.06.23;14;MATH-105(b);Analyse avancée II;166061;;2;283365;210;;0;4;1;;;;MA
+6;2;26.06.23;14;MATH-105(b);Analyse avancée II;166061;;2;283365;210;;0;4;1;;;;MA
+6;2;26.06.23;8;MATH-105(a);Analyse avancée II;118353;341657;3;275804;120;;0;4;1;;;;MA
+6;2;26.06.23;14;ME-202;Systèmes mécaniques;172730;;3;283365;100;;0;4;1;;;;GM
+6;2;26.06.23;14;CS-233(b);Introduction to machine learning;112366;237807;2;275804;230;;0;4;1;;;Moodle + compte serveur AMC ok. il me contacte si besoin;IC
+6;2;26.04.23;15;MATH-205 MOCK;Analyse IV MOCK;290660;331906;3;283365;90;;0;4;1;;;;MA
+6;2;25.05.23;15;CIVIL-226;Introduction to machine learning for engineers;129343;;1;283365;70;12;840;4;1;;25.05.22;;GC
+6;2;24.04.23;15;UNIL-131 MOCK;Mathématiques II (pour SFU) - TEST;149640;;2;283365;210;4;840;4;3;;;;UNIL
+6;2;24.04.23;15;UNIL-108 MOCK;Mathématiques générales II (pour BIO) - TEST;112131;;2;283365;60;4;240;4;3;;;;UNIL
+6;2;24.04.23;15;MATH-232 MT;Probability and statistics - MT;120091;336509;2;283365;349;;0;4;1;;;;MA
+6;2;24.04.23;15;CS-207 MT;System oriented programming;112547;;2;283365;290;12;3480;1;1;;;;IC
+6;2;23.06.23;14;UNIL-108;Mathématiques générales II (pour BIO);112131;;2;283365;300;;0;4;1;;;;UNIL
+6;2;23.06.23;14;PHYS-106(a);General physics : thermodynamics;105419;;2;205845;120;;0;3;1;;;;PH
+6;2;23.06.23;14;Micro-515;Evolutionary robotics;111729;341242;3;275804;45;;0;4;1;;;Moodle + compte serveur AMC ok. il me contacte si besoin;MT
+6;2;23.06.23;14;MATH-215;Anneaux et corps;270833;;3;275804;100;;0;1;1;;;;MA
+6;2;23.06.23;14;EE-205 Final;Signals and systems Final;317456;;2;283365;243;;0;4;1;;;;EL
+6;2;23.06.23;14;CS-450 Final;Advanced algorithms Final;348124,179025;344743;2;275804;200;;0;3;1;;;;IC
+6;2;23.05.23;15;CS-112(i);Object oriented programming;106336;;2;283365;170;;0;1;1;;;;IC
+6;2;22.06.23;14;UNIL-131;Mathématiques II (pour SFU) ;149640;;2;283365;210;;0;4;1;;;;UNIL
+6;2;22.06.23;14;EE-311;Fundamentals of machine learning;107645;;3;275804;55;;0;4;1;;;;EL
+6;2;22.06.23;14;COM-102;Advanced information, computation, communication II;122796;322002;2;283365;390;;0;4;1;;;;IC
+6;2;22.05.23;15;CS-207 Final;System oriented programming;112547;;2;283365;290;;0;1;1;;;;IC
+6;2;21.06.23;14;MATH-207(c) ;Analyse IV;104781;;2;283365;345;;0;4;1;;;;MA
+6;2;21.06.23;14;MATH-207(a);Analysis IV;325019;243696;2;275804;354;;0;3;1;;;;MA
+6;2;21.06.23;14;MATH-205;Analyse IV;290660;331906;3;283365;90;;0;4;1;;;;MA
+6;2;21.04.23;15;EE-205 MT;Signals and systems Midterm;317456;;2;283365;243;16;3888;4;1;;;;EL
+6;2;21.03.23;15;CS-412 MT 1;Software security Midterm 1;303470;339295;3;283365;120;;0;4;1;;;;IC
+6;2;20.06.23;14;MATH-334;;167946;;3;275804;25;;0;4;1;;;Je lui ai donné la procédure pour la repro et j'attend de voir si elle veut venir à la seance sma pour scanner à la sma;MA
+6;2;20.06.23;14;MATH-115(b);Advanced linear algebra II;106581;;3;283365;115;;0;4;1;;;;MA
+6;2;20.06.23;14;ME-301;Measurement techniques;252550;;3;275804;110;;0;4;1;;;;GM
+6;2;20.06.23;14;MATH-232;Probability and statistics;120091;336509;2;283365;349;;0;4;1;;;;MA
+6;2;20.06.23;14;CS-442;Computer vision;112366;306981;2;275804;172;;0;4;1;;;Moodle + compte serveur AMC ok. il me contacte si besoin;IC
+6;2;20.04.23;15;CS-112(g) MT;Object oriented programming;112547;;2;283365;215;12;2580;1;1;;;;IC
+6;2;19.06.23;14;ME-280;Fluid mechanics (for GM);231182;268400;2;275804;270;20;5400;4;1;;;;GM
+6;2;19.06.23;14;MATH-251(c);Analyse numérique;121157;;2;375088;180;;0;3;1;;;;MA
+6;2;19.06.23;14;MATH-106(f);Analyse II;293509;120861;1;293509;200;;0;4;1;;;;MA
+6;2;19.06.23;14;MATH-106(en);Analyse II;138859;120861;1;293509;;;0;4;1;;;;MA
+6;2;19.06.23;14;MATH-106(e);Analyse II;167946;120861;1;293509;335;;0;4;1;;;;MA
+6;2;19.06.23;14;MATH-106(c);Analyse II;149640;120861;1;293509;207;;0;4;1;;;;MA
+6;2;19.06.23;14;MATH-106(b);Analyse II;166061;120861;1;293509;357;;0;4;1;;;;MA
+6;2;19.06.23;14;MATH-106(a);Analyse II;120861;;1;293509;1436;;0;4;1;;;;MA
+6;2;18.04.23;15;HUM-125(b);Enjeux mondiaux : Santé B;167289,185819,322840;347860;2;283365;140;8;1120;4;1;;;;SHS
+6;2;18.04.23;15;HUM-125(a);Enjeux mondiaux : Santé A;185819,322840;347860;2;283365;140;8;1120;4;1;;;;SHS
+6;2;18.04.23;15;HUM-124(a);Global issues: mobility A;137634;;2;283365;160;;0;4;1;;;;SHS
+6;2;18.04.23;15;HUM-123(b);Enjeux mondiaux : Énergie B;216007,339231;;2;283365;140;;0;4;1;;;;SHS
+6;2;18.04.23;15;HUM-123(a);Enjeux mondiaux : Énergie A;153200,317426;;2;283365;140;4;560;4;1;;;;SHS
+6;2;18.04.23;15;HUM-122(b);Enjeux mondiaux : Communication B;240726,231305;292888,308309;2;283365;140;;0;4;1;;;;SHS
+6;2;18.04.23;15;HUM-121(b);Enjeux mondiaux : Climat B;106542,317971;274815;2;283365;140;;0;4;1;;;;SHS
+6;2;18.04.23;15;HUM-121(a);Enjeux mondiaux : Climat A;211124,289942;274815;2;283365;140;;0;4;1;;;;SHS
+6;2;18.04.23;15;CS-412 MT 2;Software security Midterm 2;303470;339295;3;283365;120;;0;4;1;;;;IC
+6;2;17.04.23;15;PREPA-014;Géométrie analytique CTRL 3;100435;183833,104677;3;283365;178;12;2136;4;1;;;;MAN/CMS
+6;2;17.04.23;15;PREPA-012;Chimie CMS CTRL 3;109839;183833,104677;3;283365;178;8;1424;4;1;;;;MAN/CMS
+6;2;17.04.23;15;PREPA-006;Analyse 2 CMS CTRL 3;100527;183833,104677;3;283365;178;12;2136;4;1;;;;MAN/CMS
+6;2;17.04.23;15;PREPA-004;Analyse 1 CMS CTRL 3;183833;104677;3;283365;178;12;2136;4;1;;;;MAN/CMS
+6;2;17.04.23;15;PREPA-002;Albèbre linéaire CMS CTRL 3;248612;183833,104677;3;283365;178;12;2136;4;1;;;;MAN/CMS
+6;2;17.04.23;15;ME-105 MT;Introduction à la conception mécanique;172730;;3;283365;100;;0;4;1;;;;GM
+6;2;16.05.23;15;CS-412 MT 3;Software security Midterm 3;303470;339295;3;283365;120;;0;4;1;;;;IC
+6;2;15.03.23;15;ME-104 MOCK;Introduction to structural mechanics Mock;283343;342378;2;275804;300;;0;4;1;;;Les 2 mocks ne seront pas imprimé mais le pdf sera transmis aux étudiants. ;GM
+6;2;12.06.23;14;PREPA-026;ICS CMS CTRL 4;157882;183833,104677;3;283365;178;;0;4;1;;;;MAN/CMS
+6;2;12.06.23;14;PREPA-022;Physique CMS CTRL 4;104677;183833;3;283365;178;;0;4;1;;;;MAN/CMS
+6;2;12.06.23;14;PREPA-014;Géométrie analytique CTRL 4;100435;183833,104677;3;283365;178;;0;4;1;;;;MAN/CMS
+6;2;12.06.23;14;PREPA-012;Chimie CMS CTRL 4;109839;183833,104677;3;283365;178;;0;4;1;;;;MAN/CMS
+6;2;12.06.23;14;PREPA-006;Analyse 2 CMS CTRL 4;100527;183833,104677;3;283365;178;;0;4;1;;;;MAN/CMS
+6;2;12.06.23;14;PREPA-004;Analyse 1 CMS CTRL 4;183833;104677;3;283365;178;;0;4;1;;;;MAN/CMS
+6;2;12.06.23;14;PREPA-002;Albèbre linéaire CMS CTRL 4;248612;183833,104677;3;283365;178;;0;4;1;;;;MAN/CMS
+6;2;07.07.23;15;MATH-207(d);Analyse IV;175323;;3;275804;131;;0;4;1;;;;MA
+6;2;07.07.23;14;ENG-410;Energy supply, economics and transition;106542;288723,348288;2;283365;251;;0;4;1;;;;Other
+6;2;07.07.23;14;EE-209;Eléments de statistiques pour les data sciences;307123;;3;283365;120;;0;4;1;;;;EL
+6;2;07.03.23;15;CS-450 HW;Advanced algorithms Homework;348124,179025;344743;2;283365;200;;0;3;1;;;;IC
+6;2;06.07.23;14;BIO-483;Neuroscience: behavior and cognition;320304;;3;283365;65;;0;4;1;;;;SV
+6;2;06.05.23;15;EULER;Concours Euler;144617;;3;275804;;;0;4;1;;;;EULER
+6;2;05.04.23;15;ME-201 MT;Continuum mechanics MT;278363;;2;283365;250;;0;4;1;;;;GM
+6;2;05.04.23;15;CS-210 MT ;Parallelisme and concurrency Midterm;177241,331765;250109;2;283365;300;;0;4;1;;;;IC
+6;2;05.04.23;15;CS-206 MT;Parallelism and Concurrency Midterm;126003,331765;250300;1;283365;264;16;4224;4;1;18.04.22;21.04.22;;IC
+6;2;04.05.23;15;CIVIL-459 MT;;129343;;3;275804;140;;0;4;1;;;;GC
+6;2;04.04.23;15;PENS-200 ;La maîtrise du sol en droit suisse;159096;208586,330954;2;275804;280;;0;4;1;27.03.23;;A corriger avec Judith, 21.04.2023;ENAC
+6;2;04.04.23;15;HUM-257;Santé, population et société;300621;365046;3;275804;80;;0;4;1;27.03.23;;Adresse email pr externe à voir avec Christine. Anca avance les questions de l'exam. Procéger comme avant, Anca est informée;SHS
+6;2;03.07.23;14;PREPA-094;ICS MAN;107044;;2;283365;472;;0;4;1;;;;MAN/CMS
+6;2;03.07.23;14;PREPA-092;Sujets choisis de Mathématiques MAN;100527;;2;283365;212;;0;4;1;;;;MAN/CMS
+6;2;03.07.23;14;PREPA-032(a);Algèbre linéaire et géométrie MAN;183833;;2;283365;720;;0;4;1;;;;MAN/CMS
+6;2;03.07.23;14;PREPA-031(b);Analyse B MAN;101466,173510,364587;;2;283365;719;;0;4;1;;;;MAN/CMS
+6;2;03.07.23;14;CS-438;Optimization for machine learning;276449,317566;;3;283365;87;;0;4;1;;;;IC
+6;2;03.07.23;14;CS-119(k);Information, computation, communication;208436;;1;283365;225;;0;4;1;;;;IC
+6;2;03.07.23;14;CS-119(a);Information, computation, communication;107931;;1;283365;225;;0;4;1;;;;IC
+6;2;02.05.23;15;MATH-106(e) MOCK;Analyse II TEST;167946;;1;283365;335;4;1340;4;3;;;;MA
+6;2;02.05.23;15;MATH-106(c) MOCK;Analyse II TEST;149640;;1;283365;207;4;828;4;3;;;;MA
+6;2;01.06.23;14;CS-112(g) Final;Object oriented programming;112547;;2;283365;215;;0;1;1;;;;IC
+6;2;01.06.23;14;CIVIL-355;;329964;;3;275804;60;;0;4;1;;;;GC
+6;1;31.01.23;15;CS-453;Concurrent algorithms;105326;263197;3;283365;65;20;1300;4;1;;;;IC
+6;1;30.01.23;15;CS-233(a);Introduction to machine learning;119864;276197;2;283365;200;16;3200;4;1;;;;IC
+6;1;30.01.23;15;COM-402;Information security and privacy;240726,339176,304521;NULL;2;283365;274;20;5480;4;1;;;;IC
+6;1;30.01.23;15;BIO-205;Cellular and molecular biology I;235263,253104;;3;275804;174;1;174;4;1;;;;SV
+6;1;28.01.23;15;BIO-447;Stem cell biology and technology;235263,106911,172749;;3;275804;99;1;0;1;1;;;;SV
+6;1;27.01.23;15;UNIL-130;Police scientifique (UNIL);149640;;2;283365;250;8;2000;4;1;;;;UNIL
+6;1;27.01.23;15;MATH-265;Introduction to optimization and operations research;118332;329964;2;283365;221;20;4420;2;1;;;;MA
+6;1;27.01.23;15;MATH-113;Algebraic structures;270833;144964;2;275804;205;28;5740;1;1;;;A contacter Monique Kiener  pour le recupérer à la repro;MA
+6;1;27.01.23;15;EE-106;Sciences et technologie de l'électricité ;106775;;2;275804;250;8;2000;3;1;;;A voir lors du Zoom ;EL
+6;1;27.01.23;15;CS-101;Advanced information, computation, communication I;321948;362923;2;283365;570;48;27360;4;1;;;;IC
+6;1;26.01.23;15;ME-232;Mécanique des structures (pour GM);111563;;2;283365;235;10;2350;1;1;;;;GM
+6;1;26.01.23;15;MATH-310;Algebra;167946;;3;275804;172;20;3440;1;1;;;A contacter pr quand envoyer en print;MA
+6;1;25.11.22;15;PHYS-101(j);Physique générale : mécanique SV II;222189;;1;205845;43;0;0;3;3;;;;PH
+6;1;25.11.22;15;PHYS-101(e);Physique générale : mécanique STI II;161577;;1;205845;230;0;0;3;3;;;;PH
+6;1;25.11.22;15;PHYS-101(b);Physique générale : mécanique STI I;109056;;1;205845;188;0;0;3;3;;;;PH
+6;1;25.11.22;15;PHYS-101 (h);Physique générale : mécanique SV I;178548;;1;205845;216;0;0;3;3;;;;PH
+6;1;25.11.22;15;MATH-111(pi);Algèbre linéaire (pi);306127;149640;1;283365;176;4;704;4;3;;;;MA
+6;1;25.11.22;15;MATH-111(g);Algèbre linéaire (g);149640;149640;1;283365;215;4;860;4;3;;;;MA
+6;1;25.11.22;15;MATH-111(f);Algèbre linéaire (f);178676;149640;1;283365;223;4;892;4;3;;;;MA
+6;1;25.11.22;15;MATH-111(en);Algèbre linéaire (en);316207;149640;1;283365;210;4;840;4;3;;;;MA
+6;1;25.11.22;15;MATH-111(e);Algèbre linéaire(e);321951;149640;1;283365;389;4;1556;4;3;;;;MA
+6;1;25.11.22;15;MATH-111(d);Algèbre linéaire (d);121777;149640;1;283365;225;4;900;4;3;;;;MA
+6;1;25.11.22;15;MATH-111(c);Algèbre linéaire (c);331592;149640;1;283365;330;4;1320;4;3;;;;MA
+6;1;25.11.22;15;MATH-111(a);Algèbre linéaire (a);101466;149640;1;283365;278;4;1112;4;3;;;;MA
+6;1;25.01.23;15;ME-320;Product development and engineering design ;323953;;3;283365;125;12;1500;4;1;;;;GM
+6;1;24.01.23;15;UNIL-114;Géosciences (UNIL);112131;;2;283365;180;8;1440;4;1;;;;UNIL
+6;1;24.01.23;15;UNIL-107;Biologie+Pharmacie (UNIL) ;112131;;2;283365;300;8;2400;4;1;;;;UNIL
+6;1;23.12.22;15;MICRO-100;Eléctrotechnique I;106775;;2;275804;250;8;2000;4;1;;;Zoom 12.01 - 10h pour la correction sur le serveur;MT
+6;1;23.12.22;15;CS-119(h) ;Information, Computation, Communication;107931;148204;2;283365;150;8;1200;4;1;;;;IC
+6;1;23.11.22;15;UNIL-130;Police scientifique (UNIL);149640;;2;283365;250;4;1000;4;3;;;;UNIL
+6;1;23.01.23;15;UNIL-122;Physique Expérimentale I (pour SFU);104677;;2;283365;275;20;5500;2;1;;;;UNIL
+6;1;23.01.23;15;PREPA-ADM 4;CMS ICS- admissions;107044;104677,183833;2;283365;98;20;1960;2;1;;;;MAN/CMS
+6;1;23.01.23;15;PREPA-ADM 3;CMS Physique - admissions;104677;183833;2;283365;98;16;1568;2;1;;;;MAN/CMS
+6;1;23.01.23;15;PREPA-ADM 2;CMS Mathématiques II - admissions;248612;104677,183833;2;283365;98;24;2352;2;1;;;;MAN/CMS
+6;1;23.01.23;15;PREPA-ADM 1;CMS Mathématiques I - admissions;104677;183833;2;283365;98;36;3528;2;1;;;;MAN/CMS
+6;1;23.01.23;15;MATH-111(pi);Algèbre linéaire (pi);306127;149640;1;283365;176;16;2816;4;1;;;;MA
+6;1;23.01.23;15;MATH-111(g);Algèbre linéaire (g);149640;;1;283365;215;16;3440;4;1;;;;MA
+6;1;23.01.23;15;MATH-111(f);Algèbre linéaire (f);178676;149640;1;283365;223;16;3568;4;1;;;;MA
+6;1;23.01.23;15;MATH-111(en);Algèbre linéaire (en);316207;149640;1;283365;210;16;3360;4;1;;;;MA
+6;1;23.01.23;15;MATH-111(e);Algèbre linéaire(e);321951;;1;283365;389;16;6224;4;1;;;;MA
+6;1;23.01.23;15;MATH-111(d);Algèbre linéaire (d);121777;149640;1;283365;225;16;3600;4;1;;;;MA
+6;1;23.01.23;15;MATH-111(c);Algèbre linéaire (c);331592;149640;1;283365;330;16;5280;4;1;;;;MA
+6;1;23.01.23;15;MATH-111(a);Algèbre linéaire (a);101466;149640;1;283365;278;16;4448;4;1;;;;MA
+6;1;23.01.23;15;BIO-449;Understanding statistics and experimental design;164642;313499,303666;3;283365;80;12;960;4;1;;;;SV
+6;1;22.12.22;15;CS-119(d);Information, Computation, Communication;112547;;2;283365;389;20;7780;1;1;;;;IC
+6;1;22.11.22;15;UNIL-114;Géosciences (UNIL);112131;149640;2;283365;180;4;720;4;3;;;;UNIL
+6;1;21.12.22;15;CS-210;Functional programming;126003,177241;234551;2;283365;390;12;4680;4;1;;;;IC
+6;1;21.11.22;15;UNIL-107;Biologie+Pharmacie (UNIL) ;112131;149640;2;283365;300;4;1200;4;3;;;;UNIL
+6;1;21.10.22;15;MATH-113;Structure algébrique Basic  skills test;270833;;2;275804;211;16;3376;1;1;14.10.22;20.10.22;;MA
+6;1;21.01.23;15;ME-445;Aerodynamics;252550;;3;275804;85;16;1360;4;1;;;Zoom 10.01 pr lui montrer le serveur AMC;GM
+6;1;20.01.23;15;PHYS-101(k);Physique générale : mécanique CGC;172230;;1;205845;119;28;3332;3;1;;;;PH
+6;1;20.01.23;15;PHYS-101(j);Physique générale : mécanique SV II;222189;;1;205845;50;20;1000;3;1;;;;PH
+6;1;20.01.23;15;PHYS-101(g);Physique générale : mécanique SC;166542;;1;205845;69;28;1932;3;1;;;;PH
+6;1;20.01.23;15;PHYS-101(en);General Physics : mecanic EN ;275854;;1;205845;273;28;7644;3;1;;;;PH
+6;1;20.01.23;15;PHYS-101(e);Physique générale : mécanique STI II;161577;;1;205845;237;24;5688;3;1;;;;PH
+6;1;20.01.23;15;PHYS-101(b);Physique générale : mécanique STI I;109056;;1;205845;195;24;4680;3;1;;;;PH
+6;1;20.01.23;15;PHYS-101 (h);Physique générale : mécanique SV I;178548;;1;205845;221;20;4420;3;1;;;;PH
+6;1;20.01.23;15;CS-433;Machine Learning;276449,317566;;2;283365;527;24;12648;4;1;;;;IC
+6;1;19.01.23;15;MATH-234(d);Probabilités et statistiques;180015;;2;283365;313;20;6260;1;1;;;;MA
+6;1;19.01.23;15;MATH-110(b);Algèbre linéaire avancée I;133751;;2;283365;260;20;5200;4;1;;;;MA
+6;1;19.01.23;15;CS-250;Algorithms;179025;;2;283365;450;20;9000;4;1;;;;IC
+6;1;18.11.22;15;MATH-101(pi);Analyse I (pi);121157;;1;293509;175;4;700;4;3;08.11.22;11.11.22;;MA
+6;1;18.11.22;15;MATH-101(g);Analyse I (g);317907;;1;293509;246;4;984;4;3;08.11.22;11.11.22;;MA
+6;1;18.11.22;15;MATH-101(f);Analyse I (f);185384;;1;293509;242;4;968;4;3;08.11.22;11.11.22;;MA
+6;1;18.11.22;15;MATH-101(en);Analyse I (en);138859;;1;293509;110;4;440;4;3;08.11.22;11.11.22;;MA
+6;1;18.11.22;15;MATH-101(e);Analyse I (e);167946;;1;293509;418;4;1672;4;3;08.11.22;11.11.22;;MA
+6;1;18.11.22;15;MATH-101(de);Analyse I (de);213191;;1;293509;38;4;152;4;3;08.11.22;11.11.22;;MA
+6;1;18.11.22;15;MATH-101(d);Analyse I (d);166061;;1;293509;264;4;1056;4;3;08.11.22;11.11.22;;MA
+6;1;18.11.22;15;MATH-101(c);Analyse I (c);101466;;1;293509;368;4;1472;4;3;08.11.22;11.11.22;;MA
+6;1;18.11.22;15;MATH-101(a);Analyse I (a);194123;;1;293509;298;4;1192;4;3;08.11.22;11.11.22;;MA
+6;1;18.01.23;15;MICRO-455;Applied machine learning;115671;;2;283365;220;12;2640;4;1;;;;MT
+6;1;18.01.23;15;ME-106;Construction mécanique I (pour MT);172730;;2;283365;237;12;2844;4;1;;;;GM
+6;1;18.01.23;15;ME-101;Construction mécanique I (Pour GM);172730;;2;283365;407;12;4884;4;1;;;;GM
+6;1;18.01.23;15;MATH-311;Rings and modules;270833;144964;2;275804;41;28;1148;1;1;;;A contacter Monique Kiener  pour le recupérer à la repro;MA
+6;1;18.01.23;15;CS-451;Distributed algorithms;105326;285045;3;283365;150;28;4200;1;1;;;;IC
+6;1;18.01.23;15;CH-160b;Chimie générale (CG);109839;;1;275804;136;12;1632;3;1;;;;CGC
+6;1;18.01.23;15;CH-160-FR-SV;Chimie générale avancée;109839;;1;275804;165;20;3300;3;1;;;;CGC
+6;1;18.01.23;15;CH-160-FR-SIE;Chimie générale avancée;106239,109839,251247;;1;275804;49;20;980;3;1;;;;CGC
+6;1;18.01.23;15;CH-160-FR-MX;Chimie générale avancée;106239,109839,251247;;1;275804;27;16;432;3;1;;;;CGC
+6;1;18.01.23;15;CH-160-EN-UNIL;Chimie générale avancée;150841,109839;;1;275804;240;20;4800;3;1;;;;CGC
+6;1;18.01.23;15;CH-160-EN-SV;Chimie générale avancée;106239,109839;;1;275804;111;20;2220;3;1;;;;CGC
+6;1;18.01.23;15;CH-160-EN-SIE;Chimie générale avancée;106239,109839;;1;275804;77;20;1540;3;1;;;;CGC
+6;1;18.01.23;15;CH-160-EN-MX;Chimie générale avancée;106239,109839;;1;275804;25;16;400;3;1;;;;CGC
+6;1;17.12.22;15;CS-524;Computational complexity;318509;;2;283365;50;12;600;1;1;;;;IC
+6;1;17.12.22;15;CS-107;Introduction à la programmation;106336;;2;283365;481;16;7696;1;1;;;;IC
+6;1;17.01.23;15;MATH-203(c);Analyse III;175323;;1;283365;196;20;3920;4;1;05.02.23;10.02.23;;MA
+6;1;17.01.23;15;MATH-203(b);Analyse III;194123;;1;283365;276;20;5520;4;1;05.02.23;10.02.23;;MA
+6;1;17.01.23;15;MATH-203(a);Analyse III;357254;;1;283365;354;20;7080;4;1;05.02.23;10.02.23;;MA
+6;1;17.01.23;15;MATH-202(c);Analyse III;104781;;1;283365;345;20;6900;4;1;05.02.23;10.02.23;;MA
+6;1;17.01.23;15;MATH-189;Mathematics;248881;;2;283365;280;8;2240;4;1;;;;MA
+6;1;17.01.23;15;MATH-100(b);Analyse avancée I;119631;;2;275804;274;28;7672;4;1;;;;MA
+6;1;17.01.23;15;MATH-100(a);Analyse avancée I;181579;;1;283365;200;20;4000;1;1;;;;MA
+6;1;17.01.23;15;ENG-383;Droit de l'architecte, introduction : contrats et concours;159096,111310;208586,330954;3;275804;190;12;2280;4;1;;;A contacter une fois les scans fait pour la correction sur le serveur AMC;Other
+6;1;16.12.22;15;CS-119(g);Information, Computation, Communication;106336;;2;283365;209;20;4180;1;1;;;;IC
+6;1;16.01.23;15;MATH-110(a);Algèbre linéaire avancée I;178545;;2;275804;200;40;8000;1;1;;;;MA
+6;1;16.01.23;15;MATH-101(pi);Analyse I (pi);121157;;1;293509;174;12;2088;4;1;;;;MA
+6;1;16.01.23;15;MATH-101(g);Analyse I (g);317907;;1;293509;246;16;3936;4;1;;;;MA
+6;1;16.01.23;15;MATH-101(f);Analyse I (f);185384;;1;293509;242;16;3872;4;1;;;;MA
+6;1;16.01.23;15;MATH-101(en);Analyse I (en);138859;;1;293509;110;16;1760;4;1;;;;MA
+6;1;16.01.23;15;MATH-101(e);Analyse I (e);167946;;1;293509;417;16;6672;4;1;;;;MA
+6;1;16.01.23;15;MATH-101(de);Analyse I (de);213191;;1;293509;38;16;608;4;1;;;;MA
+6;1;16.01.23;15;MATH-101(d);Analyse I (d);166061;;1;293509;264;16;4224;4;1;;;;MA
+6;1;16.01.23;15;MATH-101(c);Analyse I (c);101466;;1;293509;367;12;4404;4;1;;;;MA
+6;1;16.01.23;15;MATH-101(a);Analyse I (a);194123;;1;293509;298;16;4768;4;1;;;;MA
+6;1;14.11.22;15;ME-232 MT;Mécanique des structures (pour GM);111563;;2;283365;235;10;2350;1;1;;;;GM
+6;1;11.11.22;15;PREPA-013;CMS Géométrie analytique - CTRL 1;100435;183833,104677;2;283365;277;16;4432;2;1;;;;MAN/CMS
+6;1;11.11.22;15;CS-250 MT;Algorithms;179025;;2;283365;450;20;9000;4;1;;;;IC
+6;1;10.11.22;15;PREPA-001;CMS Algèbre linéaire - CTRL 1;248612;183833,104677;2;283365;277;16;4432;2;1;;;;MAN/CMS
+6;1;09.11.22;15;PREPA-053;CMS ICS- CTRL 1;107044;183833,104677;2;283365;277;12;3324;2;1;;;;MAN/CMS
+6;1;09.11.22;15;PREPA-021;CMS Physique - CTRL 1;104677;183833;2;283365;277;16;4432;2;1;;;;MAN/CMS
+6;1;09.11.22;15;CS-210 MT;Functional programming;126003,177241;234551;2;283365;390;16;6240;4;1;;;;IC
+6;1;09.01.23;15;PREPA-053;CMS ICS- CTRL 2;107044;104677,183833;2;283365;277;12;3324;2;1;;;;MAN/CMS
+6;1;09.01.23;15;PREPA-021;CMS Physique - CTRL 2;104677;183833;2;283365;277;16;4432;2;1;;;;MAN/CMS
+6;1;09.01.23;15;PREPA-013;CMS Géométrie analytique - CTRL 2;100435;104677,183833;2;283365;277;16;4432;2;1;;;;MAN/CMS
+6;1;09.01.23;15;PREPA-005;CMS Analyse II - CTRL 2;183833;104677;2;283365;277;12;3324;2;1;;;;MAN/CMS
+6;1;09.01.23;15;PREPA-003;CMS Analyse I - CTRL 2;183833;104677;2;283365;277;12;3324;2;1;;;;MAN/CMS
+6;1;09.01.23;15;PREPA-001;CMS Algèbre linéaire - CTRL 2;248612;104677,183833;2;283365;277;16;4432;2;1;;;;MAN/CMS
+6;1;08.11.22;15;PREPA-005;CMS Analyse II - CTRL 1;183833;104677;2;283365;277;16;4432;2;1;;;;MAN/CMS
+6;1;07.11.22;15;PREPA-003;CMS Analyse I - CTRL 1;183833;104677;2;283365;277;12;3324;2;1;;;;MAN/CMS
+6;1;06.12.22;15;PHYS-101(en);General Physics : mecanic EN ;275854;;1;205845;270;0;0;3;3;;;;PH
+6;1;04.11.22;15;CS-119(h) MT;Information, Computation, Communication;107931;148204,148204;2;283365;150;12;1800;4;1;;;;IC
+6;1;04.11.22;15;CS-119(d) MT;Information, Computation, Communication;112547;;2;283365;398;16;6368;1;1;;;;IC
+6;1;02.02.23;15;MICRO-450;Basics of robotics for manipulation;114980;;3;275804;136;1;136;4;1;;;;MT
+5;2;31.05.22;15;HUM-257;Santé, population et société;300621;NULL,NULL;1;275804;46;12;552;4;1;17.05.22;24.05.22;;SHS
+5;2;30.06.22;15;PREPA-093;Option Chimie;109839;;1;283365;100;16;1600;2;1;;;;MAN/CMS
+5;2;30.06.22;15;MICRO-451;Applied and industrial robotics;114980;;1;275804;55;1;55;4;1;16.06.22;23.06.22;envoie les scans lundi 4 juillet;MT
+5;2;30.06.22;15;ME-202;Systèmes Mécaniques;172730;;1;275804;207;28;5796;4;1;16.06.22;23.06.22;barème SCQ !!! En attente qu'il valide le croix invalides;GM
+5;2;30.06.22;15;CS-251;Theory of computation;318509;;1;275804;328;12;3936;1;1;24.06.22;;;IC
+5;2;30.05.22;15;CS-207;Programmation orientée systèmes final;112547;112547;1;283365;298;16;4768;2;1;;;zbar;IC
+5;2;29.06.22;15;PREPA-031(b);Analyse B;106748,173510,101466;;1;283365;660;16;10560;2;1;;;;MAN/CMS
+5;2;29.06.22;15;ME-104;Introduction to Structural Mechanics;283343;206670;1;275804;273;;0;1;1;15.06.22;22.06.22;fait imprimé eux-meme avec le QRCode. Y'aura juste le scan + PDFs à transmettre;GM
+5;2;29.06.22;15;MATH-115(b);Algèbre linéaire avancée II;106581;;1;283365;136;16;2176;4;1;15.06.22;22.06.22;;MA
+5;2;29.06.22;15;MATH-115(a);Algèbre linéaire avancée II;183121;335396;1;283365;120;16;1920;4;1;15.06.22;22.06.22;;MA
+5;2;29.06.22;15;AR-310;Art et architecture;NULL;259524;1;275804;42;16;672;1;1;15.06.22;22.06.22;;AR
+5;2;29.04.22;15;EE-205;Signals & systems MT;317456;144898,144898;1;283365;271;16;4336;4;1;21.04.22;25.04.22;;EL
+5;2;29.03.22;15;HUM-257;Santé, population et société;300621;NULL,NULL;1;275804;46;8;368;4;1;22.03.22;25.03.22;;SHS
+5;2;28.06.22;15;PREPA-091;Option GD;157882;;1;283365;284;12;3408;2;1;;;;MAN/CMS
+5;2;28.04.22;15;CS-112g;Programmation orientée objet Midterm;112547;;1;283365;234;12;2808;2;1;;;zbar;IC
+5;2;27.06.22;15;PREPA-031(a);Analyse A;183833,101466,178676;;1;283365;660;16;10560;2;1;;;;MAN/CMS
+5;2;27.06.22;15;CS-233(b);Introduction to machine learning;112366;276197;1;275804;140;16;2240;4;1;13.06.22;20.06.22;!!! EXTRA MUROS !!!!!  attente validation resultats;IC
+5;2;27.06.22;15;AR-123;Histoire de l'architecture I/II;126097;259524;1;275804;225;16;3600;1;1;13.06.22;20.06.22;FAIRE 1 seul PDF pour la correction de l'enseignant qui est à Paris;AR
+5;2;25.06.22;15;MATH-251(b);Analyse numérique;106096;258064;1;275804;300;20;6000;4;1;10.06.22;17.06.22;relancé pour validation;MA
+5;2;25.06.22;15;MATH-212;Analyse numérique et optimisation;106096;247278;1;275804;200;28;5600;4;1;10.06.22;17.06.22;!!! EXTRA MUROS !!!!!;MA
+5;2;24.06.22;15;UNIL-131;Mathématiques II (pour SFU) ;149640;;1;283365;195;8;1560;4;1;10.06.22;17.06.22;;UNIL
+5;2;24.06.22;15;PHYS-106(b);Physique générale : Thermodynamique;161577;;1;283365;290;28;8120;3;1;13.06.22;17.06.22;;PH
+5;2;24.06.22;15;PHYS-106(a);Physique générale : Thermodynamique;105419;;1;283365;45;24;1080;3;1;13.06.22;17.06.22;;PH
+5;2;24.06.22;15;MICRO-515;Evolutionary Robotics;111729;;1;275804;43;8;344;4;1;10.06.22;17.06.22;contacté attente de sa confirmation pr la dealine, relancé le 3.06,recompilé + en attente réponse impression B&W ou couleur;MT
+5;2;24.06.22;15;COM-102;Advanced information, computation, communication II;122796;;1;283365;370;12;4440;4;1;10.06.22;17.06.22;;IC
+5;2;24.05.22;15;CS-112(i);Programmation Orientée Objet;106336;;1;283365;166;16;2656;2;1;;;zbar;IC
+5;2;23.06.22;15;UNIL-108;Mathématiques générales II (pour BIO) - TEST;112131;;1;283365;223;8;1784;4;1;09.06.22;16.06.22;résultats à remettre jusqu'au 29 juin !! UNIL;UNIL
+5;2;23.06.22;15;MICRO-502;Aerial Robotics;111729;;1;275804;60;8;480;4;1;09.06.22;16.06.22;contacté attente de sa confirmation pr la dealine, relancé le 3.06, recompilé en attente validation;MT
+5;2;23.06.22;15;ME-271;Écoulement des fluides;252550;;1;275804;190;12;2280;4;1;09.06.22;16.06.22;Attente qu'elle corrige les questions ouvertes manquantes !!! probleme questions ouvertes package « siunitx » et attente de Karen pour les options du package;GM
+5;2;23.06.22;15;EE-205;Signals & Systems;317456;;1;275804;259;24;6216;4;1;09.06.22;16.06.22;recompilé 2x pour leurs fautes d'orthographe, en attente confirmation croix invalides + correction open manquantes;EL
+5;2;22.06.22;15;EE-559;Deep Learning;146262;;1;283365;400;20;8000;4;1;09.06.22;15.06.22;;EL
+5;2;21.06.22;15;MATH-207(c);Analyse IV;104781;;1;283365;270;16;4320;4;1;07.06.22;14.06.22;;MA
+5;2;21.06.22;15;MATH-105(b);Analyse avancée II;166061;;1;275804;139;16;2224;4;1;07.06.22;14.06.22;relancé le 3.06;MA
+5;2;21.06.22;15;MATH-105(a);Analyse avancée II;120861;;1;283365;119;20;2380;4;1;07.06.22;14.06.22;;MA
+5;2;20.06.22;15;PHYS-206;Physics IV;318383;;1;283365;111;20;2220;3;1;24.05.22;13.06.22;;PH
+5;2;20.06.22;15;MATH-215;Anneaux et corps;270833;;1;275804;95;28;2660;1;1;08.06.22;13.06.22;contacté attente de sa confirmation pr la dealine, relancé le 3.06;MA
+5;2;20.06.22;15;MATH-106(f);Analyse II;NULL;149640;1;283365;230;12;2760;4;1;03.06.22;13.06.22;;MA
+5;2;20.06.22;15;MATH-106(en);Analyse II;NULL;149640;1;283365;193;16;3088;4;1;03.06.22;13.06.22;;MA
+5;2;20.06.22;15;MATH-106(e);Analyse II;167946;149640;1;283365;327;16;5232;4;1;03.06.22;13.06.22;;MA
+5;2;20.06.22;15;MATH-106(c);Analyse II;149640;;1;283365;230;16;3680;4;1;03.06.22;13.06.22;;MA
+5;2;20.06.22;15;MATH-106(b);Analyse II;138859;149640;1;283365;228;12;2736;4;1;03.06.22;13.06.22;;MA
+5;2;20.06.22;15;MATH-106(a);Analyse II;181579;149640;1;283365;136;12;1632;4;1;03.06.22;13.06.22;;MA
+5;2;17.06.22;15;PREPA-014;Géométrie Analytique;100435;;1;283365;126;12;1512;2;1;;;;MAN/CMS
+5;2;16.06.22;15;PREPA-002;Algèbre Linéaire;248612;;1;283365;132;16;2112;2;1;;;;MAN/CMS
+5;2;15.06.22;15;PREPA-026;ICS;157882;;1;283365;132;20;2640;2;1;;;;MAN/CMS
+5;2;14.06.22;15;UNIL-123;Physique expérimentale II (pour SFU);105173;105173;1;283365;220;8;1760;3;1;09.06.22;09.06.22;;UNIL
+5;2;14.06.22;15;PREPA-022;Physique;104677;;1;283365;126;16;2016;2;1;;;;MAN/CMS
+5;2;14.06.22;15;PREPA-006;Analyse II;100527;;1;283365;126;12;1512;2;1;;;;MAN/CMS
+5;2;14.04.22;15;PREPA-025;ICS;173510,107044;;1;283365;126;16;2016;2;1;;;;MAN/CMS
+5;2;14.04.22;15;PREPA-021;Physique;104677,157882;;1;283365;126;16;2016;2;1;;;;MAN/CMS
+5;2;14.04.22;15;PREPA-013;Géométrie analytique;100435,248612,173510;;1;283365;126;8;1008;2;1;;;;MAN/CMS
+5;2;14.04.22;15;PREPA-005;Analyse II;100527,106748,183833;;1;283365;130;12;1560;2;1;;;;MAN/CMS
+5;2;14.04.22;15;PREPA-004;Algèbre linéaire;104677,100435,248612;;1;283365;126;12;1512;2;1;;;;MAN/CMS
+5;2;14.04.22;15;PREPA-003;Analyse I;100527,106748,183833;;1;283365;126;16;2016;2;1;;;;MAN/CMS
+5;2;14.04.22;15;MATH-205;Analysis IV midterm;290660;;1;283365;95;12;1140;4;1;06.04.22;08.04.22;;MA
+5;2;13.06.22;15;PREPA-004;Analyse I;106748;;1;283365;126;12;1512;2;1;;;;MAN/CMS
+5;2;13.04.22;15;ME-201;Continuum mechanics;278363;;1;283365;175;8;1400;4;1;04.04.22;06.04.22;;GM
+5;2;12.04.22;15;HUM-124(b);Global issues: mobility B;196675,102121;302614;1;275804;154;8;1232;4;1;28.03.22;05.04.22;;SHS
+5;2;12.04.22;15;HUM-123(b);Enjeux mondieux - Energie B;216007,339231;;1;283365;140;8;1120;4;1;28.03.22;05.04.22;;SHS
+5;2;12.04.22;15;HUM-123(a);Enjeux mondieux - Energie A;153200,317426;;1;283365;160;12;1920;4;1;28.03.22;05.04.22;;SHS
+5;2;12.04.22;15;HUM-121(b);Enjeux mondiaux - Climat B;106542,317971;284201;1;283365;128;8;1024;4;1;28.03.22;05.04.22;commun A+B;SHS
+5;2;12.04.22;15;HUM-121(a);Enjeux mondiaux - Climat A;211124,289942;284201;1;283365;129;8;1032;4;1;28.03.22;05.04.22;commun A+B;SHS
+5;2;11.04.22;15;CS-207;Programmation orientée systèmes midterm;112547;;1;283365;299;12;3588;2;1;;;zbar;IC
+5;2;10.03.22;15;MICRO-314;Actionneurs et systèmes électromagnétiques II;105563,106071,101913;;1;275804;145;4;580;4;3;28.02.22;09.03.22;relancé le 3.03 pour la validation des pdfs depuis la semaine passée;MT
+5;2;09.05.22;15;MATH-106(e);Analyse II - TEST;167946;149640;1;283365;330;4;1320;4;3;25.04.22;26.04.22;;MA
+5;2;09.05.22;15;MATH-106(c);Analyse II - TEST;149640;;1;283365;231;4;924;4;3;25.04.22;26.04.22;;MA
+5;2;08.04.22;15;CS-450;Advanced algorithm;179025,213225;206903;1;275804;218;20;4360;4;1;25.03.22;01.04.22;liste des étudiants reçue de Fabienne, mis dans workspace/exam...;IC
+5;2;07.07.22;15;PREPA-094;Informatique et calcul scientifique (MAN);107044;;1;283365;425;16;6800;2;1;;30.06.22;;MAN/CMS
+5;2;07.07.22;15;MATH-123(b);Géométrie;238427;;1;275804;80;12;960;4;1;22.06.22;30.06.22;;MA
+5;2;07.07.22;15;CS-439;Optimization for machine learning ;276449,317566;;1;283365;142;20;2840;4;1;22.06.22;30.06.22;;IC
+5;2;07.07.22;15;AR-423;Histoire de l'architecture V/VI;126097;;1;275804;165;16;2640;1;1;22.06.22;30.06.22;relancé le 3.06;AR
+5;2;07.07.22;15;AR-226;Projets métaphoriques;126097;;1;275804;200;16;3200;1;1;22.06.22;30.06.22;relancé le 3.06;AR
+5;2;07.05.22;15;EULER-Exam;Concours Euler;144617;;1;283365;260;4;1040;4;1;;;;Other
+5;2;06.07.22;15;PREPA-033;Physique;104677,216960,137850;;1;283365;660;20;13200;2;1;;;;MAN/CMS
+5;2;06.07.22;15;PHYS-209;Astrophysique I : introduction à l'astrophysique;166196;;1;275804;150;16;2400;4;1;22.06.22;30.06.22;Zoom 24.05.2022 + en priorité pour corriger ! besoin le 13.07 des résultats;PH
+5;2;06.07.22;15;MATH-207(d);Analyse IV;175323;;1;275804;300;32;9600;4;1;22.06.22;30.06.22;manque correction de questions ouvertes dans des copies;MA
+5;2;06.07.22;15;AR-499;Visionnaires éclectiques;126097;;1;275804;50;16;800;1;1;22.06.22;30.06.22;relancé le 3.06;AR
+5;2;05.07.22;15;PREPA-092;Option SCM;100527;;1;283365;186;12;2232;2;1;;;;MAN/CMS
+5;2;05.05.22;15;CIVIL-459;Deep learning for autonomous vehicles MT;129343;293113;1;283365;81;8;648;4;1;27.04.22;28.04.22;;GC
+5;2;05.04.22;15;PENS-200;la maîtrise du sol en droit suisse;159096;208586,330954;1;275804;276;8;2208;4;1;22.03.22;29.03.22;zoom 08.03.2022 - 14h;ENAC
+5;2;04.07.22;15;PREPA-032(a);Algèbre lin. et géom.;248612,183833,178676;;1;283365;660;16;10560;2;1;;;;MAN/CMS
+5;2;04.07.22;15;CS-442;Computer Vision;112366;306981;1;275804;170;12;2040;4;1;22.06.22;27.06.22;Zoom 01.06.2022, attente validation resultats;IC
+5;2;04.07.22;15;BIO-483;Neuroscience : behavior and cognition;164642,165806,160090;235488;1;275804;36;8;288;4;1;22.06.22;27.06.22;En attente réponse, nouveau assistant Zoom ? recompilé après bug amc;SV
+5;2;04.05.22;15;ME-104;Introduction to Structural Mechanics;283343;206670;1;283365;284;12;3408;2;1;;;;GM
+5;2;02.06.22;15;CS-112g;Programmation orientée objet final;112547;112547;1;283365;235;16;3760;2;1;;;zbar;IC
+5;2;02.06.22;15;CIVIL-226;Introduction to machine learning for engineers;129343;;1;283365;70;12;840;4;1;;;;GC
+5;2;02.05.22;15;UNIL-131;Mathématiques II (pour SFU) - TEST;149640;149640;1;283365;194;8;1552;4;3;25.04.22;26.04.22;;UNIL
+5;2;02.05.22;15;UNIL-108;Mathématiques générales II (pour BIO) - TEST;112131;;1;283365;223;4;892;4;3;25.04.22;26.04.22;;UNIL
+5;2;01.07.22;15;MATH-251(c);Analyse numérique;121157;;1;275804;150;12;1800;3;1;17.06.22;24.06.22;deadline lundi 20.06;MA
+5;2;01.07.22;15;MATH-205;Analysis IV;290660;267620;1;275804;100;12;1200;4;1;17.06.22;24.06.22;;MA
+5;2;01.07.22;15;EE-311;Fundamentals of machine learning;107645;;1;275804;55;20;1100;4;1;17.06.22;24.06.22;;EL
+5;2;01.06.22;15;ME-201;Continuum mechanics final;278363;;1;283365;175;8;1400;4;1;25.05.22;30.05.22;;GM
+5;1;31.01.22;15;UNIL-114;Géosciences (UNIL);112131;149640;1;275804;150;8;1200;4;1;19.01.22;24.01.22;;UNIL
+5;1;31.01.22;15;MATH-234(d);Probabilities and statistics;180015;;1;275804;233;16;3728;4;1;19.01.22;24.01.22;Délai supplémentaire pour correction / apportera l'exam vers le 17.02;MA
+5;1;31.01.22;15;CS-451;Distributed Algorithms;105326;285045,144898;1;283365;158;28;4424;4;1;19.01.22;24.01.22;;IC
+5;1;29.11.21;15;UNIL-114;Géosciences (UNIL);112131;149640;1;275804;146;4;584;4;3;;;;UNIL
+5;1;29.01.22;15;MATH-311;Rings and modules;270833;;1;275804;22;28;616;1;1;19.01.22;20.01.22;Il prépare les fichiers avec QRCode et nous les transmettons ensuite à la Repro, puis scan après l'exam ;MA
+5;1;29.01.22;15;CS-233(b)(en);Introduction to machine learning;119864;276197;1;275804;225;20;4500;4;1;18.01.22;24.01.22;recompilation avec leurs modification, en attente de la validation finale;IC
+5;1;28.02.22;15;EE-106;TP Sciences et technologies de l'électricité;106775;;1;283365;6;8;48;4;1;16.02.22;;Il s'occupe de l'impression et correction. ;EL
+5;1;28.02.22;15;CH-160(en);Chimie Générale Avancée MX_EN,SIE_EN,SV_EN;109839,106239;;1;275804;8;16;128;3;1;;;;CGC
+5;1;28.02.22;15;CH-160(e);Chimie Générale Avancée SV_FR;109839;;1;275804;5;16;80;3;1;;;;CGC
+5;1;28.02.22;15;CH-160(b);Chimie Générale GC;109839;;1;275804;4;12;48;3;1;;;;CGC
+5;1;28.02.22;15;CH-160(a);Chimie Générale Avancée MX_FR, SIE_FR;109839,251247;;1;275804;1;16;16;3;1;;;;CGC
+5;1;28.01.22;15;MATH-510;Modern algebraic geometry;270833;;1;275804;14;28;392;1;1;18.01.22;19.01.22;Il prépare les fichiers avec QRCode et nous les transmettons ensuite à la Repro, puis scan après l'exam ;MA
+5;1;28.01.22;15;EE-106 ;Sciences et technologie de l'électricité ;106775;;1;275804;368;8;2944;4;1;13.01.22;19.01.22;Transmis template simplifié, uniquement QCM;EL
+5;1;28.01.22;15;CS-101;Advanced information, computation, communication I;134136;;1;283365;531;12;6372;4;1;20.01.22;24.01.22;;IC
+5;1;28.01.22;15;AR-431;Hérétiques italiens du rationalisme;126097;104962;1;283365;17;16;272;1;1;20.01.22;;last minute ... 293509in;AR
+5;1;27.01.22;15;BIO-205;Cellular and molecular biology I;235263,253104;;1;275804;161;1;161;4;1;12.01.22;18.01.22;Answer sheets;SV
+5;1;27.01.22;15;AR-225;Histoire de l'architecture III-IV;126097;104962;1;283365;141;16;2256;1;1;20.01.22;;last minute ... 293509in;AR
+5;1;26.11.21;15;UNIL-160;Chimie Générale Avancée pour SFU;109839,150841;;1;283365;259;12;3108;3;3;;;;UNIL
+5;1;26.11.21;15;UNIL-107;Biologie+Pharmacie (UNIL);112131;149640;1;275804;351;4;1404;4;3;;;;UNIL
+5;1;26.11.21;15;MATH-111(g);Algèbre linéaire (g);149640;;1;275804;235;4;940;4;3;08.11.21;;En attente qu'il choisisse l'ordre qu'il veut pour ses étudiants;MA
+5;1;26.11.21;15;MATH-111(e);Algèbre linéaire(e);321951;149640;1;275804;309;4;1236;4;3;08.11.21;;;MA
+5;1;26.11.21;15;CH-160(en);Chimie Générale Avancée;109839;;1;283365;216;12;2592;3;3;;;;CGC
+5;1;26.11.21;15;CH-160(e);Chimie Générale Avancée SV;109839;;1;283365;203;12;2436;3;3;;;;CGC
+5;1;26.11.21;15;CH-160(b);Chimie Générale GC;109839;;1;283365;138;12;1656;3;3;;;;CGC
+5;1;26.11.21;15;CH-160(a);Chimie Générale Avancée;109839,251247;;1;283365;94;12;1128;3;3;;;;CGC
+5;1;26.02.22;15;MATH-203(c);Analyse III (commun);NULL,NULL;;1;283365;359;28;10052;4;1;16.02.22;18.02.22;;MA
+5;1;26.02.22;15;MATH-203(b);Analyse III (commun);290660;;1;283365;237;28;6636;4;1;16.02.22;18.02.22;;MA
+5;1;26.02.22;15;MATH-203(a);Analyse III (commun);276526;;1;283365;218;28;6104;4;1;16.02.22;18.02.22;;MA
+5;1;26.02.22;15;MATH-111(pi);Algèbre linéaire (pi);306127;149640;1;283365;5;12;60;4;1;15.02.22;18.02.22;;MA
+5;1;26.02.22;15;MATH-111(g);Algèbre linéaire (g);149640;;1;283365;8;16;128;4;1;15.02.22;18.02.22;;MA
+5;1;26.02.22;15;MATH-111(f);Algèbre linéaire (f);178676;149640;1;283365;12;16;192;4;1;15.02.22;18.02.22;;MA
+5;1;26.02.22;15;MATH-111(en);Algèbre linéaire (en);113868;149640;1;283365;10;12;120;4;1;15.02.22;18.02.22;;MA
+5;1;26.02.22;15;MATH-111(e);Algèbre linéaire(e);321951;149640;1;283365;11;16;176;4;1;15.02.22;18.02.22;;MA
+5;1;26.02.22;15;MATH-111(d);Algèbre linéaire (d);133751;149640;1;283365;13;16;208;4;1;15.02.22;18.02.22;;MA
+5;1;26.02.22;15;MATH-111(c);Algèbre linéaire (c);178578;149640;1;283365;7;16;112;4;1;15.02.22;18.02.22;;MA
+5;1;26.02.22;15;MATH-111(a);Algèbre linéaire (a);101466;149640;1;283365;7;16;112;4;1;15.02.22;18.02.22;;MA
+5;1;26.01.22;15;MATH-11O(b);Advanced linear algebra I;316207;;1;275804;246;12;2952;4;1;12.01.22;18.01.22;transmis amc_template_en;MA
+5;1;25.11.21;15;MATH-111(pi);Algèbre linéaire (pi);306127;149640;1;275804;181;4;724;4;3;08.11.21;;En attente de Zuleta !;MA
+5;1;25.11.21;15;MATH-111(en);Algèbre linéaire (en);113868;149640;1;275804;216;4;864;4;3;08.11.21;;;MA
+5;1;25.11.21;15;MATH-111(a);Algèbre linéaire (a);101466;149640;1;275804;267;4;1068;4;3;08.11.21;;;MA
+5;1;25.01.22;15;UNIL-130;Police scientifique (UNIL);149640;;1;283365;230;8;1840;4;1;12.01.22;18.01.22;;UNIL
+5;1;25.01.22;15;UNIL-107;Biologie+Pharmacie (UNIL);112131;149640;1;283365;350;8;2800;4;1;12.01.22;18.01.22;;UNIL
+5;1;25.01.22;15;MATH-110(a);Advanced linear algebra I;178545;;1;275804;193;32;6176;1;1;12.01.22;18.01.22;envoyé email le 12.01.2022, transmettra son template ce soir;MA
+5;1;24.12.21;15;MICRO-100;Eléctrotechnique 1;106775;;1;283365;278;8;2224;4;1;13.12.21;20.12.21;Transmis template simplifié, uniquement QCM;MT
+5;1;24.11.21;15;UNIL-130;Police scientifique (UNIL);149640;;1;275804;259;4;1036;4;3;;;;UNIL
+5;1;24.11.21;15;MATH-111(c);Algèbre linéaire (c);178578;149640;1;275804;287;4;1148;4;3;08.11.21;;En attente de Zuleta pour qu'il corrige ses modifications dans le common_commandes !;MA
+5;1;24.01.22;15;PREPA-ADM;CMS - Examen d'admission ICS;157882;;1;283365;51;20;1020;1;1;;;;MAN/CMS
+5;1;24.01.22;15;MATH-265;Introduction to optimization and operations research;276768;203854;1;283365;229;12;2748;2;1;;;;MA
+5;1;24.01.22;15;MATH-111(pi);Algèbre linéaire (pi);306127;149640;1;283365;181;16;2896;4;1;25.12.21;17.01.22;;MA
+5;1;24.01.22;15;MATH-111(g);Algèbre linéaire (g);149640;;1;283365;235;12;2820;4;1;25.12.21;17.01.22;;MA
+5;1;24.01.22;15;MATH-111(f);Algèbre linéaire (f);178676;149640;1;283365;215;16;3440;4;1;25.12.21;17.01.22;;MA
+5;1;24.01.22;15;MATH-111(en);Algèbre linéaire (en);113868;149640;1;283365;216;12;2592;4;1;25.12.21;17.01.22;;MA
+5;1;24.01.22;15;MATH-111(e);Algèbre linéaire(e);321951;149640;1;283365;309;16;4944;4;1;25.12.21;17.01.22;;MA
+5;1;24.01.22;15;MATH-111(d);Algèbre linéaire (d);133751;149640;1;283365;262;16;4192;4;1;25.12.21;17.01.22;;MA
+5;1;24.01.22;15;MATH-111(c);Algèbre linéaire (c);178578;149640;1;283365;287;16;4592;4;1;25.12.21;17.01.22;;MA
+5;1;24.01.22;15;MATH-111(a);Algèbre linéaire (a);101466;149640;1;283365;267;16;4272;4;1;25.12.21;17.01.22;;MA
+5;1;24.01.22;15;BIO-447;Stem cell biology and technology;235263,106911,172749;;1;275804;72;1;72;4;1;25.12.21;17.01.22;Answer sheets;SV
+5;1;23.12.21;15;CS-119(d);Information, Calcul, Communication;112547;;1;283365;363;16;5808;1;1;23.12.21;;;IC
+5;1;23.11.21;15;MATH-111(f);Algèbre linéaire (f);178676;149640;1;275804;215;4;860;4;3;08.11.21;;;MA
+5;1;23.11.21;15;MATH-111(d);Algèbre linéaire (d);133751;149640;1;275804;262;4;1048;4;3;08.11.21;;En attente de Zuleta pour voir si la version sur 4 pages lui convient !;MA
+5;1;22.12.21;15;CS-210;Functional programming;126003,177241;224633;1;283365;371;16;5936;4;1;12.12.21;15.12.21;;IC
+5;1;22.12.21;15;CS-107 ;Introduction à la programmation;106336;;1;283365;394;20;7880;1;1;22.12.21;;;IC
+5;1;21.12.21;15;ME-106;Construction mécanique I;172730;;1;283365;263;12;3156;4;1;12.12.21;15.12.21;;GM
+5;1;21.01.22;15;UNIL-122;Physique Expérimentale I (pour SFU);104677;;1;283365;271;20;5420;4;1;14.01.22;17.01.22;;UNIL
+5;1;21.01.22;15;PHYS-101(j);Physique Générale : Mécanique (SV II);222189;178548;1;283365;75;20;1500;3;1;14.01.22;17.01.22;;PH
+5;1;21.01.22;15;PHYS-101(h);Physique Générale : Mécanique (SV I classe inversée);178548;;1;283365;216;20;4320;3;1;14.01.22;17.01.22;;PH
+5;1;21.01.22;15;PHYS-101(en);General physics : mechanics (English);189937;;1;275804;231;12;2772;1;1;17.01.22;17.01.22;;PH
+5;1;21.01.22;15;PHYS-101(e);Physique Générale : Mécanique (STI II);161577;;1;283365;230;28;6440;3;1;14.01.22;17.01.22;;PH
+5;1;21.01.22;15;PHYS-101(b);Physique Générale : Mécanique (STI I);109056;;1;283365;195;28;5460;3;1;14.01.22;17.01.22;;PH
+5;1;21.01.22;15;CS-250;Algorithms;213225;;1;275804;422;24;10128;4;1;12.01.22;14.01.22;étudiant aménagement spécial a récupéré les cartons le 14.02;IC
+5;1;20.01.22;15;CS-433;Machine learning;276449;;1;283365;550;20;11000;4;1;03.01.22;12.01.22;;IC
+5;1;19.01.22;15;UNIL-160;Chimie Générale Avancée pour SFU UNIL;109839,150841;;1;275804;245;16;3920;3;1;03.01.22;12.01.22;;UNIL
+5;1;19.01.22;15;MICRO-455;Applied machine learning;115671;;1;283365;221;23;5083;4;1;03.01.22;13.01.22;;MT
+5;1;19.01.22;15;ME-101;Construction mécanique I;172730;;1;283365;371;12;4452;4;1;03.01.22;12.01.22;;GM
+5;1;19.01.22;15;MATH-113;Structures algébriques;270833;;1;275804;185;28;5180;1;1;11.01.22;12.01.22;Il prépare les fichiers avec QRCode et nous les transmettons ensuite à la Repro, puis scan après l'exam ;MA
+5;1;19.01.22;15;CS-453;Concurrent Algorithms;105326;263197,144898;1;283365;88;24;2112;1;1;03.01.22;12.01.22;;IC
+5;1;19.01.22;15;CH-160(en);Chimie Générale Avancée MX_EN,SIE_EN,SV_EN;109839,106239;;1;275804;207;16;3312;3;1;03.01.22;12.01.22;;CGC
+5;1;19.01.22;15;CH-160(e);Chimie Générale Avancée SV_FR;109839;;1;275804;196;16;3136;3;1;03.01.22;12.01.22;;CGC
+5;1;19.01.22;15;CH-160(b);Chimie Générale GC;109839;;1;275804;134;12;1608;3;1;03.01.22;12.01.22;;CGC
+5;1;19.01.22;15;CH-160(a);Chimie Générale Avancée MX_FR, SIE_FR;109839,251247;;1;275804;95;16;1520;3;1;03.01.22;12.01.22;;CGC
+5;1;18.11.21;15;PHYS-101(e);Physique Générale : Mécanique (STI II);161577;;1;283365;235;20;4700;3;3;;;Sans scan;PH
+5;1;18.11.21;15;PHYS-101(b);Physique Générale : Mécanique (STI I);109056;;1;283365;192;20;3840;3;3;;;Sans scan;PH
+5;1;18.01.22;15;MICRO-450;Basics of robotics for manipulation;114980;;1;275804;128;4;512;4;1;06.01.22;11.01.22;Answer sheets 4 versions;MT
+5;1;18.01.22;15;MATH-203(c);Analyse III (commun);NULL,NULL;;1;283365;228;28;6384;4;1;24.12.21;10.01.22;;MA
+5;1;18.01.22;15;MATH-203(b);Analyse III (commun);290660;;1;283365;209;28;5852;4;1;24.12.21;10.01.22;;MA
+5;1;18.01.22;15;MATH-203(a);Analyse III (commun);276526;;1;283365;350;28;9800;4;1;24.12.21;10.01.22;;MA
+5;1;18.01.22;15;MATH-202(c);Analyse III;104781;;1;283365;285;20;5700;4;1;06.01.22;11.01.22;;MA
+5;1;18.01.22;15;MATH-189;Mathématiques;248881;;1;275804;189;8;1512;4;1;06.01.22;11.01.22;pas encore reçu le template, relancé le 10.01;MA
+5;1;18.01.22;15;BIO-449;Understanding statistics and experimental design;164642;306208;1;283365;100;8;800;4;1;04.01.22;11.01.22;;SV
+5;1;17.12.21;15;CS-524;Computational complexity;318509;;1;283365;63;8;504;1;1;13.12.21;14.12.21;;IC
+5;1;17.12.21;15;CS-119g;Information, calcul, communication;106336,177766;;1;283365;155;16;2480;1;1;17.12.21;;;IC
+5;1;17.11.21;15;MATH-101(pi);Analyse I (pi);121157;185384;1;275804;183;4;732;4;3;01.11.21;;;MA
+5;1;17.11.21;15;MATH-101(en);Analyse I (en);NULL;185384;1;275804;136;4;544;4;3;01.11.21;;;MA
+5;1;17.11.21;15;MATH-101(de);Analyse I (de);213191;185384;1;275804;32;4;128;4;3;01.11.21;;Envoyer les copies corrigées aux étudiants par email;MA
+5;1;17.11.21;15;MATH-101(d);Analyse I (d);166061;185384;1;275804;300;4;1200;4;3;01.11.21;;;MA
+5;1;17.11.21;15;MATH-101(c);Analyse I (c);101466;185384;1;275804;345;4;1380;4;3;01.11.21;;Donnera son template le 4.11.2021;MA
+5;1;17.11.21;15;MATH-101(a);Analyse I (a) ;302111;185384;1;275804;255;4;1020;4;3;01.11.21;;https://moodle.epfl.ch/course/search.php?q=math-101&areaids=core_course-course;MA
+5;1;17.01.22;15;MATH-101(pi);Analyse I (pi);121157;185384;1;275804;178;12;2136;4;1;18.12.21;10.01.22;;MA
+5;1;17.01.22;15;MATH-101(g);Analyse I (g);317907;185384;1;275804;276;12;3312;4;1;18.12.21;10.01.22;stats sur cprotux à voir;MA
+5;1;17.01.22;15;MATH-101(f);Analyse I (f);185384;;1;275804;281;12;3372;4;1;18.12.21;10.01.22;;MA
+5;1;17.01.22;15;MATH-101(en);Analyse I (en);NULL;185384;1;275804;124;12;1488;4;1;18.12.21;10.01.22;;MA
+5;1;17.01.22;15;MATH-101(e);Analyse I (e);167946;185384;1;275804;365;12;4380;4;1;18.12.21;10.01.22;;MA
+5;1;17.01.22;15;MATH-101(de);Analyse I (de);213191;185384;1;275804;29;12;348;4;1;18.12.21;10.01.22;;MA
+5;1;17.01.22;15;MATH-101(d);Analyse I (d);166061;185384;1;275804;299;16;4784;4;1;18.12.21;10.01.22;;MA
+5;1;17.01.22;15;MATH-101(c);Analyse I (c);101466;185384;1;275804;339;12;4068;4;1;18.12.21;10.01.22;;MA
+5;1;17.01.22;15;MATH-101(a);Analyse I (a);302111;185384;1;275804;250;12;3000;4;1;18.12.21;10.01.22;;MA
+5;1;17.01.22;15;ENG-383;architecte I : Droit de l'architecte, introduction : contrats et concours;111310,159096;208586,330954;1;275804;148;12;1776;4;1;03.01.22;10.01.22;;Other
+5;1;17.01.22;15;COM-402;Information security and privacy;105427,304521;217011;1;283365;331;16;5296;2;1;03.01.22;10.01.22;Only scanning jpeg. They'll process files in AMC on their side;IC
+5;1;15.11.21;15;MATH-101(g);Analyse I (g);317907;185384;1;275804;283;4;1132;4;3;01.11.21;;;MA
+5;1;15.11.21;15;MATH-101(f);Analyse I (f);185384;;1;275804;286;4;1144;4;3;01.11.21;;;MA
+5;1;15.11.21;15;MATH-101(e);Analyse I (e) ;167946;185384;1;275804;368;4;1472;4;3;01.11.21;;;MA
+5;1;14.01.22;15;PREPA-013;Géométrie analytique;100435,248612,173510;;1;283365;236;16;3776;4;1;15.12.21;03.01.22;;MAN/CMS
+5;1;13.01.22;15;PREPA-021;Physique;104677,157882;;1;283365;236;12;2832;4;1;15.12.21;03.01.22;;MAN/CMS
+5;1;13.01.22;15;PREPA-004;Algèbre linéaire;104677,100435,248612;;1;283365;236;16;3776;4;1;15.12.21;03.01.22;;MAN/CMS
+5;1;12.11.21;15;PREPA-004;Algèbre linéaire;104677,100435,248612;;1;283365;236;16;3776;4;1;;;;MAN/CMS
+5;1;12.03.22;15;MATH-101(pi);Analyse I (pi);121157;185384;1;275804;7;12;84;4;1;08.03.22;10.03.22;;MA
+5;1;12.03.22;15;MATH-101(g);Analyse I (g);317907;185384;1;275804;15;12;180;4;1;08.03.22;10.03.22;;MA
+5;1;12.03.22;15;MATH-101(f);Analyse I (f);185384;;1;275804;1;12;12;4;1;08.03.22;10.03.22;;MA
+5;1;12.03.22;15;MATH-101(en);Analyse I (en);NULL;185384;1;275804;6;12;72;4;1;08.03.22;10.03.22;;MA
+5;1;12.03.22;15;MATH-101(e);Analyse I (e);167946;185384;1;275804;4;12;48;4;1;08.03.22;10.03.22;;MA
+5;1;12.03.22;15;MATH-101(de);Analyse I (de);213191;185384;1;275804;9;12;108;4;1;08.03.22;10.03.22;;MA
+5;1;12.03.22;15;MATH-101(d);Analyse I (d);166061;185384;1;275804;6;12;72;4;1;08.03.22;10.03.22;;MA
+5;1;12.03.22;15;MATH-101(c);Analyse I (c);101466;185384;1;275804;8;12;96;4;1;08.03.22;10.03.22;;MA
+5;1;12.03.22;15;MATH-101(a);Analyse I (a);302111;185384;1;275804;5;12;60;4;1;08.03.22;10.03.22;;MA
+5;1;12.01.22;15;PREPA-025;ICS;173510,107044;;1;283365;236;16;3776;4;1;15.12.21;03.01.22;;MAN/CMS
+5;1;11.11.21;15;PREPA-021;Physique;104677,157882,173510;;1;283365;236;12;2832;4;1;;;;MAN/CMS
+5;1;11.11.21;15;PREPA-013;Géométrie analytique;100435,248612,173510;;1;283365;236;16;3776;4;1;;;;MAN/CMS
+5;1;11.03.22;15;MATH-313, MATH-311, MATH-510;;270833;;1;275804;20;28;560;1;1;;;;MA
+5;1;11.01.22;15;PREPA-005;Analyse II;100527,106748,183833;;1;283365;236;16;3776;4;1;15.12.21;03.01.22;;MAN/CMS
+5;1;10.11.21;15;PREPA-025;ICS;173510,107044,157882;;1;283365;236;12;2832;4;1;;;;MAN/CMS
+5;1;10.11.21;15;CS-210 Midterm;Functional programming;126003;250300;1;283365;370;12;4440;2;1;;;;IC
+5;1;10.01.22;15;PREPA-003;Analyse I;100527,106748,183833;;1;283365;236;16;3776;4;1;15.12.21;03.01.22;;MAN/CMS
+5;1;09.11.21;15;PREPA-005;Analyse II;100527,106748,183833;;1;283365;236;16;3776;4;1;;;;MAN/CMS
+5;1;08.11.21;15;PREPA-003;Analyse I;100527,106748,183833;;1;283365;236;16;3776;4;1;;;;MAN/CMS
+5;1;08.11.21;15;CS-250;Algorithms;213225;157507;1;275804;431;20;8620;4;1;28.10.21;04.11.21;envoyé email le 15.11 pour savoir quand il va ramener les copies pour la correction + deadline note;IC
+5;1;05.11.21;15;CS-119(d);Information, Calcul, Communication;112547;;1;283365;398;12;4776;2;1;;;;IC
+5;1;05.03.22;15;PHYS-101(j);Physique Générale : Mécanique (SV II);222189;178548;1;283365;6;20;120;3;1;;;;PH
+5;1;05.03.22;15;PHYS-101(h);Physique Générale : Mécanique (SV I classe inversée);178548;;1;283365;12;20;240;3;1;;;;PH
+5;1;04.02.22;15;ME-445;Aerodynamics;252550;;1;275804;90;16;1440;4;1;19.01.22;26.01.22;;GM
+5;1;01.02.22;15;MATH-310;Algebra;167946;;1;275804;155;20;3100;2;1;19.01.22;25.01.22;Only printing , QR code missing;MA
+4;2;31.08.21;15;UNIL-123;Physique expérimentale II (pour SFU);172230;;1;275804;9;16;144;3;1;;;;UNIL
+4;2;30.06.21;15;MATH-251(c);Analyse numérique;121157;;1;275804;151;16;2416;3;1;16.06.21;;;MA
+4;2;30.06.21;15;MATH-251(b);Numerical Analysis;276526;NULL;1;275804;276;24;6624;4;1;18.06.21;;Barème et croix invalides à modifier. Inscription le 10juin. reset counter a penser. Attente réponse grading si possible d'en choisir un autre;MA
+4;2;30.06.21;15;MATH-115(b);Algèbre linéaire avancée II;106581;;1;283365;140;16;2240;4;1;21.06.21;;;MA
+4;2;29.06.21;15;MATH-115(a);Algèbre linéaire avancée II;183121;NULL;1;283365;104;16;1664;4;1;15.06.21;;;MA
+4;2;29.06.21;15;MATH-106(f);Analyse II;NULL;120861;1;283365;274;12;3288;4;1;;21.06.21;;MA
+4;2;29.06.21;15;MATH-106(en);Analyse II;138859;120861;1;283365;107;12;1284;4;1;;21.06.21;;MA
+4;2;29.06.21;15;MATH-106(e);Analyse II;167946;120861;1;283365;323;12;3876;4;1;;21.06.21;;MA
+4;2;29.06.21;15;MATH-106(c);Analyse II;149640;120861;1;283365;261;12;3132;4;1;;21.06.21;;MA
+4;2;29.06.21;15;MATH-106(b);Analyse II;120861;;1;283365;245;12;2940;4;1;;21.06.21;;MA
+4;2;29.06.21;15;MATH-106(a);Analyse II;302111;120861;1;283365;159;12;1908;4;1;;21.06.21;;MA
+4;2;28.06.21;15;ME-271;Écoulement des fluides;252550;;1;275804;180;16;2880;4;1;16.06.21;;envoi le template d'ici le 16juin;GM
+4;2;28.06.21;15;MATH-207(d);Analysis IV;185384;;1;275804;240;28;6720;4;1;14.06.21;;En attente de David qui veut controler ses étudiants;MA
+4;2;26.06.21;15;CS-207;Programmation Orientée Système;112547;;1;283365;220;16;3520;2;1;;;;IC
+4;2;25.06.21;15;UNIL-131;Mathématiques II (pour SFU);149640;;1;275804;152;8;1216;4;1;17.06.21;;bamc pour le 17.06;UNIL
+4;2;25.06.21;15;PHYS-106(b);Physique générale : thermodynamique ;161577;;1;283365;302;28;8456;3;1;20.06.21;;;PH
+4;2;25.06.21;15;PHYS-106(a);Physique générale : thermodynamique;105419;;1;283365;108;24;2592;3;1;20.06.21;;;PH
+4;2;25.06.21;15;ENG-484;Droit de l'architecte, approfondissements : la réalisation d'une construction;159096,111310;208586;1;275804;51;16;816;3;1;07.06.21;;consignes OK, attente feux vert de dubey et ISA pour personnaliser les copies;Other
+4;2;25.06.21;15;EE-559;Deep learning;146262;;1;283365;422;20;8440;4;1;16.06.21;;;EL
+4;2;25.05.21;15;EULER-Exam;Concours Euler;144617;;1;275804;290;40;11600;4;1;10.05.21;;CMD REPRO : fonds 520099 EULER cours / CF 1828 AVPSAO;Other
+4;2;24.06.21;15;UNIL-108;Mathématiques générales II (pour BIO);112131;;1;275804;213;8;1704;4;1;17.06.21;;bamc pour le 17.06;UNIL
+4;2;24.06.21;15;MATH-260(a);Discrete mathematics;280037;;1;275804;102;24;2448;4;1;16.06.21;;envoi le template d'ici le 16juin. nouveau template avec QRcode. relancé pour scan mais pas de réponse;MA
+4;2;24.06.21;15;MATH-207(c);Analyse IV;104781;;1;283365;290;16;4640;4;1;11.06.21;16.06.21;;MA
+4;2;24.06.21;15;MATH-207(a)(en);Analyse IV;106096;;1;275804;367;20;7340;4;1;11.02.21;;Questions ouvertes sur 1/4 de pts, + échelle MCQ à vérfifier + IPAD arrangement spécial + liste étudiants sur VPSI1files;MA
+4;2;24.06.21;15;MATH-205(en);Analysis IV;290660;;1;275804;79;24;1896;4;1;10.06.21;;Rescanner copie ID 2 !!! Maria devrait terminer le template d'ici le 5 juin. Attention les aménagements spéciaux doivent avoir les ID 1,2,3,.., rester counter equation à ne pas oublier;MA
+4;2;24.06.21;15;COM-102;Advanced information, computation, communication II;122796;;1;283365;350;12;4200;4;1;10.06.21;16.06.21;liste des étudiants sur VPSI1files;IC
+4;2;23.06.21;15;UNIL-123;Physique expérimentale II (pour SFU);172230;;1;283365;156;16;2496;3;1;09.06.21;14.06.21;;UNIL
+4;2;23.06.21;15;CS-442(en);Computer vision;112366;;1;275804;189;16;3024;4;1;07.06.21;;Udaranga envoie à fua pour validation finale le 2.07 - V2 compilé et attente arrangements spéciaux;IC
+4;2;22.06.21;15;ENV-466;Contrats et responsabilité professionnelle;159096;330954;1;275804;35;8;280;3;1;07.06.21;;Aménagement spéciaux à mettre en 1er;SIE
+4;2;22.06.21;15;EE-205(en);Signals and systems;317456;;1;275804;227;24;5448;4;1;15.06.21;;Validera les pdfs pr le 15 juin Recu la liste des étudiants à utliser. points de question ouvertes à mettre.;EL
+4;2;21.06.21;15;MATH-123(b);Géométrie;238427;;1;275804;65;12;780;4;1;07.06.21;;2ème compilatiion en attente validation;MA
+4;2;09.07.21;15;BIO-483;Neuroscience : behavior and cognition;164642;;1;283365;56;8;448;4;1;30.06.21;;;SV
+4;2;08.07.21;15;MATH-215;Structures algébriques;270833;;1;283365;90;28;2520;1;1;;25.06.21;;MA
+4;2;08.07.21;15;CS-439(en);Optimization for machine learning ;276449;;1;283365;100;16;1600;4;1;30.06.21;;;IC
+4;2;08.07.21;15;CS-112(i);Programmation Orientée Objet;106336;;1;283365;196;20;3920;1;1;;;;IC
+4;2;07.07.21;15;ME-202;Systèmes mécaniques;172730;;1;275804;184;28;5152;3;1;23.06.21;;Comptage questions bonus à vérifier, texte libre si pas assez de pace, il va finir les critères pour lundi soir.;GM
+4;2;06.07.21;15;CS-251;Theory of computation;318509;;1;275804;226;12;2712;1;1;;;nouvelles 25.06.2021 - attente n° financier;IC
+4;2;06.07.21;15;CS-112(g) ;Programmation Orientée Objet;112547;;1;283365;227;20;4540;1;1;;;;IC
+4;2;05.07.21;15;MATH-334(en);Representation theory;167946;;1;275804;30;20;600;1;1;25.06.21;;Elle a corrigé et pas forcément besoin de scan. Peut-être en septembre... elle reprendra contacte;MA
+4;2;03.07.21;15;PHYS-209    ;Astrophysique I : introduction à l'astrophysique;166196;;1;275804;144;16;2304;4;1;17.06.21;;OPEN questions, revient vers moi quand son assistant aura testé;PH
+4;2;03.07.21;15;MATH-212;Analyse numérique et optimisation;106096;247278;1;275804;203;32;6496;4;1;18.06.21;;Faire Zoom 12.07 pour les invalider et vérifier MCQ-29 : 2 choix de réponses à ignorer A tester avec son barème \begin{questionmult}{MCQ-29}\bareme{b=0.5,m=-0.5};MA
+4;2;03.05.21;15;MATH-106(f);Analyse II;NULL;120861;1;275804;1;4;4;4;3;;;;MA
+4;2;03.05.21;15;MATH-106(en);Analyse II;138859;120861;1;275804;1;4;4;4;3;;;;MA
+4;2;03.05.21;15;MATH-106(e);Analyse II;167946;120861;1;275804;1;4;4;4;3;;;;MA
+4;2;03.05.21;15;MATH-106(c);Analyse II;149640;120861;1;275804;1;4;4;4;3;;;;MA
+4;2;03.05.21;15;MATH-106(b);Analyse II;120861;120861;1;275804;1;4;4;4;3;;;;MA
+4;2;03.05.21;15;MATH-106(a);Analyse II;302111;120861;1;275804;1;4;4;4;3;;;;MA
+4;2;02.07.21;15;MICRO-502(en);Aerial robotics;111729;;1;275804;62;8;496;4;1;18.06.21;;template reçu mais il ne l'as pas compilé...;MT
+4;2;02.07.21;15;MATH-105(b);Analyse avancée II;166061;;1;283365;154;16;2464;4;1;23.06.21;;;MA
+4;2;02.07.21;15;CS-233(b)(en);Introduction to machine learning;112366;NULL;1;275804;134;16;2144;4;1;15.06.21;;Validé mais on attend lundi, voir si il n'y a pas autre chose...Ils ont fait une faute dans la question 10, en attente de leur correction dans le template, Attendre Ariane lundi pour qu'ils se coordonnent entre les 2 examens !!! Une fois le template reçu,mixer les questions par groupe de questions (section_1.tex), voir si les arrangements spéciaux ils veulent des IDs spécifiques;IC
+4;2;01.07.21;15;EE-311;Apprentissage et intelligence artificielle;107645;;1;275804;90;20;1800;4;1;23.06.21;;attention à leur système de random question par groupes etc !!!!;EL
+4;1;27.01.21;15;MATH-310;Algebra;167946;;1;275804;145;20;2900;1;1;08.01.21;20.01.21;PDF reconstitués. Elle n'a pas fini de corriger son examen;MA
+4;1;27.01.21;15;MATH-234(d);Probabilités et statistique;180015;;1;275804;248;24;5952;4;1;18.12.20;20.01.21;Copie 177 question 12 pas corrigée. En attente de wilheml pr le nombre de points à donner à la question. pré-résultats sur vpsi1files;MA
+4;1;25.11.20;15;MATH-101(g) Mock;Analyse I (g);271675;185384;1;283365;248;0;0;4;3;;;;MA
+4;1;25.01.21;15;UNIL-130;Mathématiques I SFU – police scientifique;149640;;1;283365;248;8;1984;4;1;14.01.21;18.01.21;;UNIL
+4;1;25.01.21;15;BIO-447;Stem cell biology and technology;106911,172749,235263;;1;275804;51;1;51;4;1;;;En attente de la validation des résultats;SV
+4;1;24.11.20;15;MATH-101(f) Mock;Analyse I (f);NULL;185384;1;283365;316;0;0;4;3;;;;MA
+4;1;23.11.20;15;MATH-101(en) Mock;Analyse I (en);NULL;185384;1;283365;138;0;0;4;3;;;;MA
+4;1;22.11.20;15;MATH-101(e) Mock;Analyse I (e);167946;185384;1;283365;456;0;0;4;3;;;;MA
+4;1;22.01.21;15;UNIL-122;Physique expérimentale I (pour SFU);104677;;1;283365;278;16;4448;3;1;13.01.21;18.01.21;;UNIL
+4;1;22.01.21;15;MATH-113;Structures algébriques;270833;;1;283365;183;20;3660;1;1;;;LAST MINUTE !;MA
+4;1;22.01.21;15;EE-106;Sciences et technologie de l'électricité;106775;;1;275804;305;8;2440;3;1;;;vérifié toutes les questions pour 20 étudiants et 60 pour les questions 4,5 et 6 --> en attente des retours de Zoia concernant ANS;EL
+4;1;21.11.20;15;MATH-101(de) Mock;Analyse I (de);213191;185384;1;283365;49;0;0;4;3;;;;MA
+4;1;21.01.21;15;ME-101/ME-106;Construction mécanique I GM/MT;172730;;1;283365;556;12;6672;3;1;12.01.21;14.01.21;;GM
+4;1;21.01.21;15;BIO-205;Cellular and molecular biology I;235263,253104;;1;275804;165;1;165;4;1;;;En attente de la validation des résultats;SV
+4;1;20.11.20;15;MATH-101(d) Mock;Analyse I (d);166061;185384;1;283365;341;0;0;4;3;;;;MA
+4;1;20.01.21;15;MATH-110(a);Algèbre linéaire avancée I;178545;;1;275804;192;32;6144;1;1;06.01.21;13.01.21;envoyé mail pr pick up le 15.01.2021;MA
+4;1;20.01.21;15;CS-119(g);Information, Calcul, Communication;106336,177766;;1;275804;270;16;4320;1;1;06.01.21;;Scan QRCode (Zbar) - a son propre template;IC
+4;1;20.01.21;15;CS-107;Introduction à la programmation;106336;;1;275804;400;16;6400;1;1;;;Scan QRCode (Zbar) - a son propre template;IC
+4;1;19.11.20;15;MATH-101(c) Mock;Analyse I (c);101466;185384;1;283365;310;0;0;4;3;;;;MA
+4;1;18.11.20;15;MATH-101(a) Mock;Analyse I (a);302111;185384;1;283365;238;0;0;4;3;;;;MA
+4;1;18.01.21;15;MICRO-455;Applied machine learning;115671;;1;283365;218;16;3488;4;1;11.02.21;12.01.21;envoyé mail pr pick up le 15.01.2021 relancé le 18.01.2021;MT
+4;1;18.01.21;15;MATH-111(g);Algèbre linéaire (g);149640;121157;1;275804;225;12;2700;4;1;06.01.21;11.01.21;En attente de la confirmation du barème (27.01 soir). 28.01 transmettre les csv avec les notes;MA
+4;1;18.01.21;15;MATH-111(f);Algèbre linéaire(f);NULL;121157;1;275804;275;12;3300;4;1;06.01.21;11.01.21;En attente de la confirmation du barème (27.01 soir). 28.01 transmettre les csv avec les notes;MA
+4;1;18.01.21;15;MATH-111(en);Algèbre linéaire (en);113868;;1;275804;213;12;2556;4;1;06.01.21;11.01.21;En attente de la confirmation du barème (27.01 soir). 28.01 transmettre les csv avec les notes;MA
+4;1;18.01.21;15;MATH-111(e);Algèbre linéaire (e);306127;121157;1;275804;448;12;5376;4;1;06.01.21;11.01.21;En attente de la confirmation du barème (27.01 soir). 28.01 transmettre les csv avec les notes;MA
+4;1;18.01.21;15;MATH-111(d);Algèbre linéaire (d);133751;121157;1;275804;299;12;3588;4;1;06.01.21;11.01.21;En attente de la confirmation du barème (27.01 soir). 28.01 transmettre les csv avec les notes;MA
+4;1;18.01.21;15;MATH-111(c);Algèbre linéaire (c);178578;121157;1;275804;291;12;3492;4;1;06.01.21;11.01.21;En attente de la confirmation du barème (27.01 soir). 28.01 transmettre les csv avec les notes;MA
+4;1;18.01.21;15;MATH-111(a);Algèbre linéaire (a);101466;121157;1;275804;224;12;2688;4;1;06.01.21;11.01.21;En attente de la confirmation du barème (27.01 soir). 28.01 transmettre les csv avec les notes;MA
+4;1;18.01.21;15;MATH-110(b);Algèbre linéaire avancée I;316207;;1;275804;209;16;3344;1;1;;;PDF reconstitué scan pour archive --> n a pas encore fini de corriger les questions ouvertes ;MA
+4;1;17.11.20;15;MATH-111(d) Mock;Algèbre linéaire (g);133751;121157;1;275804;225;0;0;4;3;;;;MA
+4;1;16.01.21;15;CS-451;Distributed Algorithms;105326;285045,144898;1;275804;109;28;3052;1;1;04.01.21;12.01.21;France revient le 13.01;IC
+4;1;16.01.21;15;CS-250;Algorithms;213225;157507;1;275804;329;20;6580;1;1;06.01.21;12.01.21;En attente du n° financier --> facturer à IC;IC
+4;1;15.11.20;15;MATH-111(g) Mock;Algèbre linéaire (g);149640;121157;1;275804;213;0;0;4;3;;;;MA
+4;1;15.01.21;15;PHYS-101(h);Physique générale : mécanique SV;178548;;1;283365;292;24;7008;3;1;06.01.21;11.01.21;;PH
+4;1;15.01.21;15;PHYS-101(eng);General Physics : Mecanics (English);189937;;1;283365;203;12;2436;1;1;;;Last minute !;PH
+4;1;15.01.21;15;PHYS-101(e);Physique générale : mécanique STI I;109056;;1;283365;222;28;6216;3;1;06.01.21;11.01.21;;PH
+4;1;15.01.21;15;PHYS-101(b);Physique générale : mécanique STI II;161577;;1;283365;232;28;6496;3;1;06.01.21;11.01.21;;PH
+4;1;15.01.21;15;CS-453;Concurrent Algorithms;105326;263197,144898;1;275804;61;28;1708;1;1;04.01.21;11.01.21;Scan triés par page + reconstitution PDF pour la correction sur Ipad car le correcteur se trouve à l'étrange;IC
+4;1;15.01.21;15;BIO-449;Understanding statistics and experimental design;164642;NULL;1;283365;133;8;1064;4;1;05.01.21;07.01.21;Fichiers à recevoir au grand plus tard le 4 janvier. Avant les fêtes de préférences. Attend confirmation;SV
+4;1;14.11.20;15;MATH-111(en) Mock;Algèbre linéaire (en);113868;NULL;1;275804;291;0;0;4;3;;;;MA
+4;1;13.11.20;15;MATH-111(c) Mock;Algèbre linéaire (e);178578;121157;1;275804;448;0;0;4;3;;;;MA
+4;1;13.01.21;15;MICRO-100;Electrotechnique I;105228,106071,106775;;1;275804;287;8;2296;3;1;17.12.20; ;En cours de corrections sur ANS;MT
+4;1;13.01.21;15;CS-433;Machine learning;276449,317566;188457;1;283365;464;20;9280;4;1;04.01.21;06.01.21;Fichiers à recevoir le 4 janvier 2021 au plus tard;IC
+4;1;13.01.21;15;CH-161(d);Chimie Générale GC;109839;;1;283365;261;16;4176;3;1;23.12.20;06.01.21;;CGC
+4;1;13.01.21;15;CH-160(en);Chimie Générale Avancée;109839;;1;283365;175;24;4200;3;1;29.12.20;06.01.21;;CGC
+4;1;13.01.21;15;CH-160(e);Chimie Générale Avancée SV;109839,106239;;1;283365;252;24;6048;3;1;29.12.20;06.01.21;;CGC
+4;1;13.01.21;15;CH-160(b);Chimie Générale GC;109839;;1;283365;117;16;1872;3;1;23.12.20;06.01.21;;CGC
+4;1;13.01.21;15;CH-160(a);Chimie Générale Avancée;109839,106239,251247;;1;283365;111;28;3108;3;1;29.12.20;06.01.21;;CGC
+4;1;12.11.20;15;MATH-111(e) Mock;Algèbre linéaire (d);306127;121157;1;275804;299;0;0;4;3;;;;MA
+4;1;12.01.21;15;MATH-203(c);Analyse III (IN SC SIE);185384;185384;1;275804;308;28;8624;4;1;22.12.20;05.01.21;En attente de la validation des résultats ;MA
+4;1;12.01.21;15;MATH-203(b);Analyse III ;104781;;1;283365;73;16;1168;4;1;30.12.20;05.01.21;2 premiers cartons scannés;MA
+4;1;12.01.21;15;MATH-203(a);Analyse III (MT SV);185384;;1;275804;362;28;10136;4;1;22.12.20;05.01.21;En attente de la validation des résultats ;MA
+4;1;12.01.21;15;MATH-202(c);Analyse III ;104781;;1;283365;294;20;5880;4;1;30.12.20;05.01.21;28.01 - 11h 30 (entrée étudiants);MA
+4;1;12.01.21;15;MATH-189;Mathématiques ;302111;;1;275804;225;8;1800;4;1;17.12.20;05.01.21;mail 29.01 demandé si je peux cloturer le processus (Luz est en attendte de la validation de sa section);MA
+4;1;12.01.21;15;CS-119(d);Information, Calcul, Communication;112547;;1;283365;320;12;3840;1;1;;;Scan QRCode;IC
+4;1;11.01.21;15;ME-445;Aerodynamics;252550;;1;275804;94;16;1504;4;1;22.12.20;04.01.21;Toutes les questions corrigées, en attente de validation des fichiers de résultats;GM
+4;1;11.01.21;15;MATH-101(g);Analyse I (g);271675;185384;1;283365;248;8;1984;4;1;21.12.20;04.01.21;;MA
+4;1;11.01.21;15;MATH-101(f);Analyse I (f);NULL;185384;1;283365;316;8;2528;4;1;21.12.20;04.01.21;;MA
+4;1;11.01.21;15;MATH-101(en);Analyse I (en);NULL;185384;1;283365;138;8;1104;4;1;21.12.20;04.01.21;;MA
+4;1;11.01.21;15;MATH-101(e);Analyse I (e);167946;185384;1;283365;456;8;3648;4;1;21.12.20;04.01.21;;MA
+4;1;11.01.21;15;MATH-101(de);Analyse I (de);213191;185384;1;283365;49;8;392;4;1;21.12.20;04.01.21;;MA
+4;1;11.01.21;15;MATH-101(d);Analyse I (d);166061;185384;1;283365;341;8;2728;4;1;21.12.20;04.01.21;;MA
+4;1;11.01.21;15;MATH-101(c);Analyse I (c);101466;185384;1;283365;310;8;2480;4;1;21.12.20;04.01.21;;MA
+4;1;11.01.21;15;MATH-101(a);Analyse I (a);302111;185384;1;283365;238;8;1904;4;1;21.12.20;04.01.21;;MA
+4;1;10.11.20;15;MATH-111(f) Mock;Algèbre linéaire (f);NULL;121157;1;275804;275;0;0;4;3;;;;MA
+4;1;09.11.20;15;MATH-111(a) Mock;Algèbre linéaire (a);101466;121157;1;275804;224;0;0;4;3;;;;MA
+4;1;02.02.21;15;UNIL-114;Mathématiques pour les Géosciences;112131;;1;283365;168;8;1344;4;1;25.01.21;28.01.21;;UNIL
+4;1;01.02.21;15;UNIL-107;Mathématiques Générales 1;112131;;1;283365;324;8;2592;4;1;25.01.21;28.01.21;Date à confirmer !;UNIL
+3;2;25.08.20;15;UNIL-ADM;Admission Math UNIL;149640;;1;283365;14;12;168;4;1;;;;UNIL
+3;2;25.08.20;15;UNIL-131;Mathématiques II;149640;;1;283365;160;12;1920;4;1;;;;UNIL
+3;2;25.08.20;15;UNIL-114 R;Mathématiques pour les Géosciences Rattrapage;149640;;1;283365;20;12;240;4;1;;;;UNIL
+3;2;25.08.20;15;HUM-257;Santé, population et société;300621;;1;283365;78;16;1248;4;1;;;Bochud et Dominique encore en discussion pour savoir si il faut ignorer des questions. Elles me contactent ASAP. Laurie et Domique seront au bureau lundi 7. DI neg et résultats et PDFs controlés par eux mais elle a envoyé un email au SAC par rapport aux notes 15% inférieur par rapport à l'année passée. (Plusieurs questions av DI nég. Pour la suite, à voir avec Dominique ok);SHS
+3;2;25.08.20;15;CIVIL-557;Decision-Aid methodologies in transportation;303300;;1;283365;12;16;224;4;1;;;Scan only (Nicholas Molyneaux);GC
+3;2;24.08.20;15;CS-233 Spring;Introduction to machine learning;112366;;1;283365;99;16;1584;4;1;;;Faire en priorité (1élève urgent) ?12 élèves extra-muros;IC
+3;2;24.08.20;15;AR-499;Visionnaires éclectiques. Architectures, 2000-2018;126097;;1;283365;27;12;6792;1;1;;;Scan and rebuild pdfs only;AR
+3;2;22.08.20;15;EULER-Exam;Concour Euler;144617;;1;283365;224;36;8064;4;1;;;A faire en priorité ;Other
+3;2;21.08.20;15;MATH-240;Statistics;303300;;1;283365;100;8;800;4;1;;;;MA
+3;2;20.08.20;15;ME-271;Ecoulement des fluides;252550;;1;283365;164;8;1312;4;1;;;Par Zoom (Karen);GM
+3;2;20.08.20;15;EE-205;Signals and systems;317456;;1;283365;192;24;4608;4;1;;;Elle voulait controler encore des PDFs après son retour de vacs. relancé. attente rep. Revient le 2.09.20 (1 étudiant extra-muros);EL
+3;2;20.08.20;15;AR-423(a);Projets métaphoriques d'Archizoom à Koolhaas;126097;;1;283365;71;12;6792;1;1;;;Scan and rebuild pdfs only;AR
+3;2;19.08.20;15;MATH-225;Topology;144617;;1;283365;45;16;720;4;1;;;Corrector box à modifier (selon email reçu) ? ;MA
+3;2;18.08.20;15;EE-559;Deep learning;146262;;1;283365;300;20;6000;4;1;;;;EL
+3;2;18.08.20;15;AR-123;Histoire de l'architecture I/II;126097;;1;283365;148;12;6792;1;1;;;Scan and rebuild pdfs only;AR
+3;2;17.08.20;15;UNIL-123;Physique expérimentale II;172230;;1;283365;170;20;3400;1;1;;;ANS pilot project;UNIL
+3;2;17.08.20;15;CS-112(g);Programmation orientée objet;112547;;1;283365;220;;0;4;1;;;Scan and Zbar ;IC
+3;2;17.08.20;15;AR-226;Histoire de l'architecture V/VI;126097;;1;283365;144;12;6792;1;1;;;Scan and rebuild pdfs only;AR
+3;2;14.08.20;15;MATH-123(b);Géometrie;NULL;;1;283365;63;8;504;4;1;;;;MA
+3;2;14.08.20;15;EE-311;Fundamentals of machine learning;107645;;1;283365;66;20;1320;4;1;;;;EL
+3;2;13.08.20;15;MATH-215;Rings and fields;144617;;1;283365;79;16;1264;4;1;;;Notes avec échelle fédérale;MA
+3;2;12.08.20;15;MATH-335 ;Coxeter groups;167946;;1;283365;22;20;440;4;1;;;Printing with Repro, scanning and rebuild pdfs ;MA
+3;2;12.08.20;15;MATH-251(c);Analyse numérique;121157;;1;283365;116;16;1856;4;1;;;Rendre scan pour le 18.08 en fin de journée ? JPG finaux après IPAD pour importation dans AMC prêts pr le 25 ao^t ?;MA
+3;2;12.08.20;15;CS-207;Programmation orientée système;112547;;1;283365;220;12;2640;4;1;;;Scan and Zbar ;IC
+3;2;11.08.20;15;MATH-251(b);Analyse numérique;106096;;1;283365;283;24;6792;4;1;;;;MA
+3;2;11.08.20;15;MATH-251(b);Analyse numérique optimisation;106096;;1;283365;192;32;6144;4;1;;;Vérifié avec Paride mais Repro controler Etudiants 48 et 49. Etudiant 80 : ajouter pages brouillons à l'IPAD PDF.;MA
+3;2;11.08.20;15;CS-439;Optiminzation for machine learning;276449;;1;283365;127;16;2032;4;1;;;On attend le 8 sept pr être sure que les notes soient publiées sur ISA. En attente de Roland pour savoir quand je peux envoyer les PDFs corrigés par email. (Zoom, extra-muros bientot sur VPSI1files fait );IC
+3;2;11.08.20;15;AR-310;Arts et architecture;126097;;1;283365;20;12;6792;1;1;;;Scan and rebuild pdfs only;AR
+3;2;10.08.20;15;MGT-415;Data science in practice;NULL;;1;283365;95;12;1140;4;1;;;;MTE
+3;2;10.08.20;15;MATH-105(b);Analyse avancée II;166061;;1;283365;135;16;2160;4;1;;;;MA
+3;2;10.08.20;15;MATH-105(a);Analyse avancée II;120861;;1;283365;94;16;1504;4;1;;;;MA
+3;2;08.08.20;15;PENS-200;La maîtrise du sol en droit suisse;159096;;1;283365;232;8;1856;4;1;;;;ENAC
+3;2;07.08.20;15;PHYS-106(b);General Physiscs : Thermodynamics;161577;;1;283365;278;20;5560;3;1;;;ANS pilot project;PH
+3;2;07.08.20;15;PHYS-106(a);General Physiscs : Thermodynamics;105419;;1;283365;104;26;2704;3;1;;;ANS pilot project + 1 étudiant fiche trop coupée à scanner !;PH
+3;2;06.08.20;15;MATH-115(b);Algèbre linéaire avancée II;106581;;1;283365;142;16;2272;4;1;;;En vacs 15-22 aout. Résultats AMC stats autour du 25 aout ?;MA
+3;2;06.08.20;15;MATH-115(a);Advanced linear algebra II;183121;;1;283365;91;20;1820;4;1;;;1/2 OK reçu mais attente du définitif. (Email Venzin ils veulent encore ignorer des questions et corriger la reponse du tf 6c.fait);MA
+3;2;05.08.20;15;MATH-205;Analyse IV;185384;;1;283365;74;28;2072;4;1;;;Rescanné : quasi tous invalides !;MA
+3;2;04.08.20;15;MATH-207(d);Analyse IV;104781;;1;283365;200;20;4000;4;1;;;Scanné les cas limites dans le dossier  : 2020_Analyse_IV_suite_Cibils/limites;MA
+3;2;04.08.20;15;MATH-207(c);Analyse IV;104781;;1;283365;300;20;6000;4;1;;;Scanné les cas limites dans le dossier  2020_Anlayse_IV_Cibils/limite;MA
+3;2;04.08.20;15;CS-442;Computer Vision;112366;;1;283365;166;16;2656;4;1;;;Zoom pour l'exemen au crayon déjà vu avec une des assistantes. élève 51 oubli de corriger 1 exercice. 9 élèves extra-muros + 1élève sur IPAD;IC
+3;2;04.08.20;15;AR-121 et AR-122;Théorie de l'architecture I et II;105747;;1;283365;147;16;2352;4;1;;;;AR
+3;2;04.05.20;15;MATH-106(e) Mock;Analyse II ;167946;;1;275804;1;4;4;4;3;;;Only one copy !;MA
+3;2;03.08.20;15;CS-251;Theory of computation;213225;;1;283365;235;24;5640;1;1;;;Scan and rebuild pdfs only;IC
+3;2;03.08.20;15;MATH-106(f);Analyse II;NULL;;1;283365;199;12;2388;4;1;;;;MA
+3;2;03.08.20;15;MATH-106(en);Analyse II;138859;;1;283365;193;12;2316;4;1;;;;MA
+3;2;03.08.20;15;MATH-106(e);Analyse II;167946;;1;283365;225;12;2700;4;1;;;;MA
+3;2;03.08.20;15;MATH-106(c);Analyse II;166061;;1;283365;243;12;2916;4;1;;;;MA
+3;2;03.08.20;15;MATH-106(b);Analyse II;NULL;;1;283365;118;12;1416;4;1;;;;MA
+3;2;03.08.20;15;MATH-106(a);Analyse II;302111;;1;283365;115;12;1380;4;1;;;;MA
+3;2;02.09.20;15;ENG-624;Science and Engineering Teaching and Learning;217408;;1;283365;14;10;140;4;1;;;;Other
+3;1;31.10.19;15;CH-160(b) Mock;Chimie générale;109839;;1;283365;101;8;808;4;3;;;;CGC
+3;1;29.01.20;15;BIO-205;Cellular and Molecular Biology I;235263;;1;283365;107;1;107;4;1;;;Answersheets;SV
+3;1;28.01.20;15;UNIL-107;Mathématiques Générales 1;121777;;1;283365;353;8;2824;4;1;;;;UNIL
+3;1;28.01.20;15;MICRO-452;Basics of mobile robotics;102717;;1;283365;151;16;2416;4;1;;;Help to finalize, scan and correct;MT
+3;1;28.01.20;15;MATH-265 2;Introduction to optimization and operations research;118332;;1;283365;130;8;1040;4;1;;;Scan only;MA
+3;1;27.01.20;15;CS-233;Introduction to machine learning;119864;;1;283365;157;16;2512;4;1;;;;IC
+3;1;27.01.20;15;BIO-447;Stem cell biology and technology;235263;;1;283365;61;1;61;4;1;;;Answersheets;SV
+3;1;24.01.20;15;UNIL-122;Physique expérimentale I (pour SFU);104677;;1;283365;245;16;3920;3;1;;;ANS pilot project;UNIL
+3;1;23.01.20;15;UNIL-114;Mathématiques pour les Géosciences;149640;;1;283365;180;8;1440;4;1;;;;UNIL
+3;1;22.01.20;15;UNIL-130;Mathématiques I SFU – police scientifique;149640;;1;283365;218;12;2616;4;1;;;;UNIL
+3;1;22.01.20;15;MICRO-450;Bases de la Robotique;114980;;1;283365;150;1;150;2;1;;;Answersheets;MT
+3;1;22.01.20;15;EE-106;Sciences et technologies de l’électricité;106775;;1;283365;294;5;1470;2;1;;;Answersheets + 4 pages booklet;EL
+3;1;21.11.19;15;CS-119(d);Information, calcul, communication Exam II;112547;;1;283365;301;12;3612;1;1;;;Scan and Zbar ;IC
+3;1;21.01.20;15;MATH-189;Mathématiques;121777;302111;1;283365;241;8;1928;4;1;;;;MA
+3;1;21.01.20;15;ENG-383;Droit de l’architecte, Introduction : contrats et concours;111310;;1;283365;150;12;1800;4;1;;;;Other
+3;1;21.01.20;15;CIVIL-261;Computational Thinking;129343;;1;275804;55;16;880;4;1;;;;GC
+3;1;20.12.19;15;EE-100;Électrotechnique I (lab);106775;;1;283365;305;5;1525;2;1;;;Answersheets + 4 pages booklet;EL
+3;1;20.12.19;15;CS-119(d);Information, calcul, communication Exam III;112547;;1;283365;300;16;4800;1;1;;;Scan and Zbar ;IC
+3;1;20.01.20;15;MATH-111(pi);Algèbre linéaire (pi);121157;;1;283365;176;12;2112;4;1;;;;MA
+3;1;20.01.20;15;MATH-111(g);Algèbre linéaire (g);149640;;1;283365;180;12;2160;4;1;;;;MA
+3;1;20.01.20;15;MATH-111(f);Algèbre linéaire (f);105396;;1;283365;229;12;2748;4;1;;;;MA
+3;1;20.01.20;15;MATH-111(en);Algèbre linéaire (en);113868;;1;283365;249;12;2988;4;1;;;;MA
+3;1;20.01.20;15;MATH-111(e);Algèbre linéaire (d);306127;;1;283365;336;16;5376;4;1;;;;MA
+3;1;20.01.20;15;MATH-111(d);Algèbre linéaire (c);NULL;;1;283365;284;12;3408;4;1;;;;MA
+3;1;20.01.20;15;MATH-111(c);Algèbre linéaire (e);178578;;1;283365;165;12;1980;4;1;;;;MA
+3;1;20.01.20;15;MATH-111(a);Algèbre linéaire (a);101466;;1;283365;242;16;3872;4;1;;;;MA
+3;1;18.11.19;15;MATH-101(g) Mock;Analyse I (g);271675;;1;283365;198;4;792;4;3;;;;MA
+3;1;18.11.19;15;MATH-101(f) Mock;Analyse I (f);121777;;1;283365;298;4;1192;4;3;;;;MA
+3;1;18.11.19;15;MATH-101(en) Mock;Analyse I (en);270833;;1;283365;138;4;552;4;3;;;;MA
+3;1;18.11.19;15;MATH-101(e) Mock;Analyse I (e);167946;;1;283365;357;4;1428;4;3;;;;MA
+3;1;18.11.19;15;MATH-101(de) Mock;Analyse I (de);213191;;1;283365;33;4;660;4;3;;;;MA
+3;1;18.11.19;15;MATH-101(d) Mock;Analyse I (d);166061;;1;283365;318;4;1220;4;3;;;;MA
+3;1;18.11.19;15;MATH-101(c) Mock;Analyse I (c);101466;;1;283365;283;4;1132;4;3;;;;MA
+3;1;18.11.19;15;MATH-101(a) Mock;Analyse I (a);302111;;1;283365;218;4;872;4;3;;;;MA
+3;1;17.01.20;15;PHYS-101;Physique générale : mécanique;178548;;1;283365;430;24;10320;3;1;;;ANS pilot project;PH
+3;1;16.01.20;15;MATH-234(d);Probabilités et statistiques;NULL;;1;283365;245;24;5880;4;1;;;;MA
+3;1;15.01.20;15;CS-433;Machine Learning;124369;;1;283365;527;16;8432;4;1;;;;IC
+3;1;15.01.20;15;CH-160(b);Chimie Générale GC;109839;;1;283365;106;12;1272;4;1;;;;CGC
+3;1;15.01.20;15;CH-160(a);Chimie Générale Avancée;109839;;1;283365;779;24;18696;4;1;;;Archiving impose_exam;CGC
+3;1;14.01.20;15;ME-445;Aerodynamics;252550;;1;283365;92;16;1472;4;1;;;;GM
+3;1;14.01.20;15;MATH-110(b);Algèbre linéaire avancé 1;106581;;1;283365;195;16;3120;4;1;;;;MA
+3;1;14.01.20;15;MATH-110(a);Advanced linear algebra I;133751;316207;1;283365;172;28;4816;4;1;;;;MA
+3;1;13.12.19;15;ME-101/ME-106;Construction mécanique I;NULL;;1;283365;580;1;580;4;1;;;Answersheets;GM
+3;1;13.01.20;15;MATH-203(b);Analyse III;235589;;1;283365;60;12;720;4;1;;;;MA
+3;1;13.01.20;15;MATH-101(g);Analyse I (g);271675;;1;283365;198;16;3168;4;1;;;;MA
+3;1;13.01.20;15;MATH-101(f);Analyse I (f);121777;;1;283365;298;16;4768;4;1;;;;MA
+3;1;13.01.20;15;MATH-101(en);Analyse I (en);270833;;1;283365;138;16;2208;4;1;;;;MA
+3;1;13.01.20;15;MATH-101(e);Analyse I (e);167946;;1;283365;357;16;5712;4;1;;;;MA
+3;1;13.01.20;15;MATH-101(de);Analyse I (de);213191;;1;283365;33;12;396;4;1;;;;MA
+3;1;13.01.20;15;MATH-101(d);Analyse I (d);166061;;1;283365;318;12;3816;4;1;;;;MA
+3;1;13.01.20;15;MATH-101(c);Analyse I (c);101466;;1;283365;283;16;4528;4;1;;;;MA
+3;1;13.01.20;15;MATH-101(a);Analyse I (a);302111;;1;283365;218;16;3488;4;1;;;;MA
+3;1;12.11.19;15;UNIL-130 Mock;Mathématiques I SFU – police scientifique;149640;;1;283365;224;4;896;4;3;;;;UNIL
+3;1;12.11.19;15;UNIL-114 Mock;Mathématiques pour les Géosciences;149640;;1;283365;191;4;764;4;3;;;;UNIL
+3;1;11.11.19;15;MATH-111(pi) Mock;Algèbre linéaire (pi);121157;;1;283365;176;8;1408;4;3;;;;MA
+3;1;11.11.19;15;MATH-111(g) Mock;Algèbre linéaire (g);149640;;1;283365;180;8;1440;4;3;;;;MA
+3;1;11.11.19;15;MATH-111(f) Mock;Algèbre linéaire (f);105396;;1;283365;229;8;1832;4;3;;;;MA
+3;1;11.11.19;15;MATH-111(en) Mock;Algèbre linéaire (en);113868;;1;283365;249;8;1992;4;3;;;;MA
+3;1;11.11.19;15;MATH-111(e) Mock;Algèbre linéaire (d);306127;;1;283365;336;8;1200;4;3;;;;MA
+3;1;11.11.19;15;MATH-111(d) Mock;Algèbre linéaire (c);NULL;;1;283365;284;8;2272;4;3;;;;MA
+3;1;11.11.19;15;MATH-111(c) Mock;Algèbre linéaire (e);178578;;1;283365;165;8;1320;4;3;;;;MA
+3;1;11.11.19;15;MATH-111(a) Mock;Algèbre linéaire (a);101466;;1;283365;242;8;1936;4;3;;;;MA
+3;1;08.11.19;15;MATH-265;Introduction to optimization and operations research;118332;;1;283365;130;20;2600;4;1;;;Scan only;MA
+3;1;05.12.19;15;ENG-445;Building energetics;283341;;1;283365;114;4;456;4;1;;;;Other
+3;1;03.12.19;15;UNIL-114 Mock 2;Mathématiques pour les Géosciences;149640;;1;283365;191;4;764;4;3;;;;UNIL
+2;2;29.04.19;15;UNIL-131 Mock;Mathématiques II (esc);149640;;1;283365;163;4;652;4;3;;;;UNIL
+2;2;28.06.19;15;MATH-123(b);Géométrie;NULL;;1;283365;62;8;496;4;1;;;;MA
+2;2;28.06.19;15;CS-442;Computer Vision;112366;;1;283365;139;16;2224;4;1;;;;IC
+2;2;28.05.19;15;HUM-263 ;Histoire des médias;NULL;;1;283365;40;8;320;4;1;;;;SHS
+2;2;28.05.19;15;HUM-257;Santé, population et société;300621;;1;283365;79;12;948;4;1;;;;SHS
+2;2;28.04.19;15;MATH-106(e) Mock;Analyse II (e);167946;;1;283365;1;4;4;4;3;;;Only one copy !;MA
+2;2;27.06.19;15;MATH-115(b);Advanced Linear Algebra II;280037;;1;283365;130;32;4160;4;1;;;;MA
+2;2;27.06.19;15;MATH-115(a);Algèbre linéaire Avancée II;183121;;1;283365;154;16;2464;4;1;;;;MA
+2;2;27.06.19;15;CS-233;Introduction to machine learning;112366;;1;283365;267;16;4272;4;1;;;;IC
+2;2;27.05.19;15;CS-207;Programmation orientée système;112547;;1;283365;182;12;2184;1;1;;;Scan qrcode et génération pdf et liste ;IC
+2;2;25.06.19;15;UNIL-131;Mathématiques II (esc);149640;;1;283365;163;4;652;4;1;;;;UNIL
+2;2;25.06.19;15;PREPA-033(b);Mathématiques 1B (pour MAN);101466,173510,106748;;1;283365;747;28;20916;4;1;;;MAN;MAN/CMS
+2;2;25.06.19;15;MICRO-502;Aerial Robotics;111729;;1;283365;44;8;352;4;1;;;;MT
+2;2;25.06.19;15;MATH-251(d);Analyse Numérique;106096;;1;283365;232;20;4640;4;1;;;;MA
+2;2;25.06.19;15;MATH-207(c);Analyse IV;NULL;;1;283365;279;20;5580;4;1;;;;MA
+2;2;24.06.19;15;PREPA-031(a);Mathématiques 1A (pour MAN);104677,121777,107044;;1;283365;747;28;20916;4;1;;;MAN;MAN/CMS
+2;2;24.06.19;15;MATH-251(c);Analyse numérique;NULL;;1;283365;143;16;2288;4;1;;;;MA
+2;2;23.05.19;15;CS-112(g);Programmation Orientée objet final;112547;;1;283365;212;16;3392;1;1;;;Scan qrcode et génération pdf et liste ;IC
+2;2;21.06.19;15;UNIL-123;Physique Expérimentale II ;172230;;1;283365;168;24;4032;4;1;;;;UNIL
+2;2;21.06.19;15;PHYS-106(b);Physique générale : Thermodynamique;178548;;1;283365;229;20;4580;3;1;;;Test ANS software;PH
+2;2;21.06.19;15;AR-121,AR-122;Théorie de l’architecture I et II;105747;;1;283365;146;12;1752;4;1;;;;AR
+2;2;20.06.19;15;CS-439;Optimization for machine learning;276449;;1;283365;101;16;1616;4;1;;;;IC
+2;2;18.06.19;15;MATH-205;Analyse IV;185384;;1;283365;90;24;2160;4;1;;;;MA
+2;2;18.06.19;15;EE-559;Deep learning;146262;;1;283365;227;20;4540;4;1;;;Master;EL
+2;2;17.06.19;15;UNIL-108;Mathématiques générales II;NULL;;1;283365;230;8;1840;4;1;;;;UNIL
+2;2;17.06.19;15;MATH-106(f);Analyse II (f);120861;;1;283365;153;16;2448;4;1;;;;MA
+2;2;17.06.19;15;MATH-106(en);Analyse II (en);138859;;1;283365;193;16;3088;4;1;;;;MA
+2;2;17.06.19;15;MATH-106(e);Analyse II (e);167946;;1;283365;210;16;3360;4;1;;;;MA
+2;2;17.06.19;15;MATH-106(c);Analyse II (c);166061;;1;283365;206;16;3296;4;1;;;;MA
+2;2;17.06.19;15;MATH-106(b);Analyse II (b);NULL;;1;283365;127;12;1524;4;1;;;;MA
+2;2;17.06.19;15;MATH-106(a);Analyse II (a);302111;;1;283365;104;16;1664;4;1;;;;MA
+2;2;17.06.19;15;COM-402;Information security and privacy;NULL,290659,105427;;1;283365;208;16;3328;4;1;;;Scan only;IC
+2;2;12.04.19;15;EE-205 MT;Circuits & Systems II;122796;;1;283365;195;4;780;4;1;;;;EL
+2;2;11.04.19;15;CS-112(g);Programmation Orientée objet SN;112547;;1;283365;214;12;2568;1;1;;;Scan qrcode et génération pdf et liste ;IC
+2;2;09.04.19;15;HUM-125(a-b);Enjeux Mondiaux : Santé A/B;167289,185819;;1;283365;240;12;2880;4;1;;;;SHS
+2;2;09.04.19;15;HUM-124(b);Enjeux Mondiaux : Mobilité (2 version EN + FR);196675,155716;;1;283365;129;8;1032;4;1;;;;SHS
+2;2;09.04.19;15;HUM-123(a);Enjeux Mondiaux : Energie A;105078,NULL,111055;;1;283365;118;8;944;4;1;;;;SHS
+2;2;09.04.19;15;HUM-121(a-b);Enjeux Mondiaux : Climat A/B;NULL;;1;283365;240;8;1920;4;1;;;;SHS
+2;2;06.05.19;15;PHYS-106(b) Mock;Physique générale : Thermodynamique;178548;;1;283365;160;24;3840;3;3;;;Test ANS software;PH
+2;2;04.05.19;15;EULER-;Concours Euler;144617;;1;283365;377;4;1508;4;1;;;;Other
+2;2;03.07.19;15;PREPA-033;Physique (pour MAN);137850,104677,157882;;1;283365;747;28;20916;4;1;;;;MAN/CMS
+2;2;03.07.19;15;MICRO-515;Evolutionary Robotics;111729;;1;283365;45;8;360;4;1;;;;MT
+2;2;03.07.19;15;MATH-250;Analyse numérique;271675;;1;283365;94;24;2256;4;1;;;;MA
+2;2;02.07.19;15;ME-271;Écoulement des fluides;252550;;1;283365;234;20;4680;4;1;;;;GM
+2;2;02.04.19;15;PENS-200;La Maîtrise du sol en droit Suisse;159096;;1;283365;325;8;2600;4;1;;;;ENAC
+2;2;02.04.19;15;HUM-257;Santé, population et société ;300621;;1;283365;79;8;632;4;1;;;;SHS
+2;2;01.07.19;15;PREPA-032(b);Mathématiques 2B (pour MAN);100527,137850,248612;;1;283365;747;16;11952;4;1;;;;MAN/CMS
+2;2;01.07.19;15;PREPA-032(a);Mathématiques 2A (pour MAN);121777,101466,248612;;1;283365;747;12;8964;4;1;;;;MAN/CMS
+2;2;01.07.19;15;EE-205;Circuits & Systems II;122796;;1;283365;195;16;3120;4;1;;;;EL
+2;1;31.01.19;15;MICRO-450;Bases de la robotique;114980,104561;;1;283365;154;13;2002;2;1;;;1 page answer sheet + 12 pages booklet ;MT
+2;1;30.01.19;15;BIO-205;Cellular and molecular biology I;235263,253104;;1;283365;139;1;139;4;1;;;;SV
+2;1;29.01.19;15;MATH-265;Introduction à l’optimisation et la recherche opérationnelle;118332;;1;283365;217;40;8680;4;1;;;Scan only;MA
+2;1;28.01.19;15;UNIL-107;Mathématiques générales I;121777;;1;283365;315;8;2520;4;1;;;;UNIL
+2;1;27.12.18;15;CS-119(c);Information, Calcul et Communication Examen III;112547;;1;283365;310;20;6200;1;1;;;Scan qrcode et génération pdf et liste étudiants;IC
+2;1;23.01.19;15;UNIL-130;Mathématiques (FGSE);149640;;1;283365;224;12;2688;4;1;;;;UNIL
+2;1;23.01.19;15;UNIL-114;Mathématiques pour les Géosciences;149640;;1;283365;167;8;1336;4;1;;;;UNIL
+2;1;23.01.19;15;MATH-189;Mathématiques SAR;121777;;1;283365;232;8;1856;4;1;;;;MA
+2;1;22.11.18;15;CS-119(c);Information, Calcul et Communication Examen II;112547;;1;283365;316;12;3792;1;1;;;Scan qrcode et génération pdf et liste étudiants;IC
+2;1;22.01.19;15;ENG-383;Droit de l’architecte, introduction : contrats et concours;111310,112780;;1;283365;270;12;3240;4;1;;;;Other
+2;1;21.12.18;15;EE-100;Électrotechnique I (lab);106775;;1;283365;301;1;301;2;1;;;;EL
+2;1;21.01.19;15;MATH-111(a);Algèbre linéaire (a);101466;;1;283365;194;16;3104;4;1;;;;MA
+2;1;19.11.18;15;MATH-101(g);Analyse I (g);101466;;1;283365;198;4;792;4;3;;;;MA
+2;1;19.11.18;15;MATH-101(f);Analyse I (f);121777;;1;283365;310;4;1240;4;3;;;;MA
+2;1;19.11.18;15;MATH-101(en);Analyse I (en);270833;;1;283365;135;4;540;4;3;;;;MA
+2;1;19.11.18;15;MATH-101(e) ;Analyse I (e);167946;;1;283365;320;4;1280;4;3;;;;MA
+2;1;19.11.18;15;MATH-101(de);Analyse I (de);213191;;1;283365;40;4;160;4;3;;;;MA
+2;1;19.11.18;15;MATH-101(d);Analyse I (d);166061;;1;283365;325;4;1300;4;3;;;;MA
+2;1;19.11.18;15;MATH-101(c);Analyse I (c);271675;;1;283365;308;4;1232;4;3;;;;MA
+2;1;19.11.18;15;MATH-101(a);Analyse I (a);181579;;1;283365;210;4;840;4;3;;;;MA
+2;1;18.01.19;15;MATH-234(b);Probabilités et statistiques;NULL;;1;283365;328;28;9184;4;1;;;;MA
+2;1;18.01.19;15;BIO-447;Stem cell biology and technolgy;235263,172749,106911;;1;283365;69;1;69;4;1;;;;SV
+2;1;17.01.19;15;MATH-251(b);Analyse Numérique;106096;;1;283365;245;24;5880;4;1;;;;MA
+2;1;17.01.19;15;CS-433;Machine Learning;124369,276449;;1;283365;505;24;12120;4;1;;;Scan only;IC
+2;1;16.11.18;15;MATH-265;Introduction à l’optimisation et la recherche opérationnelle;118332;;1;283365;220;20;4400;4;1;;;Scan only;MA
+2;1;16.01.19;15;CH-160;Chimie Générale Avancée;109839;;1;283365;776;20;15520;2;1;;;Archiving impose_exam;CGC
+2;1;16.01.19;15;CH-160;Chimie Générale GC;109839;;1;283365;117;16;1872;2;1;;;Archiving impose_exam;CGC
+2;1;15.11.18;15;UNIL-114;Mathématiques pour les Géosciences;149640;;1;283365;164;4;656;4;3;;;;UNIL
+2;1;15.01.19;15;MATH-203(b);Analyse III;235589;;1;283365;85;12;1020;4;1;;;;MA
+2;1;15.01.19;15;MATH-110(b);Algèbre linéaire avancée I;106581;;1;283365;225;16;3600;4;1;;;;MA
+2;1;15.01.19;15;MATH-110(a);Algèbre linéaire avancée I;133751;;1;283365;163;24;3912;4;1;;;Open questions only;MA
+2;1;15.01.18;15;UNIL-122;Physique expérimental I SFU;104677;;1;283365;228;20;4560;4;1;;;;UNIL
+2;1;15.01.18;15;MATH-111(g);Algèbre linéaire (g);149640;;1;283365;180;16;2880;4;1;;;;MA
+2;1;14.12.18;15;ME-101/6;Mecanichal construction I MT et ME;NULL,240428;;1;283365;560;1;560;4;1;;;Feuille de réponse;GM
+2;1;14.11.18;15;UNIL-130;Mathématiques I SFU – police scientifique;149640;;1;283365;224;4;896;4;3;;;;UNIL
+2;1;14.01.19;15;MATH-101(g);Analyse I (g);101466;;1;283365;198;12;2376;4;1;;;;MA
+2;1;14.01.19;15;MATH-101(f);Analyse I (f);121777;;1;283365;310;12;3720;4;1;;;;MA
+2;1;14.01.19;15;MATH-101(en);Analyse I (en);270833;;1;283365;135;12;1620;4;1;;;;MA
+2;1;14.01.19;15;MATH-101(e) ;Analyse I (e);167946;;1;283365;320;12;3840;4;1;;;;MA
+2;1;14.01.19;15;MATH-101(de);Analyse I (de);213191;;1;283365;40;12;480;4;1;;;;MA
+2;1;14.01.19;15;MATH-101(d);Analyse I (d);166061;;1;283365;325;12;3900;4;1;;;;MA
+2;1;14.01.19;15;MATH-101(c);Analyse I (c);271675;;1;283365;308;12;3696;4;1;;;;MA
+2;1;14.01.19;15;MATH-101(a);Analyse I (a);181579;;1;283365;210;12;2520;4;1;;;;MA
+2;1;14.01.18;15;MATH-111(en);Algèbre linéaire (en);183120;;1;283365;189;16;3024;4;1;;;;MA
+2;1;13.01.18;15;MATH-111(pi);Algèbre linéaire (pi);121157;;1;283365;171;16;2736;4;1;;;;MA
+2;1;12.11.18;15;MATH-111(pi);Algèbre linéaire (pi);121157;;1;283365;171;4;684;4;3;;;;MA
+2;1;12.11.18;15;MATH-111(g);Algèbre linéaire (g);149640;;1;283365;180;4;720;4;3;;;;MA
+2;1;12.11.18;15;MATH-111(f);Algèbre linéaire (f);105396;;1;283365;260;4;1040;4;3;;;;MA
+2;1;12.11.18;15;MATH-111(en);Algèbre linéaire (en);183120;;1;283365;189;4;756;4;3;;;;MA
+2;1;12.11.18;15;MATH-111(e);Algèbre linéaire (d);144617;;1;283365;273;8;2184;4;3;;;;MA
+2;1;12.11.18;15;MATH-111(d) ;Algèbre linéaire (c);NULL;;1;283365;270;4;1080;4;3;;;;MA
+2;1;12.11.18;15;MATH-111(c);Algèbre linéaire (e);178578;;1;283365;307;4;1228;4;3;;;;MA
+2;1;12.11.18;15;MATH-111(a);Algèbre linéaire (a);101466;;1;283365;194;4;776;4;3;;;;MA
+2;1;12.01.18;15;MATH-111(c);Algèbre linéaire (e);178578;;1;283365;307;16;4912;4;1;;;;MA
+2;1;11.01.18;15;MATH-111(e);Algèbre linéaire (d);144617;;1;283365;273;16;4368;4;1;;;;MA
+2;1;10.01.18;15;MATH-111(d) ;Algèbre linéaire (c);NULL;;1;283365;270;16;4320;4;1;;;;MA
+2;1;09.01.18;15;MATH-111(f);Algèbre linéaire (f);105396;;1;283365;260;16;4160;4;1;;;;MA
+1;2;29.06.18;15;MATH-186;Mathématiques II;104781;;1;283365;172;8;1376;4;1;;;;MA
+1;2;28.06.18;15;PREPA-031(b);Mathématiques 1B (pour MAN);106748,101466;;1;283365;729;32;23328;4;1;;;MAN;MAN/CMS
+1;2;28.05.18;15;CS-207;Programmation orientée système;112547;;1;283365;213;16;3408;1;1;;;Scan qrcode et génération pdf et liste ;IC
+1;2;27.06.18;15;PHYS-218;Physique du Bâtiment IV;NULL;;1;283365;178;12;2136;4;1;;;Scan only;PH
+1;2;27.06.18;15;MICRO-515;Evolutionary Robotics;111729;;1;283365;49;8;392;4;1;;;Master;MT
+1;2;27.06.18;15;MATH-115(b);Advanced Linear Algebra II;280037;;1;283365;135;24;3240;4;1;;;;MA
+1;2;27.06.18;15;MATH-115(a);Advanced Linear Algebra II;183121;;1;283365;88;16;1408;4;1;;;;MA
+1;2;26.06.18;15;PREPA-031(a);Mathématiques 1A (pour MAN);104677,121777,248612;;1;283365;729;28;20412;4;1;;;MAN;MAN/CMS
+1;2;26.06.18;15;MATH-123(b);Géométrie;NULL;;1;283365;68;12;816;4;1;;;;MA
+1;2;26.06.18;15;MATH-121;Geometry;NULL;;1;283365;206;12;2472;4;1;;;;MA
+1;2;26.06.18;15;CH-162;Chimie organique I;148588;;1;283365;142;24;3408;4;1;;;;CGC
+1;2;26.03.18;15;CH-162;Chimie organique I;148588;;1;283365;134;8;1072;4;1;;;;CGC
+1;2;25.06.18;15;MATH-250;Analyse numérique;271675;;1;283365;92;24;2208;4;1;;;MAN;MA
+1;2;25.06.18;15;MATH-150;Analyse Numérique;106096;;1;283365;134;24;3216;4;1;;;MAN;MA
+1;2;25.05.18;15;CS-112(g);Programmation II – final;112547;;1;283365;211;16;3376;1;1;;;Scan qrcode et génération pdf et liste ;IC
+1;2;23.06.18;15;EE-559;Deep learning;146262;;1;283365;175;20;3500;4;1;;;Master;EL
+1;2;23.04.18;15;MATH-115(a);Algèbre linéaire avancée II;183121;;1;283365;1;16;16;4;3;;;Only prepared blank copie to put on website;MA
+1;2;22.06.18;15;MATH-207(c);Analyse IV;NULL;;1;283365;226;24;5424;4;1;;;;MA
+1;2;22.03.18;15;PHYS-218;Physique du bâtiment IV;NULL;;1;283365;179;12;2148;4;1;;;Scan only;PH
+1;2;21.06.18;15;MATH-203(c);Analysis III;235589;;1;283365;20;12;240;4;1;;;;MA
+1;2;20.06.18;15;MICRO-502;Aerial Robots;111729;;1;283365;35;8;280;4;1;;;Master;MT
+1;2;20.06.18;15;CH-161;Chimie générale;109839;;1;283365;637;20;12740;2;1;;;Using Archiving project impose_exam qr_codes;CGC
+1;2;20.06.18;15;AR-121,AR-122;Théorie de l’architecture I et II;105747;;1;283365;154;12;1848;4;1;;;;AR
+1;2;18.06.18;15;MATH-106(f);Analyse II (f);149640;;1;283365;182;12;2184;4;1;;;;MA
+1;2;18.06.18;15;MATH-106(en);Analyse II (en);138859;;1;283365;137;12;1644;4;1;;;;MA
+1;2;18.06.18;15;MATH-106(e);Analyse II (e);167946;;1;283365;165;12;1980;4;1;;;;MA
+1;2;18.06.18;15;MATH-106(c);Analyse II (c);166061;;1;283365;213;12;2556;4;1;;;;MA
+1;2;18.06.18;15;MATH-106(b);Analyse II (b);NULL;;1;283365;177;12;2124;4;1;;;;MA
+1;2;18.06.18;15;MATH-106(a);Analyse II (a);120861;;1;283365;123;12;1476;4;1;;;;MA
+1;2;17.04.18;15;PENS-200;La Maîtrise du sol en droit Suisse;159096;;1;283365;318;8;2544;4;1;;;;ENAC
+1;2;17.04.18;15;HUM-125(a-b);Enjeux Mondiaux : Santé A/B;167289,185819,135489;;1;283365;236;2;472;4;1;;;;SHS
+1;2;17.04.18;15;HUM-124(a);Enjeux Mondiaux : Mobilité A;118332,102121;;1;283365;110;8;880;4;1;;;Scan only;SHS
+1;2;17.04.18;15;HUM-121(a-b);Enjeux Mondiaux : Climat A/B;176402,289942,106542;;1;283365;181;12;2172;4;1;;;;SHS
+1;2;15.06.18;15;UNIL-131;Mathématiques II (esc);149640;;1;283365;125;12;1500;4;3;;;;UNIL
+1;2;11.04.18;15;HUM-123(a);Enjeux Mondiaux : Energie A;105078,111055,NULL;;1;283365;100;2;200;4;1;;;;SHS
+1;2;06.07.18;15;CS-439;Optimization for machine learning;276449;;1;283365;111;20;2220;4;1;;;;IC
+1;2;05.07.18;15;PREPA-033;Physique (pour MAN);137850,104677,157882;;1;283365;729;28;20412;4;1;;;MAN;MAN/CMS
+1;2;04.07.18;15;MATH-251(c);Analyse numérique;NULL;;1;283365;110;12;1320;4;1;;;;MA
+1;2;03.07.18;15;PREPA-032(b);Mathématiques 2B (pour MAN);100527,137850,248612;;1;283365;729;20;14580;4;1;;;MAN;MAN/CMS
+1;2;03.07.18;15;PREPA-032(a);Mathématiques 2A (pour MAN);121777,101466,248612;;1;283365;729;16;11664;4;1;;;MAN;MAN/CMS
+1;2;03.05.18;15;UNIL-131;Mathématiques II (esc);149640;;1;283365;124;4;496;4;3;;;;UNIL
+1;2;02.07.18;15;UNIL-108;Mathématiques générales II;NULL;;1;283365;268;8;2144;4;1;;;;UNIL
+1;2;02.07.18;15;CIVIL-103;Geologie;220185;;1;283365;129;1;129;2;1;;;Answer sheet + process Other;GC
+1;1;31.01.18;15;UNIL-107;Mathématiques générales I;121777;;1;283365;321;8;2568;4;1;;;;UNIL
+1;1;30.01.18;15;BIO-205;Cellular and molecular biology I;235263;;1;283365;108;1;108;4;1;;;;SV
+1;1;29.01.18;15;MATH-265;Introduction à l’optimisation et la recherche opérationnelle;118332;;1;283365;210;32;6720;4;1;;;;MA
+1;1;27.11.17;15;MATH-110(a);Algèbre linéaire avancée I;213191;;1;283365;171;12;2052;4;3;;;;MA
+1;1;26.01.18;15;MATH-110(a);Algèbre linéaire avancée I;213191;;1;283365;171;16;2736;4;1;;;;MA
+1;1;25.01.18;15;PHYS-217;Physique du bâtiment III;NULL;;1;283365;184;12;2208;4;1;;;Scan only;PH
+1;1;24.10.17;15;PHYS-217;Physique du bâtiment III;NULL;;1;283365;184;6;1104;4;1;;;Scan only;PH
+1;1;24.01.18;15;MATH-203(c);Analyse III (a);235589;;1;283365;268;12;3216;4;1;;;;MA
+1;1;24.01.18;15;MATH-184;Mathématiques I;121777;;1;283365;242;8;1936;4;1;;;;MA
+1;1;24.01.18;15;BIO-109(d);Introduction au sciences du vivant;235263;;1;283365;329;1;329;2;1;;;;SV
+1;1;24.01.18;15;BIO-109(c);Introduction au sciences du vivant;NULL;;1;283365;69;1;69;2;1;;;;SV
+1;1;24.01.18;15;BIO-109(b);Introduction au sciences du vivant;168670;;1;283365;323;1;323;2;1;;;;SV
+1;1;24.01.18;15;BIO-109(a);Introduction au sciences du vivant;168676;;1;283365;241;1;241;2;1;;;;SV
+1;1;23.11.17;15;CS-111(g);Programmation I – série notée;112547;;1;283365;310;16;4960;1;1;;;Scan qrcode et génération pdf et liste étudiants;IC
+1;1;22.12.17;15;EE-100;Électrotechnique I (lab);106775;;1;283365;302;1;302;2;1;;;;EL
+1;1;22.01.18;15;MATH-111(pi);Algèbre linéaire (pi);121157;;1;283365;98;12;1176;4;1;;;;MA
+1;1;22.01.18;15;MATH-111(g);Algèbre linéaire (g);149640;;1;283365;193;12;2316;4;1;;;;MA
+1;1;22.01.18;15;MATH-111(f);Algèbre linéaire (f);105396;;1;283365;207;12;2484;4;1;;;;MA
+1;1;22.01.18;15;MATH-111(en);Algèbre linéaire (en);183120;;1;283365;224;12;2688;4;1;;;;MA
+1;1;22.01.18;15;MATH-111(e);Algèbre linéaire (e);156849;;1;283365;284;12;3408;4;1;;;;MA
+1;1;22.01.18;15;MATH-111(d);Algèbre linéaire (d);144617;;1;283365;300;12;3600;4;1;;;;MA
+1;1;22.01.18;15;MATH-111(c) ;Algèbre linéaire (c);NULL;;1;283365;287;12;3444;4;1;;;;MA
+1;1;22.01.18;15;MATH-111(a);Algèbre linéaire (a);101466;;1;283365;230;12;2760;4;1;;;;MA
+1;1;21.12.17;15;CS-111(g);Programmation I – final;112547;;1;283365;310;16;4960;2;1;;;Scan qrcode et génération pdf et liste étudiants;IC
+1;1;21.11.17;15;MICRO-450;Bases de la robotique;114980;;1;283365;172;1;172;2;3;;;;MT
+1;1;20.11.17;15;MATH-101(g);Analyse I (g);101466;;1;283365;203;4;812;4;3;;;;MA
+1;1;20.11.17;15;MATH-101(f);Analyse I (f);121777;;1;283365;267;4;1068;4;3;;;;MA
+1;1;20.11.17;15;MATH-101(en);Analyse I (en);270833;;1;283365;142;4;568;4;3;;;;MA
+1;1;20.11.17;15;MATH-101(e) ;Analyse I (e);167946;;1;283365;292;4;1168;4;3;;;;MA
+1;1;20.11.17;15;MATH-101(de);Analyse I (de);NULL;;1;283365;47;4;188;4;3;;;;MA
+1;1;20.11.17;15;MATH-101(d);Analyse I (d);166061;;1;283365;312;4;1248;4;3;;;;MA
+1;1;20.11.17;15;MATH-101(c);Analyse I (c);271675;;1;283365;291;4;1164;4;3;;;;MA
+1;1;20.11.17;15;MATH-101(a);Analyse I (a);161312;;1;283365;235;4;940;4;3;;;;MA
+1;1;19.01.18;15;UNIL-130;Mathématiques (FGSE);149640;;1;283365;189;8;1512;4;1;;;;UNIL
+1;1;19.01.18;15;UNIL-114;Mathématiques pour les Géosciences;149640;;1;283365;194;8;1552;4;1;;;;UNIL
+1;1;19.01.18;15;MATH-234(b);Probabilités et statistiques;NULL;;1;283365;271;28;7588;4;1;;;;MA
+1;1;18.01.18;15;MICRO-450;Bases de la robotique;114980,104561;;1;283365;172;1;172;2;1;;;;MT
+1;1;17.01.18;15;CS-433;Machine Learning;276449,124369;;1;283365;400;20;8000;4;1;;;Scanning only;IC
+1;1;17.01.18;15;CH-160;Chimie générale avancée;109839;;1;283365;776;20;15520;2;1;;;Using Archiving project impose_exam qr_codes;CGC
+1;1;16.11.17;15;UNIL-130;Mathématiques (FGSE);149640;;1;283365;189;4;756;4;3;;;;UNIL
+1;1;16.11.17;15;UNIL-114;Mathématiques pour les Géosciences;149640;;1;283365;194;4;776;4;3;;;;UNIL
+1;1;16.01.18;15;MATH-203(a);Analyse III (a);106096;;1;283365;299;20;5980;4;1;;;;MA
+1;1;15.01.18;15;MATH-101(g);Analyse I (g);101466;;1;283365;203;12;2436;4;1;;;;MA
+1;1;15.01.18;15;MATH-101(f);Analyse I (f);121777;;1;283365;267;12;3204;4;1;;;;MA
+1;1;15.01.18;15;MATH-101(en);Analyse I (en);270833;;1;283365;142;12;1704;4;1;;;;MA
+1;1;15.01.18;15;MATH-101(e) ;Analyse I (e);167946;;1;283365;292;12;3504;4;1;;;;MA
+1;1;15.01.18;15;MATH-101(de);Analyse I (de);NULL;;1;283365;47;12;564;4;1;;;;MA
+1;1;15.01.18;15;MATH-101(d);Analyse I (d);166061;;1;283365;312;12;3744;4;1;;;;MA
+1;1;15.01.18;15;MATH-101(c);Analyse I (c);271675;;1;283365;291;12;3492;4;1;;;;MA
+1;1;15.01.18;15;MATH-101(a);Analyse I (a);161312;;1;283365;235;12;2820;4;1;;;;MA
+1;1;14.12.17;15;MATH-234(b);Probabilités et statistiques;NULL;;1;283365;271;8;2168;4;3;;;;MA
+1;1;13.11.17;15;MATH-111(pi);Algèbre linéaire (pi);121157;;1;283365;98;4;392;4;3;;;;MA
+1;1;13.11.17;15;MATH-111(g);Algèbre linéaire (g);149640;;1;283365;193;4;772;4;3;;;;MA
+1;1;13.11.17;15;MATH-111(f);Algèbre linéaire (f);105396;;1;283365;207;4;828;4;3;;;;MA
+1;1;13.11.17;15;MATH-111(en);Algèbre linéaire (en);183120;;1;283365;224;4;896;4;3;;;;MA
+1;1;13.11.17;15;MATH-111(e);Algèbre linéaire (e);156849;;1;283365;284;4;1136;4;3;;;;MA
+1;1;13.11.17;15;MATH-111(d);Algèbre linéaire (d);144617;;1;283365;300;4;1200;4;3;;;;MA
+1;1;13.11.17;15;MATH-111(c) ;Algèbre linéaire (c);NULL;;1;283365;287;4;1148;4;3;;;;MA
+1;1;13.11.17;15;MATH-111(a);Algèbre linéaire (a);101466;;1;283365;230;4;920;4;3;;;;MA
+1;1;10.11.17;15;MATH-265;Introduction à l’optimisation et la recherche opérationnelle;118332;;1;283365;210;16;3360;4;3;;;;MA

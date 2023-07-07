@@ -14,7 +14,7 @@ def create_app(test_config=None):
     # create and configure the app
     app = Flask(__name__, instance_relative_config=True)
     app.config['SECRET_KEY'] = "secret-key"
-    app.config['SQLALCHEMY_DATABASE_URI'] = "mysql://root:MOTdepasse2023!@localhost:3306/ceproexamsmgt"
+    app.config['SQLALCHEMY_DATABASE_URI'] = "mysql://root:Mic99099.-.@localhost:3306/ceproexamsmgt"
     app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
     app.config['BASIC_AUTH_FORCE'] = True
     app.config['UPLOAD_FOLDER'] = app.root_path+"/blueprints/data_import/upload"
