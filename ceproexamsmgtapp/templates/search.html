@@ -1,9 +1,9 @@
 {% extends 'base.html' %}
 {% set page_title = 'Search' %}
 {% block content %}
-    <div>
+    <div class="employee">
           {% for user in users %}
-            {{ user.firstname }} {{ user.lastname }}
+           <p class="name"> {{ user.firstname }} {{ user.lastname }} {{ user.email }} {{ user.sciper }}</p>
             <br/>
         {% endfor %}
 

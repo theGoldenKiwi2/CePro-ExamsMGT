@@ -30,6 +30,7 @@
     <link rel="stylesheet" href="https://cdn.datatables.net/fixedheader/3.3.1/css/fixedHeader.dataTables.min.css">
     <link rel="stylesheet" href="../static/css/nav.css">
     <link rel="stylesheet" href="../static/css/form.css">
+    <link rel="stylesheet" href="../static/css/import.css">
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     {% block extra_head %}{% endblock %}
 
@@ -45,6 +46,16 @@
     <a class="navbar-brand" href="/">
         <img src="{{url_for('static', filename='images/house.svg')}}" width="30" height="30" alt="">
     </a>
+
+    <div class="input-group rounded">
+                    <form class="form-inline" method="post" action="{{ url_for('search.search') }}">
+                        <div>
+                            <input class="form-control rounded" placeholder="Search" aria-label="Search" aria-describedby="search-addon" name="search"/>
+                            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                        </div>
+                    </form>
+                </div>
+
     <div class="collapse navbar-collapse" id="navbarNavDropdown">
         <ul class="navbar-nav ml-auto">
             <li class="nav-item active">
@@ -153,15 +164,9 @@
                         <span class="menu-collapsed">Semester </span>
                     </div>
                 </a>
-                <div class="input-group rounded">
-                    <form method="post" action="{{ url_for('search.search') }}">
-                    <input class="form-control rounded" placeholder="Search" aria-label="Search"
-                           aria-describedby="search-addon" name="search"/>
-                    <span class="input-group-text border-0" id="search-addon">
-                        <input type="submit">
-                    </span>
-                    </form>
-                </div>
+
+
+
                 <li class="list-group-item sidebar-separator-title text-muted d-flex align-items-center menu-collapsed"></li>
                 <a href="#top" data-toggle="sidebar-colapse"
                    class="bg-dark list-group-item list-group-item-action d-flex align-items-center">

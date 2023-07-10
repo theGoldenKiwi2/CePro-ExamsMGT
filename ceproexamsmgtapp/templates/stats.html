@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+{% set page_title = 'Search' %}
+{% block content %}
+    <div class="input-group rounded">
+                    <form class="form-inline" method="post" action="{{ url_for('search.search') }}">
+                        <div>
+                            <input class="form-control rounded" placeholder="Search" aria-label="Search" aria-describedby="search-addon" name="search"/>
+                            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                        </div>
+                    </form>
+                </div>
+{% endblock %}

@@ -171,7 +171,37 @@ nav ul li{
 }
 
 
+.btn {
+    display: inline-block;
+    font-weight: 600;
+    color: #919aa1;
+    text-align: center;
 
+    vertical-align: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-color: transparent;
+    border: 0px solid transparent;
+    padding: 0.75rem 1.5rem;
+    font-size: 0.875rem;
+    line-height: 1.5rem;
+    border-radius: 5px}
+
+.form-control {
+    display: block;
+    width: 50%;
+    text-align: center;
+    height: calc(1rem + 1.5rem + 0px);
+    padding: 0.0rem ;
+    font-size: 0.875rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #55595c;
+    background-color: #f7f7f9;
+    background-clip: padding-box;
+    border: 0px solid #ced4da;}
 
 
 
