@@ -1,12 +1,12 @@
 import math
 from ceproexamsmgtapp import models
-from ceproexamsmgtapp.models import db, UserType, User, ExamStatus, UserHasExam, Exam, ServiceLevel, Service, ExamType, AcademicYear
+from ceproexamsmgtapp.models import db, UserType, User, ExamStatus, Exam, ServiceLevel, Service, ExamType, AcademicYear, Section
 import pandas as pd
 from flask import Blueprint
 
 #fonctions pour lire le fichier csv pour ensuite pouvoir les inséré dans la bd
 def parse_user_csv(file_path):
-    df = pd.read_csv(file_path, sep=',')
+    df = pd.read_csv(file_path)
     array_data = df.to_numpy()
 
     i = 1
@@ -64,8 +64,7 @@ def parse_user_csv(file_path):
 
 #fonctions pour lire le fichier csv pour ensuite pouvoir les inséré dans la bd 
 def parse_exam_csv(file_path):
-    print(file_path)
-    df = pd.read_csv(file_path, sep=';')
+    df = pd.read_csv(file_path, sep=';', keep_default_na=False)
     array_data = df.to_numpy()
 
     i = 1
@@ -83,59 +82,64 @@ def parse_exam_csv(file_path):
 
         #on récupère que le premier objet de la liste
         if exam.first() is not None:
-            print('exam exist')
+            #print('exam exist')
             exam = exam.first()
         #si il y en a pas on met l'objet dans la base
         else:
-            print('exam does not exist')
+            #print('exam does not exist')
             exam = Exam()
-
-        # exam_years = AcademicYear.query.filter_by(code=row[0])
-        # if exam_years:
-        #     exam_years = exam_years.first()
-        # exam.academic_year_id = exam_years
 
         exam.academic_year_id = row[0]
         exam.exam_semester = row[1]
         exam.exam_date = row[2]
+        exam.exam_status_id = row[3]
+        exam.code = row[4]
+        exam.name = row[5]
+        exam.service_level_id = row[8]
+        if row[10]:
+            exam.nb_students = row[10]
+        else:
+            exam.nb_students = 0
+        if row[11]:
+            exam.nb_pages = row[11]
+        else:
+            exam.nb_pages = 0
+        exam.total_pages = row[12]
+        exam.service_id = row[13]
+        exam.exam_type_id = row[14]
 
-        exam_status = ExamStatus.query.filter_by(code=row[3])
-        if exam_status:
-            exam_status = exam_status.first()
-        exam.exam_status_id = exam_status
+        if row[15]:
+            exam.deadline_prep = row[15]
+        else:
+            exam.deadline_prep = None
 
-        exam.code = [4]
-        exam.name = [5]
-        exam.nb_students = row[15]
-        exam.nb_pages = row[16]
-        exam.total_pages = row[17]
-        exam.deadline_prep = row[20]
-        exam.deadline_repro = row[21]
-        exam.remark = row[23]
+        if row[16] and row[16].replace(" ", "") != '':
+            exam.deadline_repro = row[16]
+        else:
+            exam.deadline_repro = None
 
-        user_has_exam = None
-        user_has_exam = UserHasExam()
+        exam.remark = row[17]
+
+        section = Section.query.filter_by(code=row[18])
+        if section:
+            section = section.first()
+        exam.section = section
+
+        db.session.add(exam)
+        db.session.commit()
+
+
 
         user_list = []
         if row[6]:
-            if not is_float(row[6]):
-                user_list = row[6].split(',')
+             if not is_float(row[6]):
+                 user_list = row[6].split(',')
+                 for user in user_list :
+                     print(user)
+             else:
+                 print('ceci estt un user', user)
 
 
-        service_level = ServiceLevel.query.filter_by(code=row[13])
-        if service_level:
-            service_level = service_level.first()
-        exam.service_level_id = service_level
-
-        service = Service.query.filter_by(code=row[18])
-        if service:
-            service = service.first()
-        exam.service_id = service
-
-        exam_type = ExamType.query.filter_by(code=row[19])
-        if exam_type:
-            exam_type = exam_type.first()
-        exam.exam_type_id = exam_type
 
 #-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
         #

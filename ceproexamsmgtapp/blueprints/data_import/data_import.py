@@ -33,7 +33,7 @@ def user_import():
             else:
                 msg = 'gros caca boudin'
 
-            data = pd.read_csv(os.path.join(current_app.config['UPLOAD_FOLDER'], file.filename), sep=',')
+            data = pd.read_csv(os.path.join(current_app.config['UPLOAD_FOLDER'], file.filename), sep=',', keep_default_na=False)
 
             # page = request.args.get('page', 1, type=int)
             #
@@ -74,7 +74,7 @@ def exam_import():
                 msg = 'gros caca boudin'
 
             # reading the data in the csv file
-            data = pd.read_csv(os.path.join(current_app.config['UPLOAD_FOLDER'], file.filename), sep=';')
+            data = pd.read_csv(os.path.join(current_app.config['UPLOAD_FOLDER'], file.filename), sep=';', keep_default_na=False)
 
             page = request.args.get('page', 1, type=int)
             pagination = User.query.order_by(User.firstname).paginate(page, per_page=20)

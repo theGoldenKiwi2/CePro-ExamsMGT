@@ -14,11 +14,10 @@ def create_app(test_config=None):
     # create and configure the app
     app = Flask(__name__, instance_relative_config=True)
     app.config['SECRET_KEY'] = "secret-key"
-    app.config['SQLALCHEMY_DATABASE_URI'] = "mysql://root:MOTdepasse2023!@localhost:3306/ceproexamsmgt"
+    app.config['SQLALCHEMY_DATABASE_URI'] = "mysql://root:Mic99099.-.@localhost:3306/ceproexamsmgt"
     app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
     app.config['BASIC_AUTH_FORCE'] = True
     app.config['UPLOAD_FOLDER'] = app.root_path+"/blueprints/data_import/upload"
-    app.config['WHOOSH_BASE'] = '/blueprints/search/whoosh.db'
     db.init_app(app)
     # remplacer la configuration
     if test_config is None:
@@ -35,10 +34,9 @@ def create_app(test_config=None):
     app.register_blueprint(data_import.bp)
     from .blueprints.search import search
     app.register_blueprint(search.bp)
-
         # Import admin model views
     #if __name__ == '__main__':
-    admin = Admin(app, template_mode='bootstrap3')
+    admin = Admin(app)
     admin.add_view(ModelView(User, db.session))
     admin.add_view(ModelView(UserType, db.session))
     admin.add_view(ModelView(ServiceLevel, db.session))
