@@ -5,6 +5,7 @@ from .import_functions import parse_user_csv, parse_exam_csv
 import pandas as pd
 from flask_sqlalchemy import SQLAlchemy
 from flask_paginate import Pagination, get_page_parameter
+from ceproexamsmgtapp.models import User
 
 bp = Blueprint('data_import', __name__, url_prefix='/data_import ')
 
@@ -77,7 +78,7 @@ def exam_import():
             data = pd.read_csv(os.path.join(current_app.config['UPLOAD_FOLDER'], file.filename), sep=';', keep_default_na=False)
 
             page = request.args.get('page', 1, type=int)
-            pagination = User.query.order_by(User.firstname).paginate(page, per_page=20)
+            pagination = User.query.order_by(User.firstname).paginate(page=1, per_page=20)
             return render_template(r'data_import/import_exam.html', message=msg, tables=[data.to_html()], titles=[''], pagination=pagination)
 
         return render_template(r'data_import/import_exam.html', message="Veuillez choisir un fichier .csv")
@@ -96,5 +97,3 @@ def exam_import():
 #     print(file.filename)
 #     data = pd.read_csv(file.filename)
 #     return render_template('tables.html', tables=[data.to_html()], titles=[''])
-
-

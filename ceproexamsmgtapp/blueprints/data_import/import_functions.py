@@ -17,7 +17,7 @@ def parse_user_csv(file_path):
         ligne = "Lignes " + str(i) + " : "
 
         user = None
-        
+
         #on regarde si il est float ou pas en utilisant la fonctions qui est plus basse
         if is_float(row[0]):
             if math.isnan(row[0]):
@@ -30,7 +30,7 @@ def parse_user_csv(file_path):
         if user.first() is not None:
             print('user exist')
             user = user.first()
-        #si il y en a pas on met l'objet dans la base 
+        #si il y en a pas on met l'objet dans la base
         else:
             print('user does not exist')
             user = User()
@@ -62,7 +62,7 @@ def parse_user_csv(file_path):
 
     return True
 
-#fonctions pour lire le fichier csv pour ensuite pouvoir les inséré dans la bd 
+#fonctions pour lire le fichier csv pour ensuite pouvoir les inséré dans la bd
 def parse_exam_csv(file_path):
     df = pd.read_csv(file_path, sep=';', keep_default_na=False)
     array_data = df.to_numpy()
@@ -125,19 +125,19 @@ def parse_exam_csv(file_path):
             section = section.first()
         exam.section = section
 
-        db.session.add(exam)
-        db.session.commit()
-
-
-
-        user_list = []
         if row[6]:
              if not is_float(row[6]):
-                 user_list = row[6].split(',')
-                 for user in user_list :
-                     print(user)
-             else:
-                 print('ceci estt un user', user)
+                 user_sciper_list = row[6].split(',')
+                 for user_sciper in user_sciper_list :
+                     user = User.query.filter_by(sciper=user_sciper).first();
+                     if user:
+                       exam.users.append(user)
+                     else:
+                       print("!!!!!! Exam : "+exam.code+" - ligne N° "+str(i)+" --> User with sciper "+ user_sciper+" not found !")
+
+
+        db.session.add(exam)
+        db.session.commit()
 
 
 

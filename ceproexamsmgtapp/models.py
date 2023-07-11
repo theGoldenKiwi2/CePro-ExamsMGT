@@ -8,6 +8,7 @@ class ExamType(db.Model):
     code = db.Column(db.String(20))
     name = db.Column(db.String(50))
     exams = db.relationship('Exam', backref='exam_type', lazy='dynamic')
+
 class ExamStatus(db.Model):
     id = db.Column(db.Integer, primary_key=True)
     code = db.Column(db.String(20))
@@ -23,35 +24,45 @@ class Service(db.Model):
     code = db.Column(db.String(20))
     description = db.Column(db.String(100))
     exams = db.relationship('Exam', backref='service', lazy='dynamic')
+
 class AcademicYear(db.Model):
     id = db.Column(db.Integer, primary_key=True)
     code = db.Column(db.String(20))
     name = db.Column(db.String(100))
     exams = db.relationship('Exam', backref='academic_year', lazy='dynamic')
+
 class Section(db.Model):
     id = db.Column(db.Integer, primary_key=True)
     code = db.Column(db.String(20))
     name = db.Column(db.String(100))
     exams = db.relationship('Exam', backref='section', lazy='dynamic')
+
+user_has_exam = db.Table('user_has_exam',
+    db.Column('exam_id', db.Integer, db.ForeignKey('exam.id'), primary_key=True),
+    db.Column('user_id', db.Integer, db.ForeignKey('user.id'), primary_key=True),
+    db.Column('contact_person', db.Boolean(), default=False)
+)
+
 class Exam(db.Model):
-    id = db.Column(db.Integer, primary_key=True)
+    id = db.Column(db.Integer, primary_key=True, autoincrement=True)
     code = db.Column(db.String(30))
     name = db.Column(db.String(100))
     exam_date = db.Column(db.DateTime())
     exam_semester = db.Column(db.String(10))
     nb_students = db.Column(db.Integer)
     nb_pages = db.Column(db.Integer)
-    total_pages = db.Column(db.Integer)
-    deadline_prep = db.Column(db.DateTime())
-    deadline_repro = db.Column(db.DateTime())
+    deadline_prep = db.Column(db.Date(), nullable=True)
+    deadline_repro = db.Column(db.Date(), nullable=True)
     remark = db.Column(db.String(250))
-    exam_type_id = db.Column(db.Integer, db.ForeignKey('exam_type.id'), primary_key=True)
-    exam_status_id = db.Column(db.Integer, db.ForeignKey('exam_status.id'), primary_key=True)
-    service_level_id = db.Column(db.Integer, db.ForeignKey('service_level.id'), primary_key=True)
-    service_id = db.Column(db.Integer, db.ForeignKey('service.id'), primary_key=True)
-    academic_year_id = db.Column(db.Integer, db.ForeignKey('academic_year.id'), primary_key=True)
-    user_has_exams = db.relationship('UserHasExam', backref='exams', lazy='dynamic')
-    section_id = db.Column(db.Integer, db.ForeignKey('section.id'), primary_key=True)
+    exam_type_id = db.Column(db.Integer, db.ForeignKey('exam_type.id'))
+    exam_status_id = db.Column(db.Integer, db.ForeignKey('exam_status.id'))
+    service_level_id = db.Column(db.Integer, db.ForeignKey('service_level.id'))
+    service_id = db.Column(db.Integer, db.ForeignKey('service.id'))
+    academic_year_id = db.Column(db.Integer, db.ForeignKey('academic_year.id'))
+    section_id = db.Column(db.Integer, db.ForeignKey('section.id'))
+    users = db.relationship('User', secondary=user_has_exam, lazy='subquery',
+                                  backref=db.backref('exams', lazy=True))
+
 class UserType(db.Model):
     id = db.Column(db.Integer, primary_key=True)
     code = db.Column(db.String(20))
@@ -59,7 +70,6 @@ class UserType(db.Model):
     users = db.relationship('User', backref='user_type', lazy='dynamic')
 
 class User(UserMixin, db.Model):
-    __searchable__ = ['firstname']
     id = db.Column(db.Integer, primary_key=True, autoincrement=True)
     lastname = db.Column(db.String(50))
     firstname = db.Column(db.String(50))
@@ -67,8 +77,8 @@ class User(UserMixin, db.Model):
     password = db.Column(db.String(100))
     authenticated = db.Column(db.Boolean, default=False)
     sciper = db.Column(db.String(6))
-    user_type_id = db.Column(db.Integer, db.ForeignKey('user_type.id'), primary_key=True)
-    exams = db.relationship('UserHasExam', backref='user', lazy='dynamic')
+    user_type_id = db.Column(db.Integer, db.ForeignKey('user_type.id'))
+
 
     def is_active(self):
         return True
@@ -78,10 +88,13 @@ class User(UserMixin, db.Model):
         return self.authenticated
     def is_anonymous(self):
         return False
-class UserHasExam(db.Model):
-    exam_id = db.Column(db.Integer, db.ForeignKey('exam.id'), primary_key=True)
-    user_id = db.Column(db.Integer, db.ForeignKey('user.id'), primary_key=True)
-    contact_person = db.Column(db.Boolean(), default=False)
+
+# userhasexam = db.Table('userhasexam',
+#     db.Column('exam_id', db.Integer, db.ForeignKey('exam.id'), primary_key=True),
+#     db.Column('user_id', db.Integer, db.ForeignKey('user.id'), primary_key=True),
+#     db.Column('contact_person', db.Boolean(), default=False)
+# )
+
 class ExamHasSection(db.Model):
     section_id = db.Column(db.Integer, db.ForeignKey('section.id'), primary_key=True)
     exam_id = db.Column(db.Integer, db.ForeignKey('exam.id'), primary_key=True)
