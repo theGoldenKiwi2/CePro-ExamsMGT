@@ -47,15 +47,6 @@
         <img src="{{url_for('static', filename='images/house.svg')}}" width="30" height="30" alt="">
     </a>
 
-    <div class="input-group rounded">
-                    <form class="form-inline" method="post" action="{{ url_for('search.search') }}">
-                        <div>
-                            <input class="form-control rounded" placeholder="Search" aria-label="Search" aria-describedby="search-addon" name="search"/>
-                            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-                        </div>
-                    </form>
-                </div>
-
     <div class="collapse navbar-collapse" id="navbarNavDropdown">
         <ul class="navbar-nav ml-auto">
             <li class="nav-item active">
@@ -139,7 +130,7 @@
                 </a>
                 <!-- Submenu content -->
                 <div id='submenu2' class="collapse sidebar-submenu">
-                    <a href="#" class="list-group-item list-group-item-action bg-dark text-white">
+                    <a href="{{ url_for('stats.stats') }}" class="list-group-item list-group-item-action bg-dark text-white">
                         <span class="menu-collapsed">1</span>
                     </a>
                     <a href="#" class="list-group-item list-group-item-action bg-dark text-white">
