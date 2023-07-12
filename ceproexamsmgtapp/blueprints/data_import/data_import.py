@@ -36,13 +36,12 @@ def user_import():
 
             data = pd.read_csv(os.path.join(current_app.config['UPLOAD_FOLDER'], file.filename), sep=',', keep_default_na=False)
 
-            # page = request.args.get('page', 1, type=int)
-            #
-            # table = Table.query.paginate(page=page, per_page=ROWS_PER_PAGE)
 
 
+            page = request.args.get('page', 3, type=int)
+            pagination = User.query.order_by(User.firstname).paginate(page=1, per_page=20)
 
-            return render_template(r'data_import/import_user.html', message=msg, tables=[data.to_html()], titles=[''])
+            return render_template(r'data_import/import_user.html', message=msg, tables=[data.to_html()], titles=[''], pagination=pagination)
 
         return render_template(r'data_import/import_user.html', message="Veuillez choisir un fichier .csv")
     else:
@@ -77,7 +76,7 @@ def exam_import():
             # reading the data in the csv file
             data = pd.read_csv(os.path.join(current_app.config['UPLOAD_FOLDER'], file.filename), sep=';', keep_default_na=False)
 
-            page = request.args.get('page', 1, type=int)
+            page = request.args.get('page', 3, type=int)
             pagination = User.query.order_by(User.firstname).paginate(page=1, per_page=20)
             return render_template(r'data_import/import_exam.html', message=msg, tables=[data.to_html()], titles=[''], pagination=pagination)
 

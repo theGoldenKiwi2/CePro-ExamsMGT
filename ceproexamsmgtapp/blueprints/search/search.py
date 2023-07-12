@@ -17,4 +17,10 @@ def search():
 
     return render_template('search.html', users=results)
 
-
+# @bp.route('/search/filter/year', methods=['POST'])
+# @login_required
+# def year():
+#     year_str = request.form.get('year')
+#     results = Exam.query.filter(Exam.exam_date.like('%'+year_str+'%')).all()
+#
+#     return render_template('searchYear.html', exams=results)
